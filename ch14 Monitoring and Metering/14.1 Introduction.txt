@@ -1,0 +1,201 @@
+
+Management is that for which there is no algorithm. 
+Where there is an algorithm, it’s administration.
+– ROGER NEEDHAM
+
+管理是沒有演算法的領域。當有演算法存在時，就是行政
+
+ 這句話旨在區分管理（Management）和行政（Administration）之間的不同
+ 其中，「Management is that for which there is no algorithm」
+ 表明管理涉及處理複雜、不可預測和不具有固定解決方案的問題。
+ 管理往往需要靈活性和創造性，無法單純透過一套固定的演算法來解決。
+
+ 相對地，「Where there is an algorithm, it’s administration」
+ 表明當出現一套固定的演算法時，就會轉化為行政管理，
+ 即按照預定的程序和規則來執行任務，更注重效率和執行力。
+
+ 總體而言，管理涉及更高層次的問題解決、決策和領導，
+ 而行政管理更注重實際執行和操作，並且可能更適合使用固定的演算法或程序。
+
+The market is not an invention of capitalism. It has existed for centuries.
+It is an invention of civilization.
+– MIKHAIL GORBACHEV
+
+市場不是資本主義的發明。它已存在數個世紀了。它是文明的發明。
+
+In addition to the burglar alarms we discussed in the last chapter
+, your home will likely have a number of other monitoring devices: utility meters
+, baby monitors, smoke detectors, exercise equipment, health trackers and connected appliances. 
+
+You may also buy value online for some metering systems 
+, from a prepayment utility meter in your home through prepaid postage labels. 
+An increasing number of systems are concerned with monitoring and metering human activities and indeed the natural environment too. 
+
+They go back a long way. 
+
+James Watt, the steam engine pioneer, didn’t just sell engines
+; he licensed his patents using a sealed counter that measured the number of revolutions an engine had made. 
+
+His inspectors read these from time to time and billed the customer for royalties.
+
+除了上一章中討論的防盜警報系統外，您的家中可能還有許多其他監控設備：
+公用事業計量表、嬰兒監視器、煙霧探測器、運動設備、健康追踪器和連接的家電
+
+您可能還會線上購買一些 計量系統的價值 ，從家中的 預付款公用事業計量表 到 預付郵資標籤
+
+ buy value 指的是向某個計量系統支付一定的金額，以獲得相應的價值或服務。
+ Postage 是郵資的意思
+ prepaid postage labels 就是事先支付了邮资的标签
+
+越來越多的系統關注 監測和計量 人類活動，甚至是自然環境
+
+這些系統的歷史悠久。
+
+蒸汽機先驅詹姆斯·瓦特不僅僅是出售發動機；
+他還使用一個 密封的計數器 來測量 發動機轉動的次數
+他的檢查員定期讀取這些數據，然後向客戶收取專利權使用費
+
+Electronic systems that use cryptography and tamper-resistance 
+have displaced most of the older mechanical systems and opened up all sorts of new applications. 
+
+使用加密和防篡改技術的電子系統已經取代了大多數舊的機械系統，並開啟了各種新的應用。
+ 
+ tamper 代表 竄改
+ tamper-resistance 就是 防止竄改
+
+Ticketing is huge, from transport tickets through sports events to
+coupons; my case study for ticketing is the prepayment meters used for gas and
+electricity. Then I’ll turn to vehicle systems. The most familiar of these may be
+taxi meters, but as these are being replaced by phone apps, I’ll mainly discuss
+tachographs – devices used in Europe and Australia to record the speed and
+working hours of truck and coach drivers, and in the USA to record the com-
+ings and goings of bank trucks.
+
+售票業務十分龐大，從交通票到體育賽事再到優惠券；
+我將以天然氣和電力預付表作為售票業務的案例研究。
+
+接下來我會轉向車輛系統。其中最為人熟悉的可能是計程車計價器，
+但隨著這些計價器被手機應用程式取代，我將主要討論的是
+——在歐洲和澳大利亞用於記錄卡車和大巴司機的速度和工作時間的測速儀，
+以及在美國用於記錄銀行車輛來往的儀器。
+
+My third case study is the curfew tags used in
+the USA to monitor criminal suspects before trial and in the UK for parolees
+after release. My fourth is the electronic postage meters used to frank letters
+and packages.
+
+我的第三個案例研究是在美國用於監控犯罪嫌疑人在審判前的宵禁標籤，以及在英國用於假釋者在釋放後的宵禁標籤。
+我的第四個案例是用於蓋郵件和包裹的電子郵資表。
+
+Many of these new applications follow the traditional IT industry mantra of ‘ship it Tuesday and get it right by version 3’. 
+
+許多這些新應用都遵循傳統的IT行業口號：“星期二出貨，第三版完美”。
+
+ "Mantra" 是一個來自梵文的詞，原本指的是印度教或佛教的祈禱文，用於冥想或靜心。
+ 在英文中，"mantra" 通常被用來指代一個口號、口頭禱告或重複的口號，
+ 尤其是在特定情境下不斷重複的口號，以強調某種信念、原則或目標。在IT行業中，
+ "ship it Tuesday and get it right by version 3" 
+ 可視為一種口號或格言，意味著先快速上線產品，然後通過不斷的版本迭代來完善和修正。
+
+We do have the beginnings of general standards for IoT security
+, such as the draft ETSI standard EN 303 645
+, which lays out the usual motherhood-and-apple-pie stuff like no default passwords
+, protecting crypto keys, updateable software
+, minimising the attack surface and allowing users to delete personal information [640]. 
+
+But turning basic principles into good engineering takes effort
+, and we can learn a lot from applications that have already gone through at least one iteration of attack and defence. 
+
+I hope the case studies in this chapter will give some of the needed contextual insight.
+
+
+我們確實已經開始制定物聯網安全的一般標準，例如ETSI標準EN 303 645的草案，該標準列出了一些常見的基本原則，
+例如不使用默認密碼、保護加密密鑰、可更新的軟件、最小化攻擊面，以及允許用戶刪除個人信息。
+
+ motherhood-and-apple-pie stuff 是一個英文俚語，用來描述一些普遍認為是正確、不容置疑或無懈可擊的事情或觀點
+ 這個短語源自美國文化，是一種隱喻，將母愛和蘋果派作為代表普遍被認可的價值和理想的符號
+ 因此，當人們說某事是"motherhood-and-apple-pie stuff" 時，
+ 他們指的是一些基本的、不爭議的、顯而易見的或普遍接受的事情或觀點
+
+將基本原則轉化為優秀的工程實踐需要努力。我們可以從已經經歷過至少一次攻擊和防禦迭代的應用中學到很多
+將理論和基本原則應用到實際工程中是一項挑戰性的任務，需要付出大量的努力和實踐
+通過研究已經經歷過攻擊和防禦的應用案例，我們可以從中學習到寶貴的經驗和教訓，以改進我們自己的工程實踐
+
+我希望本章的案例研究能夠提供一些 the needed contextual insight
+案例研究中所提供的信息或觀點，可以幫助讀者更好地理解、分析和應對特定問題或情境
+這些洞察可以提供相應的背景、相關信息或深入理解，幫助讀者更好地應對相關挑戰或制定解決方案
+
+You’ll recall that in order to defeat a burglar alarm it is sufficient to make it
+appear unreliable. Meters add further subtleties.
+
+When we discussed an alarm in a bank vault, we were largely concerned
+with attacks on communications (though sensor defeats also matter). 
+
+But many metering systems are much more exposed physically. 
+
+A taxi driver may want the meter to read more miles or more minutes than were actually worked
+, so may manipulate it into over-measuring. 
+
+With tachographs, it’s the reverse: the truck driver usually wants to drive above the speed limit
+, or work dangerously long hours, so wants the tachograph to ignore some driving. 
+
+Utility consumers may want their meters to ignore some of the passing electricity or gas. 
+
+Criminal defendants and parolees may want to evade a curfew order. 
+
+In such cases, the subject of surveillance may cause the device to make false readings, or simply to fail. 
+
+There are also underground markets for exploits of various kinds.
+
+你可能還記得，要擊敗一個防盜警報，只需讓它看起來不可靠即可。計量器增加了更多微妙之處。
+
+當我們討論銀行金庫中的警報時，我們主要關注的是對通信的攻擊（盡管感應器的擊敗也很重要）。
+但許多計量系統在物理上更加暴露。
+
+計程車司機可能希望計程表顯示的里程數或時間比實際工作的多，因此可能會操縱它進行過度測量。
+
+而對於測速儀來說，情況剛好相反：卡車司機通常希望超速行駛，或者工作時間過長，因此希望測速儀忽略某些行駛時間。
+
+公用事業消費者可能希望他們的計量器忽略一部分過去的電力或天然氣。犯罪被告和假釋者可能希望逃避宵禁令。
+
+在這些情況下，被監視的對象可能會導致設備進行虛偽讀數，或者簡單地失效。
+
+還有各種各樣的漏洞利用地下市場。
+
+
+Many metering and monitoring systems are also concerned with evidence.
+An opponent could get an advantage either by manipulating communications
+(such as by replaying old messages) or by falsely claiming that someone else had done so. 
+
+With postal franking systems, it’s not sufficient for the attacker to cause a failure (as then he can’t post his letters). 
+
+And we need to understand the real threats. 
+
+The post office is mostly concerned with stopping wholesale fraud
+, such as crooked direct marketers who bribe postal employees to slip a truckload of mail into the system. 
+
+The system may look like it’s designed to stop external fraud, but its real focus is internal.
+
+許多計量和監控系統也在乎證據
+
+對手可以通過操縱通信（例如重播舊消息）或虛偽聲稱別人已經這樣做來獲得優勢。
+
+對於郵政蓋郵系統來說，對於攻擊者來說，僅僅導致系統故障是不夠的，因為如果系統故障了，攻擊者自己也無法郵寄他的信件。
+
+ "Franking" 是一個郵政術語，指的是在郵件上蓋上郵資標誌，表示郵資已經支付。
+
+而我們需要了解真正的威脅。郵局主要關心防止大規模欺詐，
+例如貪污的直銷行銷人員賄賂郵局員工，將一車輛的郵件塞入系統中
+
+ Wholesale 大宗的、大批量的或批發的
+ wholesale fraud 大規模的欺詐行為
+ direct marketers 直接向消費者推銷商品或服務的市場營銷人員
+ crooked 不正當或不誠實的
+ Bribe 賄賂或收買
+ slip 悄悄地或秘密地放置或插入某物
+ truckload of mail 一整車的郵件
+
+這個系統看起來可能設計用於阻止外部欺詐，但它真正的焦點是內部
+
+
+

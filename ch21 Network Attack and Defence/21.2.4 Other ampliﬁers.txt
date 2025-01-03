@@ -1,0 +1,49 @@
+
+
+Many other protocols have been used in service-denial attacks than DNS and TCP [1505].
+An early favourite was smurfing; this exploited the Internet control message protocol (ICMP)
+, which enables users to send an echo packet to a remote host to check whether it’s alive.
+If Alice sent an ICMP packet purporting to come from Bob to a broadcast address
+, all the machines on the subnet would send him a response.
+The protocol was changed so that broadcast addresses didn’t reply.
+The bad guys changed to use protocols such as NTP and DNS for which amplifiers could still be found.
+
+許多其他協議已被用於服務阻斷攻擊，而不僅僅是 DNS 和 TCP。
+一個早期的偏愛是 smurfing；這利用了網際網路控制消息協議（ICMP），
+該協議使用戶可以向遠程主機發送回應封包以檢查其是否存活。
+如果 Alice 發送了一個偽造的 ICMP 封包，聲稱來自 Bob，發送到廣播位址，則子網中的所有機器都會向他發送回應。
+該協議被更改，以使廣播位址不再回應。壞人開始改用諸如 NTP 和 DNS 等協議，因為仍然可以找到放大器。
+
+More thorough fixes for attacks based on packet amplification were to follow. 
+Most of the available amplifiers use UDP packets, including ICMP and NNTP but not SYN reflection; 
+so starting from the mid-2000s, broadband ISPs started filtering out UDP packets with forged source addresses. 
+Microsoft also changed their network stack
+to make it much harder for an infected machine to send a packet with a spoofed IP address; 
+you now need to hack the operating system, not just any old application. 
+So attacks that exploit UDP packet amplifiers have to be run from servers in hosting centres. 
+
+隨後出現了更為徹底的修復方法來對抗基於封包放大的攻擊。
+大多數現有的放大器使用 UDP 封包，包括 ICMP 和 NNTP，但不包括 SYN 反射；
+因此，從2000年代中期開始，寬帶網際網路服務提供商開始過濾偽造源地址的 UDP 封包。
+微軟還改變了他們的網絡堆棧，使得感染的機器更難以發送帶有偽造 IP 地址的封包；
+現在你需要入侵操作系統，而不僅僅是任何舊應用程序。
+因此，利用 UDP 封包放大器的攻擊必須從主機中心的伺服器運行。
+
+In the late 2010s, such attacks have become increasingly the preserve of DDoS-for-hire operators
+, against whom the most effective countermeasure has been to raid them and arrest them.
+
+在 2010 年代後期，這類攻擊越來越成為 DDoS 租用運營商的專利，對抗他們最有效的對策是突襲和逮捕他們。
+
+smurfing：
+一種早期的服務拒絕（DDoS）攻擊方法，
+利用互聯網控制消息協議（ICMP）的一種漏洞。
+當攻擊者發送偽造的ICMP封包給廣播位址時，
+網絡中的所有主機都會對其進行回應，
+導致目標主機遭受過多的回應封包，從而癱瘓服務。
+purporting：
+在這個上下文中，指的是假冒、聲稱或宣稱某物或某人的意圖或來源。
+在文中，描述了Alice發送的ICMP封包聲稱是來自Bob的。
+centres：在美式英語中，"centres"的意思是"centers"，指的是中心或中心地帶。在這裡指的是主機託管中心或資料中心。
+preserve：在這裡指的是領域、範疇或地盤。在文中指的是某個行動、技術或方法被特定一群人或團體所獨有或獨佔。
+raid：在這裡指的是突襲、襲擊或突然行動，通常是指執法單位對非法活動或犯罪集團的突擊行動。
+arrest：在這裡指的是逮捕或拘留。通常是指執法單位對犯罪嫌疑人的行動。

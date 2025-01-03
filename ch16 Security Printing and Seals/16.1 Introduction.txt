@@ -1,0 +1,89 @@
+
+A seal is only as good as the man in whose briefcase it’s carried.
+– KAREN SPÄRCK JONES
+
+一個印章的價值取決於它所隨身携帶的人的品德和能力
+
+Karen Spärck Jones 是一位著名的資訊科學家，
+這句話強調了人的品格和能力對於一個印章或符號的價值的重要性
+
+You can’t make something secure if you don’t know how to break it.
+– MARC WEBER TOBIAS
+
+如果你不知道如何破解它，你就無法使某物變得安全。
+
+Many computer systems rely to some extent on secure printing
+, packaging and seals to guarantee important aspects of their protection.
+
+Most security products can be defeated if the opponent can get at them before you install them. 
+Seals, and tamper-evident packaging generally, can help with trusted distribution
+, that is, assuring the user that the product hasn’t been tampered with since leaving the factory.
+
+We saw how monitoring systems, such as utility meters and tachographs
+, often use seals to make it harder for users to tamper with input. 
+No matter how sophisticated the cryptography, a defeat for the seals can be a defeat for the system.
+
+I also discussed how the contactless cards used in most building entry control systems can be cloned
+, thanks to the attacks on Mifare and some of its successors. 
+
+If you’re scrutinising the ID of an engineer before you let him into your hosting centre
+, it can be a good idea to eyeball the ID as well as reading it electronically. 
+Even with electronic ID cards, the security printing can still matter.
+
+In general, it may be a more realistic goal 
+to make credentials tamper evident rather than tamper proof: 
+if someone dismantles their smartcard and gets the keys out
+, they should not be able to reassemble it into something that will pass close examination. 
+Security printing can help here.
+
+許多電腦系統在某種程度上依賴安全的列印、包裝和封裝，以保證其保護的重要方面
+
+大多數安全產品如果對手在您安裝它們之前就能接觸到它們，則可以被擊敗
+封裝和 tamper-evident包裝 通常可以幫助實現信任分發，即向用戶保證產品自離開工廠以來沒有被篡改
+
+ "tamper-evident" 意思是指一種特性或設計，
+ 使得在物品受到干擾或篡改後能夠顯示出痕跡或證據，表明有人試圖干擾或篡改它
+
+我們看到，監控系統，如公用事業計量器和檔案記錄器，通常使用封裝來使用戶更難篡改
+無論加密有多麼複雜，對封裝的擊敗都可能是對系統的擊敗
+
+我還討論了大多數建築物入口控制系統中使用的非接觸式卡片可能被克隆，這要歸功於對Mifare及其一些後續產品的攻擊
+在你讓一名工程師進入你的 託管中心(hosting centre) 之前仔細審查他的識別證可能是一個好主意，
+除了電子讀取外，用 眼睛查看(eyeball) 識別證也是很重要的
+即使是電子身份證，安全列印也很重要
+
+一般來說，使證件具有tamper evident的特性可能是一個更現實的目標，而不是tamper proof的特性：
+如果有人拆開他們的智能卡並取出密鑰，他們不應該能夠重新組裝成一些能夠通過近距離檢查的東西
+安全列印在這方面可以提供幫助
+
+Quite apart from these direct applications of printing and sealing technology
+, the ease with which modern color scanners and printers can be used to make passable forgeries has opened up another front. 
+
+Since the late 1990s, banknote printers have been promoting digital protection techniques [254].
+
+These include watermarks that stop compliant scanners and printers being used for forgery
+, and invisible copyright marks that can enable forgeries to be detected in vending machines [831]. 
+
+Meanwhile, vendors of color copiers and printers embed forensic tracking codes 
+in their printed output that contain the machine serial number, date and time [621]. 
+
+So the digital world and the world of ‘funny inks’ have been growing closer.
+
+除了直接應用於列印和封裝技術之外，
+現代彩色掃描儀和打印機能夠輕鬆製作出具有可通過性的贗品，開辟了另一個新領域
+
+自1990年代末以來，鈔票印刷廠一直在推廣數字保護技術
+
+這些技術包括防止符合標準的掃描儀和打印機用於贗品的水印，
+
+ 水印技術是一種防偽措施，它在紙幣上添加了隱藏的圖案或文字，
+ 這些圖案或文字只能在特定條件下（例如透過特殊光源或特定角度觀察）才能被看到
+ 這樣的水印是無法被普通的掃描儀或打印機複製出來的，
+ 因此能夠阻止符合標準的掃描儀和打印機被用於製作紙幣贗品
+
+以及可以在自動售貨機中檢測到贗品的隱形版權標記
+
+與此同時，彩色復印機和打印機的供應商
+在其打印輸出中 嵌入了 包含機器序列號、日期和時間的 法醫追踪代碼
+
+因此，數字世界和「有趣的墨水」世界正在日益接近

@@ -1,0 +1,132 @@
+Most high assurance work has been done in the area of kinetic devices and infernal machines 
+that are controlled by stupid robots. 
+
+As information processing technology becomes more important to society
+, these concerns spread to areas previously thought inherently harmless
+, like operating systems.
+- EARL BOEBERT
+
+大多數高保證工作都是在由愚蠢機器人控制的 動力裝置 和 地獄機器 方面進行的
+隨著信息處理技術對社會的重要性日益增加，
+這些擔憂擴散到了先前被認為是無害的領域，
+比如操作系統
+
+"Infernal" 與地獄有關的，或者極其邪惡、可怕的
+在這裡 它被用來形容 機器或裝置，暗示它們可能會 導致 極端破壞性或危險
+
+The password on the government phone always seemed to drop, and I couldn't get into it.
+- US diplomat and former CIA oofficer KURT VOLKER, explaining why he texted from his personal phone
+
+政府手機上的密碼似乎總是丟失了，我無法進入
+- 美國外交官和前中央情報局官員庫爾特·沃爾克（KURT VOLKER）解釋為什麼他從他的個人手機發送短信
+
+I brief; you leak; he/she commits a criminal offence by divulging classified information.
+- BRITISH CIVIL SERVICE VERB
+
+我，提供機密信息的人
+你，將機密信息透露出去的人
+他，犯下刑事犯罪的人
+
+這句話表達了在英國公務員圈中，保密是一個複雜的系統，涉及不同角色的行為
+這凸顯出保密和處理機密信息的複雜性，以及其中牽涉到的各種可能性和潛在風險
+
+"Commits" 是動詞，意思是 犯（罪）、做（錯誤的事情）
+"criminal" 是形容詞，指與犯罪有關的
+"offence" 是名詞，指的是觸犯法律或道德的 行為
+
+"Commits a criminal offence" 意思是犯下一項刑事犯罪
+
+"Divulging" 是動詞 "divulge" 的現在分詞形式，意思是「洩露」、「透露」或「揭示」
+
+
+In the next few chapters I'm going to explore the concept of a security policy using case studies. 
+A security policy is a succinct description of what we're trying to achieve; 
+it's driven by an understanding of the bad outcomes we wish to avoid and in turn drives the engineering. 
+
+在接下來的幾章中，我將通過 案例研究 探討 安全政策 的概念
+安全政策 是 對 我們所要達到的目標的 簡潔描述；
+它是 由 我們希望避免的不良結果的理解 驅動的，進而 推動了工程實踐
+
+After I've fleshed out these ideas a little, I'll spend the rest of this chapter exploring 
+the multilevel security (MLS) policy model used in many military and intelligence systems
+, which hold information at different levels of classification(Confidential, Secret, Top Secret, ... )
+, and have to ensure that data can be read only by a principal whose clearance level is at least as high. 
+Such policies are increasingly also known as information flow control(IFC).
+
+在我稍微深入探討了這些想法之後，我將花費本章的其餘部分來探索多級安全（MLS）政策模型，
+這在許多軍事和情報系統中被使用，這些系統將信息保存在不同的分類級別中（機密、秘密、極機密...），
+並且必須確保數據只能被至少具有相同或更高級別的許可的主體讀取
+
+這些政策越來越被稱為信息流控制（IFC）
+
+They are important for a number of reasons, even if you're never planning to work for a government contractor:
+
+1. from about 1980 to about 2005
+, the US Department of Defense spent several billion dollars funding research into multilevel security. 
+So the model was worked out in great detail
+, and we got to understand the second-order effects of pursuing a single policy goal with great zeal;
+
+2. the mandatory access control (MAC) systems used to implement it have now appeared 
+in all major operating systems such as Android, iOS and Windows 
+to protect core components against tampering by malware, as I described in Chapter 6;
+
+3. although multilevel security concepts were originally developed to support confidentiality in military systems
+, many commercial systems now use multilevel integrity policies. 
+For example, safety-critical systems use a number of safety integrity levels.
+
+它們出於多種原因而重要，即使您永遠不打算為政府承包商工作：
+
+從大約1980年到2005年左右，美國國防部花費了數十億美元資助多級安全研究
+因此，這個模型被詳細制定出來，我們得以了解以極大熱情追求單一政策目標的二階效應；
+
+現在所有主要操作系統，如Android、iOS和Windows，都出現了用於實現它的強制訪問控制（MAC）系統，
+以保護核心組件免受惡意軟件的篡改，就像我在第6章中所描述的那樣；
+
+雖然多級安全概念最初是為了支持軍事系統中的保密性而開發的，
+但現在許多商業系統都使用多級完整性政策
+例如，安全關鍵系統使用多個安全完整性級別。
+
+"二階效應" 是指某一行動或政策所產生的間接影響或後果，這些影響通常不是直接可見的，
+而是與原始目標相關聯的其他結果。在這個上下文中，作者提到了追求單一政策目標所產生的二階效應，
+意思是追求多級安全政策時可能帶來的間接影響或後果，
+這些影響可能在一開始並不明顯，但隨著時間的推移，它們可能會顯現出來
+
+The poet Archilochus famously noted that a fox knows many little things,
+while a hedgehog knows one big thing. Security engineering is usually in fox
+territory, but multilevel security is an example of the hedgehog approach.
+
+詩人阿基洛克斯曾著名地說過，狐狸知道許多小事，而刺蝟知道一件大事
+安全工程通常處於狐狸的領域，但多級安全則是刺蝟方法的一個例子
+
+這段話引用了詩人阿基洛克斯的名言，將人們分為狐狸和刺蝟兩種類型
+
+狐狸象徵著那些知道許多小事、多才多藝、靈活應變的人；
+而刺蝟則象徵著那些專注於一個大議題、專注於單一方向的人
+
+在這段話中，作者將安全工程比喻為狐狸的領域，因為它通常涉及處理各種不同的問題和挑戰，需要多方面的技能和知識
+然而，多級安全則被描述為刺蝟方法的一個例子，因為它專注於一個大議題——保護信息安全，並且遵循一個特定的方法論
+
+總的來說，這段話表達了在安全工程領域中，有時候專注於一個大議題並採取一貫的方法可能更有效，就像刺蝟一樣，
+而不是像狐狸一樣處理各種小事
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+翻譯
+
+

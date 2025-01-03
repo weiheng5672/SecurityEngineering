@@ -1,0 +1,94 @@
+
+Careful organisations communicate security context in various ways to help staff avoid making mistakes. 
+The NSA, for example, had different colored internal and external telephones
+, and when an external phone in a room is off-hook
+, classified material can’t even be discussed in the room 
+– let alone on the phone.
+
+Yet while many banks and other businesses maintain some internal security context
+, they often train their customers to act in unsafe ways.
+Because of pervasive phishing, it’s not prudent to try to log on to your bank by clicking on a link in an email
+, so you should always use a browser bookmark or type in the URL by hand. 
+Yet bank marketing departments send out lots of emails containing clickable links. 
+Indeed much of the marketing industry is devoted to getting people to click on links. 
+Many email clients – including Apple’s, Microsoft’s, and Google’s – 
+make plaintext URLs clickable, so their users may never see a URL that isn’t. 
+Bank customers are well trained to do the wrong thing.
+
+謹慎的組織會以各種方式溝通安全背景，以幫助員工避免犯錯。
+例如，NSA內部和外部的電話是不同顏色的，當房間裡的外部電話摘起時，甚至不能在房間裡討論機密資料，更不用說在電話中了。
+
+然而，雖然許多銀行和其他企業保持了一些內部安全背景，但他們常常訓練客戶以不安全的方式行事。
+由於普遍存在的釣魚攻擊，試圖通過點擊電子郵件中的鏈接登錄到銀行帳戶是不明智的，所以你應該總是使用瀏覽器書籤或手動輸入URL。
+然而，銀行營銷部門發送大量包含可點擊鏈接的電子郵件。
+事實上，許多營銷行業致力於讓人們點擊鏈接。
+許多電子郵件客戶端，包括蘋果、微軟和谷歌的客戶端，
+使純文本URL可點擊，因此它們的用戶可能永遠不會看到不可點擊的URL。
+銀行客戶被訓練或習慣了執行錯誤的行為，因為他們被教導或習慣了不安全的做法
+
+單字解釋：
+
+prudent - 謹慎的、慎重的
+bookmark - 書籤，指在瀏覽器中保存網頁的連結以供以後訪問的功能。
+
+
+A prudent customer should also be cautious if a web service directs them somewhere else 
+– yet bank systems use all sorts of strange URLs for their services. 
+A spam from the Bank of America directed UK customers to mynewcard.com and got the certificate wrong 
+(it was for mynewcard.bankofamerica.com). 
+There are many more examples of major banks training their customers to practice unsafe computing 
+– by disregarding domain names, ignoring certificate warnings, and merrily clicking links [582]. 
+As a result, even security experts have difficulty telling bank spam from phish [445].
+
+一位謹慎的顧客如果一個網路服務將他們引導至其他地方時也應該保持警惕 
+- 然而銀行系統會使用各種奇怪的URL作為它們的服務。
+一封來自美國銀行的垃圾郵件引導英國顧客前往mynewcard.com，但其SSL憑證有誤（它應該是mynewcard.bankofamerica.com）。
+有許多類似的例子，主要銀行訓練他們的顧客忽略域名，忽略證書警告，並快樂地點擊連結。
+結果，即使是安全專家也很難區分銀行的垃圾郵件和釣魚郵件。
+
+disregarding：忽視，不理會。在這段文字中，指的是顧客忽略了（或不在意）域名和證書警告的行為。
+merrily：愉快地，快樂地。在這裡指的是顧客快樂地點擊連結，但忽略了潛在的風險
+
+
+It’s not prudent to give out security information over the phone to unidentified callers 
+– yet we all get phoned by bank staff who demand security information. 
+Banks also call us on our mobiles now and expect us 
+to give out security information 
+to a whole train carriage of strangers
+, rather than letting us text a response. 
+(I’ve had a card blocked because a bank security team phoned me while I was driving; 
+it would have been against the law to deal with the call other than in hands-free mode
+, and there was nowhere safe to stop.) 
+
+It’s also not prudent to put a bank card PIN into any device other than an ATM or a PIN entry device (PED) in a store; 
+and Citibank even asks customers to disregard and report emails that ask for personal information, including PIN and account details. 
+So what happened? You guessed it – it sent its Australian customers an email asking customers ‘as part of a security upgrade’ to log on to its web-site and authenticate themselves using a card number and an ATM PIN [1089].
+
+And in one 2005 case, the Halifax sent a spam to the mother of a student of ours who contacted the bank’s security department, which told her it was a phish. 
+The student then contacted the ISP to report abuse, and found that the URL and the service were genuine [1243]. 
+The Halifax disappeared during the crash of 2008, and given that their own security department couldn’t tell spam from phish, perhaps that was justice (though it cost us taxpayers a shedload of money).
+
+在未識別來電者的情況下，透過電話提供安全資訊並不明智 
+- 然而我們都會接到銀行職員的來電要求提供安全資訊。
+現在銀行甚至會打電話到我們的手機上，
+期望我們在整個列車車廂的陌生人面前提供安全資訊，
+而不是讓我們發送一條簡訊回應。
+我曾因為銀行安全團隊在我駕車時打電話給我而被封鎖了一張卡；
+處理該通電話除了使用免提模式以外都違法，
+而且當時找不到安全的停車地點。
+
+在除了自動櫃員機或商店中的PIN輸入設備（PED）以外的任何設備上輸入銀行卡PIN都不是明智的行為。
+
+此外，花旗銀行甚至要求客戶忽略並回報要求提供包括PIN和帳戶詳細信息等個人信息的電子郵件。
+然而，出現了一件事情，你猜對了 - 它向其澳大利亞客戶發送了一封電子郵件，要求客戶“作為安全升級的一部分”，
+登錄其網站並使用卡號和自動櫃員機PIN進行身份驗證。
+電子郵件中的請求與該銀行原本對於安全措施的建議不符
+
+
+在2005年的一個案例中，Halifax向我們一位學生的母親發送了一封垃圾郵件，
+該學生的母親與該銀行的安全部門聯繫，該部門告訴她這是釣魚郵件。
+然後學生聯繫了互聯網服務提供商以報告濫用行為，發現URL和服務是真實的。
+Halifax在2008年的金融危機中消失了，考慮到他們自己的安全部門無法區分垃圾郵件和釣魚郵件，
+也許這是正義（儘管這花費了納稅人大量的錢）。
+
+

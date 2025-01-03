@@ -1,0 +1,81 @@
+
+
+On wide-area networks, most data move between machines using either the User Datagram Protocol (UDP)
+, which is connectionless
+, or the Transmission Control Protocol (TCP)
+, which sets up persistent connections between endpoints. 
+Let’s start with the 3-way handshake used by Alice to initiate a TCP connection to Bob
+and set up sequence numbers for subsequent packet traffic (see Figure 21.1).
+
+A → B: SYN; my number is X
+B → A: CK; now X + 1 SYN; my number is Y
+A → B: ACK; now Y + 1 (start talking)
+
+This protocol has been exploited in many ways. 
+The classic service-denial attack is the SYN flood. 
+Alice simply sends a lot of SYN packets and never acknowledges any of the replies. 
+Bob accumulates more records of SYN packets than his software can handle. 
+This was used in one of the first distributed denial-of-service attacks that brought down Panix, a New York ISP, for several days in 1996.
+
+The technical fix was the ‘SYNcookie’: 
+rather than keeping a copy of the incoming SYN packet, B simply sends out as Y an encrypted version of X. 
+That way, Bob doesn’t have to retain a lot of state about half-open sessions. 
+Despite this, SYN floods persisted, albeit at a declining rate, for many years. 
+The general principle is that when you’re designing a protocol anyone can invoke
+, don’t let malicious users force honest ones to do work.
+
+The more common attack now is SYN reflection. 
+Alice sends Bob a packet that purports to come from Charlie.
+Bob replies to Charlie, and in practice systems send up to five ACKs in response to each SYN as a robustness measure
+, so there’s still a useful amplification effect.
+
+
+在廣域網路中，大多數資料在機器之間傳輸時使用的是User Datagram Protocol (UDP)，它是無連接的，
+或者Transmission Control Protocol (TCP)，它在端點之間建立持續的連接。
+
+讓我們從Alice用來向Bob初始化TCP連接並為後續的封包流量設置序列號的三向握手開始（見圖21.1）。
+
+A → B: SYN；我的號碼是X
+B → A: CK；現在X + 1 SYN；我的號碼是Y
+A → B: ACK；現在Y + 1（開始交談）
+
+這個協議已經被多種方式利用了。經典的服務拒絕攻擊是SYN洪水攻擊。
+Alice簡單地發送了大量的SYN封包，並且從不確認任何回覆。
+Bob累積了比他的軟件處理能力更多的SYN封包記錄。
+這在1996年的一次分布式阻斷服務攻擊中被用來使紐約的ISP Panix 嘗試了數天。
+
+技術修復是“SYNcookie”：B不再保留來自入站SYN封包的副本，而是僅將X的加密版本作為Y發送出去。
+這樣，Bob就不必保留大量有關半開放會話的狀態。
+儘管如此，許多年來，SYN洪水攻擊仍然持續存在，盡管有所減少。
+一般原則是，在設計任何人都可以調用的協議時，不要讓惡意用戶強迫誠實的用戶去做工作。
+
+現在更常見的攻擊是SYN反射攻擊。
+Alice發送給Bob的封包聲稱來自Charlie。
+Bob回覆給Charlie，在實際操作中，系統對每個SYN封包都會發送多達五個ACK作為一種韌性措施，因此仍然存在有用的放大效應。
+
+
+
+
+
+
+將以上文字翻譯成繁體中文
+然後根據上下文
+條列解釋以下單字的意思
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

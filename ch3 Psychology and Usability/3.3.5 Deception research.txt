@@ -1,0 +1,79 @@
+
+Finally, a word on deception research. 
+
+Since 9/11, huge amounts of money 
+have been spent by governments 
+trying to find better lie detectors, and deception researchers 
+are funded 
+across about five different subdisciplines of psychology.
+
+The polygraph measures stress via heart rate and skin conductance; 
+it has been around since the 1920s and is used by some US states in criminal investigations,
+as well as by the Federal government in screening people for Top Secret clearances. 
+
+The evidence on its effectiveness is patchy at best, and surveyed extensively by Aldert Vrij [1974]. 
+
+While it can be an effective prop in the hands of a skilled interrogator
+, the key factor is the skill rather than the prop. 
+
+When used by unskilled people in a lab environment
+, against experimental subjects telling low-stakes lies
+, its output is little better than random. 
+
+As well as measuring stress via skin conductance
+, you can measure distraction using eye movements and guilt by upper body movements. 
+
+In a research project with Sophie van der Zee
+, we used body motion-capture suits and also the gesture-recognition cameras in an Xbox 
+and got slightly better results than a polygraph [2066].
+
+However such technologies 
+can at best augment the interrogator’s skill
+, and claims that they work well should be treated as junk science. 
+
+Thankfully, the government dream of an effective interrogation robot is some way off.
+
+
+A second approach to dealing with deception is to train a machine-learning classifier on real customer behaviour. 
+
+This is what credit-card fraud engines have been doing since the late 1990s, and recent research has pushed into other fields too. 
+
+For example, Noam Brown and Tuomas Sandholm have created a poker-playing bot called Pluribus 
+that beat a dozen expert players over a 12-day marathon of 10,000 hands of Texas Hold ’em. 
+
+It doesn’t use psychology but game theory
+, playing against itself millions of times and tracking regret at bids that could have given better outcomes. 
+
+That it can consistently beat experts 
+without access to ‘tells’ such as its opponents’ facial gestures or body language is itself telling. 
+
+Dealing with deception using statistical machine learning rather than physiological monitoring 
+may also be felt to intrude less into privacy.
+
+
+兩種應對欺騙的方法，以及相關技術的應用和限制
+
+自911事件以來，各國政府已投入大量資金，試圖尋找更好的測謊儀器，並且各種心理學的分支領域都在資助欺騙研究。
+
+對於傳統的測謊檢測技術，如多功能偵測器（polygraph）的討論。
+多功能偵測器使用心率和皮膚導電度等指標來測量壓力，
+它自20世紀20年代以來就存在，一些美國州在刑事調查中使用它，聯邦政府也在進行機密許可的篩查時使用。
+
+然而，關於它的有效性的證據並不確定，研究人員Aldert Vrij在1974年進行了廣泛的調查，指出其效果參差不齊。
+它可以在熟練的審訊官手中成為一個有效的工具，但關鍵因素是技能而不是工具。
+當它被不熟練的人在實驗室環境中使用時，對實驗對象告訴的低風險謊言的檢測效果幾乎與隨機相同。
+除了通過皮膚導電度測量壓力外，還可以使用眼睛運動來測量分心，使用上身運動來測量內疚感。
+在一個與Sophie van der Zee合作的研究項目中，他們使用了身體動作捕捉服和Xbox中的手勢識別攝像頭，
+比多功能偵測器取得了稍微更好的結果。
+然而，這樣的技術最多只能增強審訊官的技能，對於聲稱其效果良好的主張應該被視為無用的科學。
+值得慶幸的是，政府對於一個有效的審訊機器人的夢想還有一段距離。
+
+其次，這段話提到了利用統計機器學習而不是生理監測來應對欺騙的第二種方法。
+這是一種基於真實客戶行為的機器學習分類器的訓練。
+這就是自從1990年代末信用卡欺詐引擎一直在做的事情，最近的研究也已擴展到其他領域。
+例如，Noam Brown和Tuomas Sandholm創建了一個名為Pluribus的撲克機器人，
+它在一場為期12天的10,000手德州撲克馬拉松賽中擊敗了十幾位專家玩家。
+它不使用心理學，而是使用博弈論，通過與自己對局數百萬次，並跟踪應該能夠獲得更好結果的出價的後悔來進行遊戲。
+
+它能夠在沒有訪問對手的面部表情或肢體語言等線索的情況下持續擊敗專家，這本身就很有說服力。
+利用統計機器學習而不是生理監測來應對欺騙，可能會被認為對隱私的侵入較少。

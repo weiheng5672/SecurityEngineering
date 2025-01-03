@@ -1,0 +1,150 @@
+
+It is relatively easy to build an encryption system that is secure if it is working as intended and is used correctly 
+
+but it is still very hard to build a system that does not compromise its security in
+situations in which it is either misused or one or more of its sub-components fails 
+(or is ’encouraged’ to misbehave) … 
+this is now the only area where the closed world is still a long way ahead of the open world 
+and the many failures we see in commercial cryptographic systems provide some evidence for this.
+– BRIAN GLADMAN
+
+建立一個在正常情況下運作且被正確使用時安全的加密系統相對容易，
+但在被誤用或其中一個或多個子組件失敗（或被『鼓勵』出現故障）的情況下，
+建立一個不會犧牲其安全性的系統仍然非常困難...這是封閉世界仍遠遠領先於開放世界的唯一領域，
+商業加密系統的許多失敗提供了一些證據支持這一觀點
+
+Brian Gladman 是一位計算機科學家和密碼學專家，專注於信息安全領域
+他在許多加密和安全相關的項目中發揮了重要作用，
+並在許多國際標準組織中擔任顧問或貢獻者
+他的工作涵蓋了數字加密、網絡安全、密碼學等領域，
+並對開放源碼社區做出了重要貢獻
+
+
+The amount of careful, critical security thinking that has gone into a given security device, system or program 
+is inversely proportional to the amount of high-technology it uses.
+
+– ROGER JOHNSTON
+
+對於一個給定的安全設備、系統或程序所進行的仔細、批判性的安全思維，與其使用高科技的程度呈負相關
+
+Roger Johnston 是一位知名的安全工程師和專家，他在物理安全和計量安全領域有著廣泛的研究和實踐經驗
+他以對鎖、保險箱、門禁系統等物理安全措施的研究而聞名，並提出了許多關於安全系統的實用建議和漏洞
+Johnston 曾在美國政府的安全機構工作，並擔任過私營公司的安全顧問
+他的研究和洞察力對於改進現有的安全措施和發展新的安全技術都有著重要的貢獻
+
+Tamper-resistant devices are everywhere now. Examples we’ve discussed so far include:
+
+the EMV chips used in bank cards and the SIMs used in mobile phones for authentication;
+
+the contactless cards used as transport tickets and the smartcards used in pay-TV decoders for service control;
+
+chips used for accessory control in printer toner cartridges and game-console accessories;
+
+the TPM chips in phones, laptops and servers to provide a root of trust to support secure boot and hard-disk encryption;
+
+hardware security modules used to encrypt bank PINs
+, not just in bank server farms but in ATMs and some point-of-sale terminals;
+
+the NFC chips used in Android phones to store contactless payment credentials
+, and the enclave chips in iPhones that store your fingerprint and crypto keys;
+
+cryptographic modules buried in vending machines that sell everything 
+from railway tickets through postage stamps to the magic numbers that activate your electricity meter;
+
+various chips used for manufacturing control 
+by firms who want to have their products made by low-cost overseas manufacturers
+but don’t want to see extra products made without their consent on a ‘third shift’ and sold on the grey market.
+
+防篡改裝置現在隨處可見。我們已經討論的例子包括：
+
+用於銀行卡的EMV晶片和用於手機認證的SIM卡；
+用作交通票證的無接觸式卡片和用於付費電視解碼器的智慧卡；
+用於印表機碳粉盒和遊戲機配件的附件控制晶片；
+用於手機、筆記本電腦和服務器的TPM晶片，以提供信任根以支持安全啟動和硬盤加密；
+用於加密銀行PIN的硬體安全模組，不僅用於銀行伺服器農場，還用於ATM和某些銷售點終端；
+用於存儲無接觸付款憑證的安卓手機的NFC晶片，以及用於存儲指紋和加密密鑰的iPhone中的保障區晶片；
+嵌入在售賣從火車票到郵票再到啟動電表的魔法數字的自動售貨機中的加密模組；
+各種用於製造控制的晶片，由希望通過低成本的海外製造商製造其產品，但又不希望在「第三班」製造過多產品並在灰色市場上出售的公司所使用。
+
+
+
+
+
+
+Many of the devices on the market are insecure. In section 4.3.1 I described
+how reverse engineering remote key entry devices for cars led to class breaks
+that notably increased car theft; in section 13.2.5 I described how reverse engi-
+neering the Mifare card compromised many building locks and transport tick-
+eting systems; and in section 12.6.1.1, I described card payment terminals that
+could be compromised trivially, leading to card counterfeiting and transaction
+manipulation attacks.
+
+市場上許多設備都存在安全漏洞。
+在4.3.1節中，我描述了對汽車遙控鑰匙進行逆向工程如何導致顯著增加了汽車盜竊的類別型攻擊；
+在13.2.5節中，我描述了逆向工程Mifare卡片如何破壞了許多建築物鎖和交通票務系統；
+在12.6.1.1節中，我描述了可以輕易受到破壞的信用卡支付終端，這導致了信用卡仿冒和交易操縱攻擊。
+
+
+
+
+Yet some are pretty good. The best cryptographic modules used in banking
+and government withstand all known types of physical attack, and can only
+be defeated when people either run insecure software on them or rely on inse-
+cure devices to interface with users. Smartcard tamper resistance has evolved
+in a long war between pay-TV pirates cloning subscriber cards and the pay-TV
+industry trying to stop them, and was honed in an arms race between firms that
+wanted to lock down their products, and others who wanted to unlock them.
+The tussles over printer cartridges were important here, as both the printer
+makers who were trying to control aftermarkets, and the independent car-
+tridge makers who were trying to break into these markets, are acting lawfully.
+Other hackers work for lawyers, reverse engineering products to prove patent
+infringements. There are academics who hack systems for glory, and to push
+forward the state of the art. And finally there are lots of grey areas. If you find
+a way to unlock a mobile phone, so that it can be used on any network, is that
+a crime? It depends on how you do it, and on what country you’re in.
+
+然而，有些設備相當不錯。
+在銀行和政府使用的最佳密碼模組中，它們可以抵禦所有已知類型的物理攻擊，
+只有當人們在其上運行不安全的軟件或依賴不安全的設備與用戶進行交互時，才能被打敗。
+
+智慧卡的防篡改能力在支付電視盜版訂閱卡克隆者和支付電視行業試圖阻止他們之間的長期戰爭中逐步演進，
+並在那些試圖鎖定產品的公司與那些試圖解鎖產品的公司之間的軍備競賽中不斷完善。
+打印機墨盒的爭奪在這方面起到了重要作用，因為既有試圖控制售後市場的打印機製造商，
+也有試圖進入這些市場的獨立墨盒製造商，他們都在合法行動。
+其他黑客是為律師工作的，逆向工程產品以證明專利侵權。
+還有一些學者為了榮耀和推動技術的發展而入侵系統。
+最後還有很多灰色地帶。
+如果你找到了解鎖手機的方法，讓它可以在任何網絡上使用，那是不是犯罪？
+這取決於你的做法，以及你所在的國家。
+
+Given the wide range of products and the huge variation in quality, the secu-
+rity engineer needs to understand what tamper resistance is, and what it can
+and can’t do. In this chapter I’m going to take you through the past thirty years
+of evolution of attack and defence.
+If a computer cannot resist physical tampering, an attacker can simply change
+the software. Computers in data centres are protected by physical barriers,
+sensors and alarms. And an ATM is basically a PC in a safe with banknote
+dispensers and alarm sensors, often bolted to a wall or a plinth.
+Where tamper resistance is needed purely for integrity and availability, it
+can sometimes be implemented using replication on different servers that
+perform transactions simultaneously and vote on the result; this is being
+reinvented nowadays with blockchains and other consensus protocols. The
+threshold schemes discussed in section 15.4 can also provide confidentiality
+for key material. But tamper-resistant devices can provide confidentiality for
+the data too, and the arrival of CPUs that support enclaves such as SGX and
+TrustZone hold out the prospect of computing with encrypted data in cloud
+services.
+
+考慮到產品的廣泛範圍和品質的巨大差異，安全工程師需要理解防篡改的含義，以及它能做什麼，不能做什麼。
+在本章中，我將帶您回顧過去三十年的攻擊和防禦的演變過程。
+
+如果一台計算機無法抵禦物理篡改，攻擊者可以簡單地更改軟件。
+數據中心的計算機受到物理屏障、感應器和報警器的保護。
+而自動取款機基本上是一台放在保險箱中的電腦，配有鈔票分配器和警報感應器，通常固定在牆壁或基座上。
+
+在純粹需要保持完整性和可用性的情況下，可以通過在不同服務器上進行複製來實現防篡改，
+這些服務器同時執行交易並對結果進行投票；現今這種做法正在使用區塊鏈和其他共識協議進行重塑。
+15.4節中討論的閾值方案也可以為密鑰材料提供機密性。
+
+但防篡改設備也可以為數據提供機密性，而支持保障區（例如SGX和TrustZone）的CPU的出現，
+使得在雲服務中使用加密數據的計算成為可能。

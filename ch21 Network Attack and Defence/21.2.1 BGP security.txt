@@ -1,0 +1,199 @@
+
+The Internet is an interconnected network of networks: 
+its components are Autonomous Systems (ASes) 
+such as ISPs, telcos and large organisations, each of which controls a range of IP addresses. 
+The glue that holds them together, the core routing protocol of the Internet, is the Border Gateway Protocol (BGP).
+Routers – the specialized computers that switch packets on networks 
+– use BGP to exchange information about what routes are available to get to particular blocks of IP addresses
+, and to maintain routing tables so they can select efficient routes to use. 
+ASes can route traffic to other ASes by buying service from large transit providers but typically cut the costs of this by peering with each other at a local Internet interchange (IX), of which most countries have at least one and large countries may have several.
+Internet interconnectivity is a complex ecosystem with many interdependent layers. 
+Its open and decentralised organisation has been essential to the success and resilience of the Internet
+, which has meant that the effects of natural disasters such as Hurricane Katrina and terrorist attacks such as 9/11 have been limited in time and space, as have assorted technical failures. 
+However, the Internet is slowly becoming more centralised, as a result of the consolidation of Tier-1 providers
+, and is vulnerable to common-mode failures (such as electric power cuts) as well as to disruptive attacks.
+About the worst attack we can reasonably foresee would involve an attacker planting malware on thousands of routers 
+so they advertise large numbers of false routes, clogging the routing tables and tearing up the routing fabric.
+There have been several warnings already in the form of incidents and accidents.
+
+互聯網是一個由 多個網絡 相互連接而成的網絡：
+其組成部分是 自治系統（ASes），如ISP、電信公司和大型組織，每個 自治系統 控制著 一系列IP地址
+將它們連接在一起的關鍵 是 互聯網的核心路由協議，即 邊界閘道協議（BGP）
+
+路由器 - 在網絡上切換數據包的專用計算機 - 
+使用BGP來 交換 關於如何到達特定IP地址塊的 路由信息，並 維護 路由表，以便 選擇 有效的路由
+
+自治系統 可以 通過向大型過境提供商購買服務來將流量 路由到 其他自治系統，
+但通常通過在 本地的互聯網交換點（IX） 互連以降低成本，大多數國家至少有一個，而大型國家可能有幾個
+
+互聯網 互聯性 是一個由許多 相互依存 的層次組成的 複雜 生態 系統
+其 開放和分散 的組織 對互聯網的 成功 和 韌性 至關重要，
+這意味著 自然災害（如卡特里娜颶風） 和 恐怖襲擊（如911事件）的 影響 在時間和空間上 有限，技術故障 也是如此
+
+然而，互聯網 正在 逐漸 變得更加 集中，這是 由於 一級提供商的 合併，
+它易受 共同模式故障（如電力中斷） 以及 破壞性攻擊 的影響
+
+我們 合理預見的 最嚴重的攻擊之一 將 涉及 攻擊者 在數千個路由器上 植入惡意軟件，
+以 發布 大量的虛假路由，阻塞 路由表並破壞路由結構
+已經有幾起事件和意外事故的警告。
+
+單字解釋：
+clogging - 阻塞、堵塞，指阻礙正常流程或運作的狀態。
+
+
+In 2008, YouTube became inaccessible for a few hours 
+after the government of Pakistan tried to censor it locally 
+by announcing false routes to it, which propagated globally;
+and in 2010 China Telecom advertised over 100,000 invalid routes
+, hijacking 15% of Internet addresses for 18 minutes.
+Some people ascribed that to accident
+, while others suggested that China had been testing a ‘cyber-nuke’, some of whose fallout escaped.
+Most routers now accept only a limited number of routes from each of their peers, be it a few dozen or a few hundred;
+so large-scale disruption would require thousands of subverted routers.
+
+在2008年，巴基斯坦政府試圖透過 宣布虛假路 由來對YouTube進行 本地審查，導致其在 全球范圍內 無法訪問了幾個小時
+
+而在2010年，中國電信宣布了超過10萬個 無效路由，劫持了15%的互聯網地址，持續了18分鐘
+有些人將此歸因於意外，而其他人則暗示中國一直在測試一種「網絡核武器」，其中一些效應逸出
+
+現在 大多數路由器 只會 從它們的 對等體 接受 有限數量的 路由信息，無論是幾十個還是幾百個
+因此，如果 想要對 整個系統 造成 大規模的干擾，就需要 控制 成千上萬個 被操縱的 路由器
+
+單字解釋：
+ascribed: 歸因於，將某事物歸因於特定原因或因素
+
+Both China and (more recently) Russia have been working on making the Internet in their countries separable
+, so that major disruptive attacks could in theory be launched 
+without inflicting unacceptable collateral damage on local services and facilities.
+There have been reports of BGP hijacking being used by China for intelligence collection; 
+for example, traffic from Canada to Korean government websites was routed via China from February 2016 for six months [533]. 
+There has also been criminal misuse
+, ranging from the hijacking of IP address space by spammers
+, to an eight-figure ad fraud in 2018 whose perpetrators hid in address space stolen from the US Air Force [792].
+Finally, there is a growing political tussle in 2019–20 about 
+whether Huawei should be allowed to sell routers at scale (or at all) in countries allied to the USA.
+
+中國和（最近）俄羅斯一直在努力 使其 國家的 互聯網 具有 可分離性，
+因此理論上 可以 發動 重大破壞性攻擊，
+而 不會 對當地的服務和設施 造成 無法接受的附帶損害
+
+據報導，中國曾利用 BGP劫持 進行情報收集；
+例如，從2016年2月開始，加拿大到韓國 政府網站的流量 在六個月內 過 中國轉發
+此外，還有犯罪濫用的情況，
+從垃圾郵件發送者劫持IP地址空間
+到2018年發生的八位數廣告詐騙，
+其犯罪分子 藏匿在 從美國空軍竊取的地址空間中
+在2019年至2020年期間，關於是否應該允許華為在與美國盟友的國家大規模（或完全）銷售路由器，出現了日益激烈的政治爭論
+
+單字解釋：
+
+spammers: 垃圾郵件發送者，指發送大量未經請求的廣告郵件或惡意郵件的人或組織。
+fraud: 詐騙，指為了獲取金錢或其他價值而使用欺詐手段的行為。
+perpetrators: 犯罪分子，指實施犯罪行為的人或組織。
+hid: 藏匿，指隱藏或掩飾行蹤，不讓人發現。
+tussle: 争斗，指争执或争夺的行为或情况。
+allied: 盟友的，指与某国或组织有关联或结盟的。
+
+Taking a step backward, the resilience of the Internet is hard to define and to measure; 
+it is in tension with efficiency 
+and may be decreasing as a small number of very large networks come to dominate. 
+These range from the dominant transit provider
+, Lumen (the company changed its name from Level 3 to Lumen),
+to content delivery networks (CDNs) operated by Google, Akamai, Cloudflare and others.
+
+There are many complex interactions between resilience and efficiency, reachability and congestion
+, traffic prioritisation and commercial sensitivity, complexity and scale.
+
+There’s no mechanism to check the validity of routing information distributed via BGP. 
+The pervasive mistrust between ISPs and governments makes regulation difficult. 
+The lack of good information about how the system works makes rational discussion difficult too. 
+Resilience has so far depended on surplus capacity and rapid growth, but that cannot continue for ever. 
+In 2011 colleagues and I wrote a major report 
+for the European Network and Information Security Agency that explores these issues in detail [1910].
+
+
+回顧一下，互聯網的 彈性 很難定義和衡量；
+彈性 與 效率 之間存在 衝突或矛盾，
+並且 可能 隨著少數幾個非常大型的網絡開始主宰 而 減少
+這些範圍從主導性的中繼提供商Lumen（該公司將其名稱從Level 3更改為Lumen）
+到由Google、Akamai、Cloudflare和其他公司運營的內容傳遞網絡（CDN）。
+
+彈性和效率、可達性和擁擠、流量優先順序和商業敏感性、複雜性和規模之間存在著許多復雜的相互作用。
+
+沒有一種機制，去檢查通過BGP分發的路由信息的有效性。
+ISP和政府之間的普遍不信任使得監管變得困難。
+缺乏對系統運作方式的正確了解，很難進行理性的討論
+到目前為止，彈性一直依賴於過剩的容量和快速增長，但這種情況不能永遠持續下去。
+2011年，我和同事為歐洲網絡和信息安全局撰寫了一份詳細探討這些問題的重要報告[1910]。
+
+彈性依賴於過剩的容量是因為在系統面對意外事件或壓力時，
+擁有額外的容量可以提供更多的彈性和備用資源，
+使系統能夠應對突發情況而不至於完全崩潰或無法正常運作。
+過剩的容量可以用來處理突然增加的需求或流量，或者是因為某些組件或節點的故障而導致的資源短缺。
+
+單字解釋：
+
+resilience: 彈性，指系統或結構能夠適應外部壓力或變化的能力。
+reachability: 可達性，指系統或網絡的能力以及方式能夠連接到其他節點或部分。
+congestion: 擁擠，指在網絡或系統中出現過多的流量或資源需求，導致效能下降的情況。
+prioritisation: 優先順序，指將不同的事物按照重要性或緊急程度排序的行為或原則。
+pervasive: 普遍存在的，指某種特徵或行為在廣泛範圍內存在的情況。
+surplus: 過剩，指超出實際需要的量或數量。
+
+
+The main technical BGP security mechanism at present is the Resource Public Key Infrastructure (RPKI)
+, which enables registries to certify that “Autonomous system X announces IP address range Y”. 
+
+目前主要的BGP技術安全機制是資源公鑰基礎設施（RPKI），
+它使註冊機構能夠證明「自治系統X宣布IP地址範圍Y」。
+
+在互聯網中，Autonomous System（AS）是一組相互關聯的IP網絡，
+它們通常由一個或多個網絡服務供應商管理，並遵循共同的路由策略。
+當一個AS宣告IP地址範圍，意味著它聲稱對該範圍內的IP地址擁有控制權，
+其他AS會根據這個宣告進行路由選擇。
+
+This will not prevent capable attackers
+, as a malicious route announcement will just have the right AS at the end of the route following the attacker’s in the middle;
+but it detects the fat-finger mistakes that cause most of the outages. 
+
+這不會阻止能力強大的攻擊者，但它能夠檢測到導致大部分中斷的錯誤操作。
+
+攻擊者可以進行一種中間人攻擊，
+他們在路由宣告中插入自己的自主系統（AS），以控制流量的轉發。
+然後，攻擊者會在非法路由的後面添加正確的AS，
+這樣後面的AS會誤以為這條路由是合法的，
+從而將流量發送到攻擊者控制的路由上。
+這樣的攻擊可能導致敏感信息的竊取、數據篡改等安全問題。
+
+"Fat-finger mistakes" 是一個俚語，用來描述因手指笨拙或錯誤操作而導致的失誤。
+這個術語通常用於描述在數字鍵盤上按下錯誤按鍵，尤其是在快速輸入時發生的錯誤。
+在技術或電腦領域中，這個術語也可能用來指代操作員或用戶由於手指誤觸或錯誤操作而導致的錯誤。
+
+"Outages" 指的是系統或服務的中斷或停止運作，
+通常是指網路服務或電子系統突然中斷或無法訪問的情況。
+在網路領域中，它可以表示網路連接中斷、伺服器故障或服務無法使用等問題。
+
+Whether it will make an already fragile BGP system more robust to have lots of certificates in it remains to be seen; 
+when RIPE’s certificate expired in February 2020 there was a short outage until it was fixed.
+For the future, people are working on Peerlock
+, whereby the main ASes at an interchange share information about what routes they will and won’t announce; 
+this has the prospect of bringing enough local benefit to exchange members for it to be practically deployable.
+
+將來是否在已經脆弱的BGP系統中加入大量證書能夠使其更加堅固還有待觀察；
+當RIPE的證書在2020年2月到期時，出現了短暫的中斷，直到修復為止。
+對於未來，人們正在研究Peerlock，Peerlock是一種技術，
+旨在提高BGP（Border Gateway Protocol）路由協議的安全性和可靠性。
+它通常是在互聯網交換點（IXP）中實施的一種機制。
+Peerlock使得IXP的主要自治系統（AS）可以共享彼此將要宣告或不宣告的路由信息。
+透過Peerlock，IXP的成員AS可以更有效地控制其路由流量，並防止不良行為或意外事件對其網絡造成損害。
+這有助於提高整個BGP系統的穩定性和安全性。
+Peerlock有望提供給IXP的成員AS足夠的好處或利益，使得他們願意使用這個技術
+
+單字解釋：
+
+fragile: 脆弱的，指易受損傷或破壞的。
+outages: 中斷，指暫時的停止或中止，特別是指網絡或服務的中斷。
+RIPE: RIPE是歐洲互聯網註冊管理機構的縮寫，負責管理歐洲地區的IP地址分配。
+prospect: 前景，指某事物可能發生的情況或發展趨勢。
+deployable: 可部署的，指能夠被實際應用或投入使用的。
+

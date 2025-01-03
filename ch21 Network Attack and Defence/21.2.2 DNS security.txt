@@ -1,0 +1,175 @@
+
+The Domain Name System (DNS) allows human-readable names 
+such as ross-anderson.com to be mapped to IP addresses of either kind; 
+there’s a hierarchy of DNS servers that do this
+, ranging from several hundred top-level servers down through machines at ISPs and on local networks
+, which cache DNS records for performance and reliability. 
+It does occasionally get attacked: 
+the Mirai botnet attacked DynDNS in October 2016, taking out Twitter on the US eastern seaboard for five hours. 
+But DNS has becomea massively distributed system 
+with a lot of very fast machines connected to very high-capacity networks
+, so service denial attacks on it are rare.
+
+域名系統（DNS）允許將人類可讀的名稱，
+例如 ross-anderson.com，映射到各種類型的 IP 地址；
+有一個 DNS 伺服器的層次結構可以實現這一點，
+從數百個頂級伺服器，通過網際網路服務提供商（ISP）和本地網絡上的機器，
+這些機器會為了性能和可靠性而緩存 DNS 記錄。
+偶爾會發生攻擊：
+Mirai 僵尸網絡在2016年10月攻擊了DynDNS，導致美國東海岸的 Twitter 網站停止服務了五個小時。
+但是，DNS 已經成為一個分佈式系統，有很多非常快速的機器連接到高容量網絡上，
+因此對其進行服務拒絕攻擊是罕見的。
+
+cache: 在這裡是指暫存，指存儲數據以便在將來快速訪問的機制。
+taking out: 在這裡是指使失效或使無法正常運作，通常是指對系統或服務進行攻擊，導致其無法正常工作或運行。
+seaboard: 指海岸線或海岸地區，特別是指國家或大陸的邊緣地帶，與海洋相鄰的地區。
+
+Hijacking does occur from time to time, and at various levels.
+Some states intercept and redirect DNS queries as a means of censorship;
+some ISPs have done so, as a means of replacing ads in web pages with ads from which they get a cut;
+and a DNS server at an ISP may be hacked to drive clients to a wicked website.
+This is known as pharming, and in a variant called drive-by pharming,
+the crooks lure you to a web page containing JavaScript 
+that changes your home router’s DNS server 
+from the one at your ISP to one under their control [1819].
+Next time you try to go to www.citibank.com 
+, you may be directed to a phishing site that emulates it.
+That’s one reason to change the default password on your home router 
+– even if it’s only accessible from inside your network.
+
+有時會發生劫持事件，而且在不同的層次上都有。
+一些國家會拦截和重新定向 DNS 查詢，作為審查制度的手段；
+一些互聯網服務提供商（ISP）也會這樣做，以將網頁中的廣告替換為他們自己獲得分潤的廣告；
+而一個 ISP 的 DNS 伺服器可能被駭客入侵，將客戶導向一個惡意網站。
+這稱為 pharming，在一個變體中被稱為 drive-by pharming，
+騙子們誘使你進入一個包含 JavaScript 的網頁，
+該 JavaScript 會將你的家用路由器的 DNS 伺服器從 ISP 的那個改為他們控制的那個 [1819]。
+下次當你試圖訪問 www.citibank.com 時，
+你可能會被引導到一個模擬它的釣魚網站。
+這是改變家用路由器默認密碼的一個原因 
+- 即使你的路由器只能從內部網絡訪問也要去改。
+
+pharming: 一種互聯網詐騙技術，該技術會將使用者重定向到一個惡意的網站，即使使用者輸入了正確的網址。
+crooks: 在這裡指壞人或犯罪分子，通常用於描述從事不法行為或詐騙的人。
+lure: 在這裡指誘使或引誘，通常是用來吸引某人做某事或進入某個位置，尤其是指不誠實或欺詐的方式。
+
+
+In order to prevent DNS hijacking, DNSSEC adds digital signatures to DNS name records. 
+By verifying such a signature you can check that the record came from the authoritative server and was not altered en route.
+Uptake is patchy: 
+all US government domains in .gov are supposed to be signed, and most domains in Sweden are signed
+, as the registrar made signed domains cheaper. 
+However, some major firms like Google don’t sign their DNS records out of concern that cryptography makes systems more fragile; 
+if anything goes wrong, you can just disappear. 
+Other firms avoid DNSSEC because they don’t want competitors to ‘walk the zone’ and enumerate all their subdomains; 
+the NSEC3 extension enables firms to avoid this using hashes
+, but many firms (or their service providers) have not yet built the infrastructure.
+
+為了防止 DNS 劫持，DNSSEC 在 DNS 名稱記錄中添加了數字簽名。
+通過驗證這樣的簽名，您可以檢查該記錄來自權威伺服器並且在傳輸過程中未被更改。
+採用情況不一：所有美國政府在 .gov 域名中的網域應該都已經被簽名，而瑞典的大多數網域也已經被簽名，因為註冊機構讓簽名網域的成本更便宜。
+然而，一些像 Google 這樣的大型公司由於擔心加密會使系統更加脆弱而沒有為其 DNS 記錄簽名；如果出現任何問題，它可能就會消失。
+其他公司避免使用 DNSSEC 是因為他們不希望競爭對手「遍歷區域」並列舉出所有他們的子域名；
+NSEC3 擴展使公司可以使用哈希函數來避免這一點，但是許多公司（或其服務提供商）尚未構建好相應的基礎設施。
+
+Uptake: 在這裡指採用率或接受程度，即技術或政策的實際應用情況。
+patchy: 在這裡指不一致或不完全的，表示某事物存在於部分地區或情況下，但不是全部。
+Sweden: 瑞典
+walk the zone: 在這裡指掃描或查詢整個 DNS 域名空間，通常用於探測目標網站的所有子域名。
+enumerate: 在這裡指列舉或列出，特別是指在計算或列出所有可能選項時使用。
+
+DNSSEC（Domain Name System Security Extensions）是一种用于增强域名系统安全性的技术，但它也有一些缺点：
+
+复杂性：DNSSEC的实施和管理需要额外的配置和维护工作。这增加了网络管理员的负担，并可能引入新的错误和安全漏洞。
+性能影响：DNSSEC的加密和验证过程可能导致一定程度的性能损失，尤其是在大规模网络中。这可能影响网络的响应时间和吞吐量。
+部署问题：尽管DNSSEC的支持已经在一些顶级域名服务器上得到了广泛的部署，但在某些情况下，特别是在一些小型或较旧的网络中，部署仍然可能面临挑战。
+兼容性问题：DNSSEC要求所有的DNS服务器和DNS客户端都支持该技术，否则可能导致通信中断或错误。
+
+至于为什么一些像Google这样的大公司不使用DNSSEC，可能有几个原因：
+
+成本和资源：尽管DNSSEC是一种增加安全性的技术，但其实施和维护需要额外的资源和资金。对于一些大型公司来说，可能更倾向于投资于其他更有效的安全措施。
+性能影响：大型公司可能更关注网络的性能和稳定性。尽管DNSSEC提供了额外的安全性，但其性能影响可能不符合公司的要求，尤其是对于像Google这样的高流量服务。
+其他安全措施：大型公司可能已经实施了其他更有效的安全措施，如TLS（传输层安全性）协议和HTTPS。这些措施可以提供类似或更高级别的安全性，而不需要DNSSEC的复杂性和性能影响。
+
+总的来说，DNSSEC是一种增强域名系统安全性的重要技术，但它也有一些缺点，这可能解释了为什么一些大公司选择不使用它，或者尚未全面部署它。
+
+Another problem with DNSSEC is that it gets abused in denial-of-service attacks. 
+A common technique is that Alice attacks Bob 
+by sending Charlie a message saying, “Hey, can you tell me the very large answer to this short question? Yours, Bob!” 
+As signed DNS records are a lot larger, a DDoS-for-hire service can use DNSSEC as an amplifier
+, Alice can send packets that purport to come from Bob’s IP address to many DNS servers
+, which then bombard the target with replies. 
+(Cheeky criminals use the FBI as Charlie, as fbi.gov has two nice big keys.)
+
+另一个DNSSEC的问题是它容易被滥用用于拒绝服务攻击。
+一种常见的技术是Alice通过发送消息给Charlie攻击Bob，
+内容是：“嘿，你能告诉我这个简短问题的非常长的答案吗？你的，Bob！”
+由于签名的DNS记录要大得多，因此DDoS服务可以利用DNSSEC作为放大器，
+Alice可以发送假冒来自Bob IP地址的数据包到许多DNS服务器，这些服务器然后向目标发送大量回复。
+（狡猾的罪犯将FBI用作Charlie，因为fbi.gov有两个很大的密钥。）
+
+解释以下单字的意思：
+
+purport：意图，打算，表示，声称。在这里指的是Alice发送的消息中所假称的意图或内容。
+bombard：轰炸，猛烈攻击。在这里指的是DNS服务器向目标发送大量回复，以实施拒绝服务攻击。
+
+
+The controversial issue in 2020 is DNS-over-https (DoH). 
+The main browser maintainers, Chrome and Mozilla, propose that 
+rather than sending DNS traffic in the clear
+, it will go encrypted over https to a DoH resolver.
+This is claimed to be good for privacy
+, as your ISP will have less information about your browsing 
+(but unless you use Tor, it will still have plenty).
+
+The downside is that many enterprise security products monitor DNS to detect abuse. 
+If malware compromises a machine in your fleet
+, you may spot it when it tries to contact a command-and-control server
+, so enterprises buy threat intelligence feeds and monitor the domain names (and IP addresses) blacklisted on them.
+Sysadmins also like to monitor for DNS hijacking, and to block certain domains as inappropriate for work. 
+DoH will make all this harder, and is questionable architecture 
+as running a core network service over an application means it’s ‘not the Internet any more’ [430]. 
+
+On the commercial side, DoH may entrench Google’s grip on the advertising market
+, while causing problems for content delivery networks 
+like Akamai and Cloudflare over routing, load balancing and so on. 
+It will also stop ISPs transcoding videos for mobile users to save bandwidth. 
+Experts would have preferred to run DNS over TLS instead.
+
+在2020年的一個有爭議的問題是DNS-over-https（DoH）。
+主要的瀏覽器維護者，Chrome和Mozilla，
+提議不再將DNS流量明文傳送，而是將其加密並通過https傳送到DoH解析器。
+這被聲稱對於隱私是有好處的，
+因為您的ISP將對您的瀏覽行為了解較少
+（但除非您使用Tor，否則它仍然會有大量信息）。
+
+缺點是許多企業安全產品監控DNS以檢測濫用行為。
+如果惡意軟件入侵了您的計算機，當其試圖聯繫命令和控制服務器時，您可能會發現它，
+因此企業會購買威脅情報源並監控其中列入黑名單的域名（和IP地址）。
+系統管理員還喜歡監控DNS劫持，並阻止某些不適合工作的域名。
+DNS-over-HTTPS（DoH）会使监视和管理网络流量变得更加困难，并且其架构本身也受到质疑，
+因为将核心网络服务运行在一个应用程序之上意味着它已经不再是传统的互联网结构了
+
+在商業方面，DoH可能會加強Google對廣告市場的控制，
+同時對像Akamai和Cloudflare這樣的內容交付網絡造成路由、負載平衡等問題。
+它還將阻止ISP對移動用戶的視頻進行轉碼以節省帶寬。
+專家們更希望使用DNS over TLS。
+
+解释以下单字的意思：
+
+controversial：有爭議的，引起爭議的。
+privacy：隱私，私隱。
+fleet：船隊，這裡指的是一個組織或企業的所有機器或設備。
+Sysadmins：系統管理員，管理和維護計算機系統和網絡的專業人員。
+entrench：確立，使根深蒂固，這裡指的是讓某種狀態或情況變得不易改變。
+
+Tor（The Onion Router）是一种匿名通信网络，旨在通过多层加密的路由传输网络流量，从而实现用户在互联网上的匿名性。
+它的名称来源于其路由数据的方式，类似于洋葱的层层剥离。
+Tor网络通过将用户的数据流量通过多个中间节点进行加密和转发，从而隐藏了用户的身份和所访问的内容。
+这种多层加密和随机路由的方式使得追踪和监视用户的网络活动变得困难。
+Tor网络是由志愿者运营的，任何人都可以使用Tor软件来访问该网络。
+Tor不仅可以用于匿名浏览互联网，还可以用于绕过审查和访问受限制的内容。
+
+
+
+

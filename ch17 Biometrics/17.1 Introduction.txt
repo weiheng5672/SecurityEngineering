@@ -1,0 +1,105 @@
+
+And the Gileadites took the passages of Jordan before the Ephraimites: and it was so, that when
+those Ephraimites which were escaped said, Let me go over; that the men of Gilead said unto him,
+Art thou an Ephraimite? 
+
+If he said, Nay; Then said they unto him, Say now Shibboleth: and he said Sibboleth: 
+for he could not frame to pronounce it right. Then they took him, and slew him at the
+passages of the Jordan: and there fell at that time of the Ephraimites forty and two thousand.
+
+– JUDGES 12:5–6
+
+《士師記》12:5-6是《聖經》中的一段經文，記錄了古代以色列的歷史事件。
+這段經文描述了基列人和以法蓮人之間的一場戰鬥，其中基列人在攻佔了約旦河的渡口後，擊敗了以法蓮人。
+在這場戰鬥中，當逃脫的以法蓮人試圖逃過河流時，基列人透過要求他們念「西播列」（Shibboleth）來辨別他們的身份。
+由於以法蓮人的方言發音不同，無法正確念出「西播列」一詞，而被識破並殺害。
+
+"judges" 一詞在這裡指的是「判官」或「法官」。
+在《士師記》中，這些判官是由神所指定，起到領導以色列人、解決紛爭和執行公義的角色。
+因此，《士師記》這本書的名稱即是源自於這些判官的角色。
+
+《士師記》是《聖經》中的一卷，它的名稱源自希伯來文中的「שופטים」（Shofetim），意為「士師」或「判官」。
+這個名稱反映了這本書記載了以色列歷史中的一個特定時期，被稱為「士師時代」。
+在這段時期，以色列的領袖不是由國王統治，而是由神所任命的士師來領導以色列人。
+《士師記》記錄了這個時期的歷史事件、人物和神蹟，描繪了以色列人與外敵的戰鬥以及他們對神的忠誠或背叛。
+因此，這本書被稱為《士師記》。
+
+
+
+
+The above quotation may be the first recorded military use of a security pro-
+tocol in which the authentication relies on a property of the human being – in
+this case his accent. (There had been less formal uses before this, as when Isaac
+tried to identify Esau by his bodily hair but got deceived by Jacob, or indeed
+when people recognized each other by their faces – which I’ll discuss later.)
+Biometrics identify people by measuring some aspect of individual anatomy
+or physiology (such as your hand geometry or fingerprint), some deeply
+ingrained skill or behavior (such as your handwritten signature), or some
+combination of the two (such as your voice).
+In the 21st century the market has really taken off, with three major changes
+since the second edition of this book in 2008.
+
+以上引文可能是第一次記錄了一個安全協議的軍事應用，
+其中認證依賴於人類的某種特性 - 在這種情況下是他的口音
+
+（在此之前已經有過較不正式的使用，例如以撒試圖通過伊薩的身體毛髮來識別他，
+但被雅各欺騙，或者當人們通過他們的面孔互相識別時 - 這我稍後會討論。）
+
+生物識別技術通過測量個人解剖學或生理學的某些方面（例如您的手部幾何形狀或指紋）、
+某種根深蒂固的技能或行為（例如您的手寫簽名）或兩者的組合（例如您的聲音）來識別人員
+
+到了21世紀，這個市場真正起飛，與2008年本書第二版相比，發生了三個重大變化。
+
+
+1. There are many large-scale programs by states to identify citizens
+using biometrics, of which the biggest single programme may be
+India’s Aadhaar project, which has recorded the iris codes and
+fingerprints of over a billion people. International travel has been
+speeded up by international standard biometric travel documents,
+the US-VISIT program that fingerprints visitors to the USA, and
+face-recognition passport booths at the borders of the European Union.
+2. There has been a massive improvement in face recognition technology,
+brought about by the revolution in deep neural networks since 2012.
+This has made passport booths steadily faster and more reliable,
+made mass surveillance easier, and led to concerns about privacy
+and human rights – particularly given its deployment in China.
+3. Automatic fingerprint readers are no longer a niche product
+for bank vaults and welfare offices, but are deployed on hun-
+dreds of millions of mobile phones. Now that people keep their
+entire lives in their phones, or on web services for which their
+phones have the credentials, they are relied on to stop a lost
+or stolen phone turning from annoyance into disaster.
+The biometric systems market has taken off like a rocket, growing from $50m
+in 1998 to over $1.5bn in 2005 [999] and $33bn in 2019 [2040].
+I’ll start off by describing the biometric techniques that predate the computer
+age – handwritten signatures, facial features and fingerprints – then describe
+how they have been automated, and then go on to explore some more modern
+techniques.
+
+許多國家都有大規模的計劃，利用生物識別技術來識別公民，
+其中最大的單一計劃可能是印度的Aadhaar項目，該項目已記錄了超過十億人的虹膜代碼和指紋
+國際旅行 已經因 
+國際標準的生物識別旅行文件、美國訪客指紋登記計劃以及歐洲聯盟邊境的人臉識別護照亭 
+而加速
+
+自2012年以來，深度神經網絡的革命已經大幅改進了人臉識別技術
+這使得護照亭的速度和可靠性穩步提高，使大規模監視變得更加容易，
+並引發了對隱私和人權的擔憂 - 特別是考慮到它在中國的應用
+
+自動指紋識別器不再是僅用於銀行保險庫和福利辦公室的小眾產品，
+而是部署在數億部移動電話上。現在人們將他們的整個生活保存在手機中，
+或者通過手機擁有相關資格的網絡服務，因此依靠它們來阻止遺失或被盜手機導致麻煩變成災難
+
+生物識別系統市場像火箭一樣起飛，從1998年的5000萬美元增長到2005年的超過15億美元，
+並在2019年達到330億美元。我將從描述計算機時代之前的生物識別技術開始 - 手寫簽名、面部特徵和指紋 - 
+然後描述它們如何被自動化，然後繼續探索一些更現代的技術。
+
+
+
+
+
+
+
+
+
+

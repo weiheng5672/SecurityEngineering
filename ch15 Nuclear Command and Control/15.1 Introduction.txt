@@ -1,0 +1,299 @@
+
+In Germany and Turkey they viewed scenes that were particularly distressing.
+
+On the runway stood a German (or Turkish) quick-reaction alert airplane 
+loaded with nuclear weapons and with a foreign pilot in the cockpit. 
+
+The airplane was ready to take off at the earliest warning, and the nuclear weapons were fully operational. 
+
+The only evidence of U.S. control was a lonely 18-year-old sentry armed with a carbine and standing on the tarmac. 
+
+When the sentry at the German airfield was asked 
+how he intended to maintain control of the nuclear weapons should the pilot suddenly decide to scramble
+(either through personal caprice or through an order from the German command circumventing U.S. command)
+, the sentry replied that he would shoot the pilot; Agnew directed him to shoot the bomb.
+
+– Jerome Wiesner, reporting to President Kennedy on nuclear arms command and control after the Cuban crisis
+
+在德國和土耳其，人們目睹了一些特別令人不安的情景
+在跑道上，停放著一架裝載有核武器的德國（或土耳其）快速反應警戒飛機，駕駛座上坐著一名外國飛行員
+這架飛機隨時準備在最早的警告下起飛，核武器也處於完全可操作的狀態
+
+一名孤獨的18歲哨兵，手持一支卡賓槍站在停機坪上，
+這位哨兵是唯一的證據，表明美國對這架飛機和其中的核武器有控制權
+
+當德國空軍基地的哨兵被問及如果飛行員 決定 突然起飛(scramble) ，他打算如何控制核武器
+（無論是出於個人任性還是德國指揮部迴避美國指揮的命令）
+哨兵回答說他會射殺飛行員；阿格紐（Agnew）指示他射擊炸彈
+
+- Jerome Wiesner，在古巴危機後向肯尼迪總統匯報核武器指揮和控制
+
+
+The catastrophic harm that could result from the unauthorized use of a nuclear weapon
+, or from the proliferation of nuclear technology, has led the US and other nuclear powers 
+to spend colossal amounts of money protecting not just nuclear warheads 
+but also the supporting infrastructure, industry and materials. 
+
+Nuclear arms control is at the heart of international diplomacy: while North Korea now has the bomb
+, South Africa and Libya were persuaded to give it up
+, Iran’s program has been stopped (by both diplomatic and cyber means) 
+while Iraq and Syria have had their WMD programs terminated by force.
+
+未經授權使用核武器或核技術擴散可能導致的災難性後果，
+促使美國和其他核大國投入巨額資金，不只是保護核彈頭，還有支持基礎設施、工業和物資
+
+核武器控制是國際外交的核心：雖然北韓現在擁有核武器，但南非和利比亞被說服放棄了核武器，
+伊朗的核計劃已被停止（通過外交和網絡手段），而伊拉克和敘利亞的大規模殺傷性武器計劃已被強制終止
+
+A surprising amount of nuclear security know-how has been published.
+In fact, there are limits on how much could be kept secret even if this was thought desirable. 
+Many countries are capable of producing nuclear weapons
+but have decided not to (Japan, Australia, Switzerland, … ) 
+so maintain controls on nuclear materials in a civilian context. 
+
+Much of the real force of nonproliferation is cultural, built over the years through diplomacy 
+and through the restraint of nuclear powers who since 1945 forbore use of these weapons 
+even when facing defeat at the hands of non-nuclear states.
+
+相當驚人的核安全知識已被發表。事實上，即使被認為是可取的，也存在保密程度的限制。
+許多國家有能力生產核武器，但決定不這樣做（例如日本、澳大利亞、瑞士...），
+因此在 民用情況(civilian context) 保持對核材料的控制
+
+非擴散的真正力量很大程度上是文化性的，透過多年的外交和核大國的克制建立起來，
+自1945年以來，即使被非核國家擊敗，這些國家也避免使用這些武器。
+
+This is backed by international agreements
+, such as the Nonproliferation Treaty and the Convention on the Physical Protection of Nuclear Material [951]
+, enforced by the International Atomic Energy Agency (IAEA).
+
+這一觀點得到了國際協議的支持，
+例如《不擴散條約》和《關於核材料物理保護的公約》，
+由國際原子能機構（IAEA）執行
+
+About ten tons of plutonium are produced by civil reactors each year
+, and if the human race is to rely on nuclear power long-term
+, then we’ll be burning it in reactors as well as just making it as a side-effect of burning uranium. 
+So we have to guard the stuff, in ways that inspire international confidence 
+– not just between governments but from an increasingly sceptical public
+
+每年大約有十噸的鈈由民用反應堆產生，
+如果人類長期依賴核能，那麼我們將不僅在反應堆中燃燒它，而且還會將它作為燃燒鈾的副產品。
+因此，我們必須保護這些物質，以方式激發國際信心，不僅僅是在政府之間，還要來自日益懷疑的公眾。
+
+A vast range of security technology has spun off from the nuclear program.
+The US Department of Energy weapons laboratories 
+– Sandia, Lawrence Livermore and Los Alamos – 
+have worked for two generations to make nuclear weapons and materials as safe as can be achieved. 
+
+I’ve already mentioned some of their more pedestrian spin-offs
+, from the discovery that passwords of more than twelve digits were not usable under battlefield conditions 
+to high-end burglar alarm systems. 
+
+The trick of wrapping an optical fiber round the devices to be protected and using interference effects
+to detect a change in length of less than a micron, is also one of theirs 
+– it was designed to loop round the warheads in an armoury and alarm without fail if any of them are moved.
+
+核計劃衍生出了一系列廣泛的安全技術。
+美國能源部的武器實驗室，
+包括桑迪亞、勞倫斯利佛摩爾和洛斯阿拉莫斯，
+已經歷了兩代人的時間，使核武器和材料盡可能安全。
+
+我已經提到了一些他們更普通的衍生產品，
+從發現在戰場條件下，超過十二位數的密碼是不可用的，到高端防盜報警系統。
+
+將光纖繞繞在需要保護的設備周圍，並利用干擾效應來檢測不到一微米的長度變化的技巧，也是他們的其中之一
+- 它設計用於環繞在武器庫中的彈頭周圍，如果有任何彈頭被移動，則無一例外地發出警報。
+
+In later chapters, we’ll see still more technology of nuclear origin. 
+
+For example, iris recognition 
+– the most accurate system known for biometric identification of individuals, and now used in India’s Aadhaar identity system–
+was developed using US Department of Energy funds to control entry to the plutonium store
+, and much of the expertise in tamper-resistance and tamper-sensing technology 
+originally evolved to prevent the abuse of stolen weapons or control devices. 
+
+After 9/11, the USA and its allies took many aggressive steps to control nuclear proliferation including:
+
+在後面的章節中，我們還會看到更多源自核技術的技術。
+例如，虹膜識別 - 目前已知最準確的個人生物識別系統，現在在印度的 Aadhaar 身份系統中使用 - 
+是使用美國能源部資金開發的，以控制進入鈈存儲庫，
+並且許多防竄改和感知竄改技術的專業知識最初是為了防止被盜武器或控制設備的濫用而發展的
+
+9/11事件後，美國及其盟友採取了許多積極的措施來控制核擴散，包括：
+
+1. the invasion of Iraq in March 2003
+, for which the casus belli was a claim that Iraq possessed weapons of mass destruction;
+
+2. an agreement by Libya in December 2003 to abandon an undeclared weapons program;
+
+3. the disclosure in 2004 that Abdul Qadeer Khan, a senior scientist with Pakistan’s nuclear program
+, had helped a number of other countries including Syria, Libya, Iran and North Korea 
+get hold of weapons technology, and the dismantling of his network;
+
+4. the Israeli operation ’Outside the Box’ where a suspected Syrian reactor near Deir-ez-Zor was bombed on September 6th, 2007;
+
+5. the 2015 Joint Comprehensive Plan of Action 
+whereby Iran agreed with the USA, the UK, Russia, China, France, Germany and the EU 
+to halt its weapons program.
+
+2003年3月入侵伊拉克，其理由是聲稱伊拉克擁有大規模殺傷性武器；
+
+ "casus belli" 是拉丁語，意為「戰爭的理由」或「開戰的原因」。
+ 在國際關係中，它指的是引發戰爭或軍事行動的正式理由或觸發事件。
+
+2003年12月，利比亞同意放棄一個未申報的武器計劃；
+
+2004年披露，巴基斯坦核計劃的高級科學家阿卜杜勒·卡迪尔·汗（Abdul Qadeer Khan）幫助數個其他國家，
+包括敘利亞、利比亞、伊朗和朝鮮獲得武器技術，並解散他的網絡；
+
+以色列在2007年9月6日發動的“Outside the Box”行動，炸毀了位於德拉省附近的一個懷疑的敘利亞反應堆；
+
+2015年簽署的聯合全面行動計劃，伊朗同意與美國、英國、俄羅斯、中國、法國、德國和歐盟停止其武器計劃。
+
+Not all of the efforts were successful, the obvious case in point being North Korea
+, which had signed a treaty with the USA in 1994 to halt weapons development 
+in return for oil shipments and help developing civil nuclear energy. 
+This collapsed in 2003, after which Pyongyang withdrew from the Non-Proliferation Treaty and developed weapons. 
+This history makes many people apprehensive of the possible long-term effects of 
+the Trump administration’s 2018 abandonment of the agreement with Iran (even though Iran was abiding by it). 
+
+And then there’s also its 2019 abandonment of the Intermediate-Range Nuclear Forces Treaty with Russia 
+(even though that was the result of Russian cheating); and the fact that the New START treaty
+, signed in 2010 by Barack Obama, will run out in February 2021
+, unless America elects a president in November 2020 who agrees to renew it.
+
+並非所有的努力都取得了成功，明顯的例子是朝鮮。
+該國在1994年與美國簽署了一項條約，以停止武器開發，換取石油運輸和協助發展民用核能。
+然而，這一努力在2003年瓦解，此後平壤退出了不擴散條約並開發了核武器。
+這段歷史使許多人對特朗普政府於2018年放棄與伊朗協議（儘管伊朗一直遵守該協議）的可能長期影響感到擔憂。
+
+還有2019年與俄羅斯放棄《中程核力量條約》的行為（儘管這是俄羅斯作弊的結果）；
+以及2010年由巴拉克·奧巴馬簽署的《新削減戰略武器條約》將於2021年2月到期，
+除非美國在2020年11月選出一位同意延續該條約的總統。
+
+Nuclear controls apply to more than just warheads and the fissile materials required for their construction. 
+
+Following 9/11, we learned that Al-Qaida had talked about a ‘dirty bomb’ 
+– a device that would disperse radioactive material over a city block – 
+which might not kill anyone but could lead to panic, and in a financial center could cause great economic damage. 
+
+So in 2007, GAO investigators set up a bogus company 
+and got a license from the Nuclear Regulatory Commission authorizing them to buy isotopes. 
+
+The license was printed on ordinary paper; 
+the investigators altered it to change the quantity of material they were allowed to buy
+, then used it to order dozens of moisture density gauges containing americium-241 and cesium-137
+, which could have been used in a dirty bomb [1114]. 
+
+Thanks to the fear of terrorism, the control of nuclear materials has tightened and spread more widely in the economy.
+
+核控制不僅適用於彈頭和其構造所需的裂變材料。
+在9/11事件之後，我們得知基地組織曾談論過一種“髒炸彈” 
+- 一種能夠在一個城市區域散播放射性材料的裝置 - 
+這可能不會造成任何人死亡，但可能引起恐慌，在金融中心可能導致巨大的經濟損失。
+
+因此，2007年，美國政府 Accountability Office (GAO) 的調查員設立了一家偽造的公司，
+並獲得了核管制委員會的許可，授權他們購買同位素。
+許可證是印在普通紙上的；調查員修改了它，改變了他們被允許購買的材料數量，
+然後用它訂購了數十個含有銦-241和銫-137的濕度密度計，這些可以用於製作髒炸彈。
+
+由于对恐怖主义的恐惧，对核材料的控制已经加强，并在经济范围内更广泛地扩展开来
+恐怖主义的威胁导致了对核材料更严格的控制，不仅限于军事领域，在经济领域也得到了扩展
+
+Nuclear safety continually teaches us lessons about the limits of assurance.
+
+For example, it’s tempting to assume that if a certain action that you don’t want to happen 
+has a probability of 1 in 10 of happening through human error
+, then by getting five different people to check
+, you can reduce the probability to 1 in 100,000. 
+
+The US Air Force thought so too. 
+Yet in October 2007, six US hydrogen bombs went missing for 36 hours after a plane taking cruise missiles 
+from Minot Air Force Base in North Dakota 
+to Barksdale in Louisiana 
+was mistakenly loaded with six missiles armed with live warheads. 
+
+All the missiles were supposed to be inspected by handlers in the storage area and checked against a schedule 
+(which was out of date)
+
+, by ground crew waiting for the inspection to finish before moving any missiles 
+(they didn’t)
+
+, by ground crew inspecting the missiles 
+(they didn’t look in the glass portholes to see whether the warheads were real or dummy)
+
+, by the driver calling in the identification numbers to a control centre 
+(nobody there bothered to check)
+
+, and finally by the navigator during his preflight check 
+(he didn’t look at the wing with the live missiles).
+
+
+核安全不斷地教訓我們有關保证的局限性
+即使采取了一定的措施或手段，也存在无法完全排除的风险或不确定性
+
+例如，人們很容易假設，如果一個你不希望發生的行動通過人為錯誤有1/10的概率發生，
+那麼通過讓五個不同的人進行檢查，你就可以將概率降低到1/100,000。
+
+美國空軍也曾這麼想。然而，在2007年10月，一架飛機 將 巡航導彈
+從 北達科他州的米諾特空軍基地 運往 路易斯安那州的巴克斯代爾空軍基地 
+
+誤載了六枚裝有實彈的導彈，導致六枚氫彈在36小時內失踪。
+
+所有導彈應該由儲存區的處理人員檢查，並根據一份時間表進行檢查（這份時間表已過時），
+由地勤人員在等待檢查完成之前不移動任何導彈（他們沒有這樣做），
+由地勤人員檢查導彈（他們沒有查看玻璃舷窗，看看彈頭是真的還是假的），
+由司機將識別號碼報告給控制中心（那裡的人沒有費心檢查），
+最後由導航員在預飛檢查時（他沒有查看帶有實彈的翼）。
+
+
+The plane took off, flew to Louisiana, landed, and sat unguarded on the runway 
+for nine hours before the ground crew arrived to unload the missiles and discovered they were live [188, 549]. 
+
+This illustrates one of the limits to shared control. 
+
+People will rely on others and slack off – a lesson also known in the world of medical safety. 
+
+Indeed, in the USAF case 
+it turned out that 
+the airmen had replaced the official procedures 
+with an ‘informal’ checklist of their own.
+
+So how can you design systems that don’t fail in this way?
+In this chapter I describe the nuclear safety environment 
+and some of the tricks that might find applications (or pose threats) elsewhere. 
+
+It has been assembled from public sources – but even so there are useful lessons to be drawn.
+
+飛機起飛後，飛往路易斯安那州，降落後，在跑道上無人看管了九個小時，
+直到地勤人員到達卸載導彈並發現它們是實彈[188, 549]。
+這說明了共享控制的局限性之一。
+
+人們會依賴他人並偷懶 - 這也是醫療安全領域已知的教訓。
+
+事實上，在美國空軍的情況中，
+事後發現，空軍人員已經用他們自己的“非正式”檢查表取代了官方程序。
+那麼，如何設計不會以這種方式失敗的系統呢？
+在本章中，我描述了核安全環境以及一些可能在其他地方應用（或構成威脅）的技巧。
+這些信息是從公開來源收集而來的 - 但即便如此，仍然有一些有用的教訓可以得出。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

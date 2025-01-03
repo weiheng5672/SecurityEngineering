@@ -1,0 +1,144 @@
+
+Passwords are just one example of a more general concept, the security protocol.
+If security engineering has a core theme, it may be the study of security protocols.
+They specify the steps that principals use to establish trust relationships.
+
+They are where the cryptography and the access controls meet;
+they are the tools we use to link up human users with remote machines
+, to synchronise security contexts
+, and to regulate key applications such as payment. 
+
+We've come across a few protocols already, including challenge-response authentication and Kerberos. 
+
+In this chapter, I'll dig down into the details, and give many examples of how protocols fail.
+
+密碼只是更一般概念的一個例子，那就是安全協議
+如果安全工程學有一個核心主題，那可能就是對安全協議的研究
+安全協議 指定 主體(principals)用來建立信任關係的 步驟
+
+它們是 密碼學 和 訪問控制 相遇的地方；
+它們是我們用來將 人類用戶 與 遠程機器 連接起來的 工具，
+以 同步 安全 上下文(synchronise security contexts)，
+並規範諸如支付(payment)等關鍵應用
+
+我們已經接觸到了一些協議，包括 挑戰-回應驗證 和 Kerberos
+
+在本章中，我將深入探討細節，並提供許多協議失敗的例子
+
+A typical security system consists of a number of principals such as people,
+companies, phones, computers and card readers, which communicate using
+a variety of channels including fibre, wifi, the cellular network, bluetooth,
+infrared, and by carrying data on physical devices such as bank cards and
+transport tickets.
+
+典型的安全系統由許多主體(principals)組成，
+例如人、公司、手機、電腦和閱卡器，它們使用 各種通道 進行通信，
+包括光纖、wifi、蜂窩網絡、藍牙、紅外線，
+以及通過攜帶數據在銀行卡和交通票證等物理設備上
+
+The security protocols are the rules that govern these com-
+munications. They are designed so that the system will survive malicious acts
+such as people telling lies on the phone, hostile governments jamming radio,
+or forgers altering the data on train tickets. Protection against all possible
+attacks is often too expensive, so protocol designs make assumptions about
+threats.
+
+安全協議是管理這些通信的規則
+它們的設計是為了使系統能夠抵禦惡意行為，
+例如人們在電話中撒謊、敵對政府干擾無線電，或者偽造者修改火車票的數據
+保護系統免受所有可能的攻擊往往成本過高，因此協議的設計會對威脅進行假設
+
+For example, when we get a user to log on by entering a password into
+a machine, we implicitly assume that she can enter it into the right machine.
+In the old days of hard-wired terminals in the workplace, this was reasonable;
+now that people log on to websites over the Internet, it is much less obvious.
+Evaluating a protocol thus involves two questions: first, is the threat model
+realistic? Second, does the protocol deal with it?
+
+例如，當我們讓用戶通過在機器上輸入密碼來登錄時，
+我們隱含地假設她能夠將密碼輸入到正確的機器中
+在工作場所使用硬連接終端的舊日，這是合理的；
+而現在人們通過互聯網登錄網站，這就不那麼明顯了
+因此，評估一個協議涉及兩個問題：
+首先，威脅模型是否現實？
+第二，協議是否應對了這些威脅？
+
+Protocols may be very simple, such as swiping a badge through a reader to enter a building. 
+They often involve interaction, and are not necessarily technical. 
+
+For example, when we order a bottle of fine wine in a restaurant
+, the standard protocol is that the wine waiter offers us the menu 
+(so that we see the prices but our guests don't); 
+they bring the bottle, so we can check the label,the seal and the temperature; 
+they open it so we can taste it; and then serve it.
+
+This has evolved to provide some privacy (our guests don't learn the price)
+, some integrity (we can be sure we got the right bottle and that it wasn't refilled with cheap plonk) 
+and non-repudiation (we can't complain afterwards that the wine was off). 
+
+Matt Blaze gives other non-technical protocol examples 
+from ticket inspection, aviation security and voting in [261]. 
+Traditional protocols like these often evolved over decades or centuries 
+to meet social expectations as well as technical threats.
+
+協議可能非常簡單，例如 通過 將識別證 刷過閱卡器 進入建築物
+它們通常 涉及互動 ，並 不一定 是技術性的
+
+例如，當我們在餐廳點一瓶好酒時，標準的協議是，
+侍酒師會遞給我們菜單（這樣我們可以看到價格，但我們的客人看不到）；
+他們會帶來酒瓶，以便我們可以檢查標籤、封口和溫度；
+他們會為我們開瓶，以便我們品嘗；
+然後才會上酒
+
+這樣的安排演變出一些隱私（我們的客人不會知道價格）、
+一些完整性（我們可以確信我們得到了正確的酒，而且不會被用廉價的酒重新灌滿）
+和不可否認性（事後我們無法抱怨酒質差）
+
+Matt Blaze 在 [261] 中提供了其他 非技術性的 協議例子，
+例如 票務檢查 、 航空安全 和 投票
+這些 傳統的協議 往往是在 幾十年 甚至 幾個世紀 的演變中
+應對 社會期望 和 技術威脅 而形成的
+
+At the technical end of things, protocols get a lot more complex, and they don't always get better. 
+As the car industry moved from metal keys to electronic keys with buttons you press
+, theft fell, since the new keys were harder to copy.
+
+But the move to keyless entry has seen car crime rise again
+, as the bad guys figured out how to build relay devices 
+that would make a key seem closer to the car than it actually was. 
+
+Another security upgrade that's turned out to be tricky 
+is the move from magnetic-strip cards to smartcards. 
+Europe made this move in the late 2000s
+while the USA is only catching up in the late 2010s.
+
+Fraud against cards issued in Europe actually went up for several years; 
+clones of European cards were used in magnetic-strip cash machines in the USA
+, as the two systems' protection mechanisms didn't quite mesh. 
+
+And there was a protocol failure that let a thief use a stolen chipcard in a store even if he didn't
+know the PIN, which took the banks several years to fix.
+
+So we need to look systematically at security protocols and how they fail.
+
+在技術層面上，協議變得更加複雜，而且並不總是變得更好
+隨著汽車行業從金屬鑰匙轉向具有按鈕的電子鑰匙，
+汽車盜竊減少了，因為新的鑰匙更難複製
+
+但是，轉向無鑰匙進入則再次看到汽車犯罪上升，
+因為壞人們想出了如何建造中繼裝置的方法，
+這些裝置會 使 鑰匙 看起來 比實際位置 更接近汽車
+
+另一個被證明很棘手的安全升級是從磁條卡轉向智能卡
+歐洲在2000年代末進行了這一轉變，
+而美國直到2010年代末才在進行這一轉變。
+
+幾年來，對歐洲發行的卡的欺詐行為實際上增加了；
+歐洲卡的副本被用於美國的磁條提款機中，
+因為兩個系統的保護機制沒有完全配合
+
+還存在一個協議失敗，讓盜賊即使不知道PIN，
+也能在商店中使用被盜的智能卡，這花了銀行幾年時間才修復
+
+因此，我們需要系統地研究安全協議及其失敗原因
+

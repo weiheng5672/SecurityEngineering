@@ -1,0 +1,172 @@
+
+Attempts to make passwords memorable are a frequent source of severe design errors. 
+The classic example of how not to do it is to ask for ‘your mother’s maiden name’. 
+A surprising number of banks, government departments and other organisations 
+still authenticate their customers in this way
+, though nowadays it tends to be not a password but a password recovery question. 
+You could always try to tell ‘Yngstrom’ to your bank
+, ‘Jones’ to the phone company, ‘Geraghty’ to the travel agent, and so on; 
+but data are shared extensively between companies
+, so you could easily end up confusing their systems – not to mention yourself. 
+And if you try to phone up your bank and tell them that 
+you’ve decided to change your mother’s maiden name 
+from Yngstrom to yGt5r4ad – or even Smith – then good luck. 
+In fact, given the large number of data breaches
+, you might as well assume that anyone who wants to can get all your common password recovery information 
+– including your address, your date of birth, your first school and your social security number
+, as well as your mother’s maiden name.
+
+嘗試使密碼容易記憶的做法常常是嚴重的設計錯誤。
+一個典型的例子是要求提供「您母親的娘家姓」。
+令人驚訝的是，許多銀行、政府部門和其他組織仍然以這種方式驗證其客戶的身份，
+儘管現在這往往不是密碼，而是密碼恢復的問題。
+你可以嘗試告訴銀行「Yngstrom」，電話公司「Jones」，旅行代理「Geraghty」等等；
+但是公司之間的數據廣泛共享，所以你很容易搞混它們的系統——更不用說搞混自己了。
+如果你打電話給銀行，告訴他們你決定將母親的娘家姓從Yngstrom改為yGt5r4ad——甚至是Smith——那麼祝你好運。
+事實上，考慮到大量的數據洩露，你可以假設任何人，只要他想要，都可以獲得你所有常見的密碼恢復信息
+——包括你的地址、出生日期、第一所學校和社會安全號碼，以及你母親的娘家姓。
+
+
+Some organisations use contextual security information. 
+A bank I once used asks its business customers the value of the last check from their account that was cleared. 
+
+In theory, this could be helpful: 
+if someone overhears me doing a transaction on the telephone, then it’s not a long-term compromise. 
+The details bear some attention though. 
+When this system was first introduced
+, I wondered whether a supplier
+, to whom I’d just written a check
+, might impersonate me
+, and concluded that asking for the last three checks’ values would be safer.
+But the problem we actually had was unexpected.
+Having given the checkbook to our accountant for the annual audit, we couldn’t talk to the bank. 
+I also don’t like the idea that someone who steals my physical post can also steal my money.
+
+有些組織使用情境安全信息。
+我曾經使用的一家銀行會要求其企業客戶提供他們帳戶中最後一張已清算支票的金額。
+從理論上來說，這樣的安全問題設計可能是有幫助的：
+如果有人在我通過電話進行交易時偷聽到了我提供的安全問題答案，
+那麼這種安全問題不會導致長期的安全風險。
+换句话说，即使有人在某一次交易中偷聽到了安全問題的答案
+，他們也無法長期地利用這個信息來入侵我的帳戶或者進行其他不當行為。
+
+但細節需要一些注意。
+當這個系統首次引入時，
+我曾擔心我剛給一個供應商寫了一張支票，
+他可能會假冒我，
+所以我得出結論認為要求提供最後三張支票的金額會更安全。
+但我們實際遇到的問題卻是意想不到的。
+將支票簿交給我們的會計師進行年度審計後，我們無法與銀行交談。
+我也不喜歡這樣的想法，即偷走我的實體郵件的人也可以偷走我的錢。
+
+The sheer number of applications demanding a password nowadays exceeds the powers of human memory. 
+A 2007 study by Dinei Florêncio and Cormac Herley of half a million web users over three months showed that
+the average user has 6.5 passwords, each shared across 3.9 different sites;
+has about 25 accounts that require passwords; 
+and types an average of 8 passwords per day. 
+Bonneau published more extensive statistics in 2012 [290]
+but since then the frequency of user password entry has fallen, thanks to smartphones. 
+Modern web browsers also cache passwords; 
+see the discussion of password managers at section 3.4.11 below. 
+
+But many people use the same password for many different purposes 
+and don’t work out special processes to deal with their high-value logons such as to their bank
+, their social media accounts and their email. 
+So you have to expect that the password chosen by the customer of the electronic banking system you’ve just designed
+, may be known to a Mafia-operated porn site as well. 
+(There’s even a website, http://haveibeenpwned.com, 
+that will tell you 
+which security breaches have leaked your email address and password.)
+
+現今，需要密碼的應用程式數量之多已經超出了人類記憶的能力。
+2007年，Dinei Florêncio和Cormac Herley對五十萬名網路使用者進行了為期三個月的研究，結果顯示：
+平均每個使用者有6.5個密碼，每個密碼在3.9個不同的網站上共用；
+大約有25個需要密碼的帳戶；
+每天平均輸入8次密碼。
+Bonneau在2012年發表了更詳細的統計數據，但自那時以來，由於智慧型手機的普及，使用者輸入密碼的頻率已經下降。
+現代網絡瀏覽器也會緩存密碼；請參見下文第3.4.11節中有關密碼管理器的討論。
+
+但許多人在許多不同目的上使用相同的密碼，
+並且沒有制定特殊的流程來處理其價值較高的登錄，
+例如他們的銀行帳戶、社交媒體帳戶和電子郵件帳戶。
+因此，您必須預期，您剛設計的電子銀行系統客戶所選擇的密碼
+，可能也被黑幫運營的色情網站知道了。
+（甚至有一個網站，http://haveibeenpwned.com，會告訴您哪些安全漏洞洩漏了您的電子郵件地址和密碼。）
+
+One of the most pervasive and persistent errors has been forcing users to change passwords regularly.
+When I first came across enforced monthly password changes in the 1980s
+, I observed that it led people to choose passwords such as ‘julia03’ for March, ‘julia04’ for April, and so on
+, and said as much in the first (2001) edition of this book (chapter 3, page 48). 
+However, in 2003, Bill Burr of NIST wrote password guidelines recommending regular update [1098].
+This was adopted by the Big Four auditors, who pushed it out to all their audit clients 3 . 
+Meanwhile, security usability researchers conducted survey after survey showing that monthly change was suboptimal. 
+
+The first systematic study by Yinqian Zhang, Fabian Monrose and Mike Reiter of 
+the password transformation techniques users invented showed that in a system with forced expiration
+, over 40% of passwords could be guessed from previous ones
+, that forced change didn’t do much to help people who chose weak passwords
+, and that the effort of regular password choice may also have diminished password quality [2073]. 
+Finally a survey was written by usability guru Lorrie Cranor while she was Chief Technologist at the FTC [492]
+, and backed up by an academic study [1507]. 
+In 2017, NIST recanted; 
+they now recommend long passphrases that are only changed on compromise. 
+Other governments’ agencies such as Britain’s GCHQ followed
+, and Microsoft finally announced the end of password-expiration policies in Windows 10 from April 2019.
+However, many firms are caught by the PCI standards set by the credit-card issuers
+, which haven’t caught up and still dictate three-monthly changes;
+another problem is that the auditors dictate compliance to many companies, and will no doubt take time to catch up.
+
+在過去，最普遍且持久的錯誤之一是強迫使用者定期更換密碼。
+當我在1980年代首次遇到強制每月更換密碼時，
+我觀察到這導致人們選擇像「julia03」代表三月、「julia04」代表四月等類似的密碼，
+並在本書的第一版（2001年版）中（第3章，第48頁）談到了這一點。
+然而，2003年，美國國家標準與技術研究院（NIST）的Bill Burr撰寫了密碼指南，建議定期更新。
+這一建議被四大會計師事務所採納，並推廣給所有他們的審計客戶。
+與此同時，安全可用性研究人員進行了一次又一次的調查，顯示每月更換密碼是次優的。
+由Yinqian Zhang、Fabian Monrose和Mike Reiter進行的第一次系統性研究。
+他們研究了使用者所發明的密碼轉換技術。
+研究結果顯示，在一個要求強制更換密碼的系統中，
+超過40%的新密碼可以從先前的密碼中猜測出來。
+此外，強制更換密碼並不能幫助那些選擇了弱密碼的人。
+同時，定期更換密碼的努力可能也會降低密碼的質量。
+最後，FTC的首席技術專家Lorrie Cranor寫了一份調查報告，並得到了一項學術研究的支持。
+2017年，NIST撤回了之前的建議；他們現在建議使用長的口令短語，在受到威脅時才更換。
+其他國家的機構，如英國的GCHQ，也跟隨了這一建議。
+微軟最終宣布從2019年4月起，在Windows 10中結束密碼到期政策。
+然而，許多公司受到信用卡發行商制定的PCI標準的約束，
+該標準尚未跟上步伐，仍然規定每三個月更換一次密碼；
+另一個問題是，審計師對許多公司的合規性施加了規定，他們毫無疑問需要時間來跟上。
+
+pervasive：廣泛存在的，普遍的。指某事物或現象在很多地方或範圍內都存在或普遍存在。
+persistent：持續的，堅持不懈的。指某事物或情況持續存在或持續進行，不易消失或改變。
+suboptimal：次優的，不夠理想的。指某事物或方案未達到最佳狀態或效果，有改進空間或不足之處。
+expiration：到期，終止。指某事物或合約的期限到期或結束。
+diminished：減少的，降低的。指某事物的數量、價值或程度降低或減少。
+recanted：撤回，改變。指撤回先前發表的觀點、聲明或建議，進行改變。
+passphrases：口令短語。指一種比單一密碼更長的密碼，由多個單詞組成，通常更安全且易於記憶。
+dictate：規定，命令。指強制性地規定或命令某事物的進行方式或行為。
+compliance：合規性，遵從。指符合規定、法律或標準的狀態，表明某事物遵循相應的規範或要求。
+
+The current fashion, in 2020, is to invite users to select passphrases of three or more random dictionary words. 
+This was promoted by a famous xkcd cartoon which suggested ‘correct horse battery staple’ as a password. 
+Empirical research, however, shows that 
+real users select multi-word passphrases with much less entropy than they’d get if they really did select at random from a dictionary; 
+they tend to go for common noun bigrams, and moving to three or four words brings rapidly diminishing returns [297]. 
+The Electronic Frontier Foundation now promotes using dice to pick words; 
+they have a list of 7,776 words (65 , so five dice rolls to pick a word) 
+and note that a six-word phrase has 77 bits of entropy and is memorable [291].
+
+截至2020年，當前流行的趨勢是邀請用戶選擇由三個或更多隨機字典單詞組成的口令短語。
+這得到了一幅著名的xkcd漫畫的推動，該漫畫建議使用“correct horse battery staple” 作為密碼。
+然而，實證研究顯示，真實用戶選擇的多詞口令短語的熵遠遠低於他們如果真的從字典中隨機選擇的熵；
+使用者往往會選擇常見的名詞雙詞組作為他們的密碼，增加到三個或四個單詞的密碼短語，則其安全性提升的效益會迅速減少。
+Electronic Frontier Foundation現在推廣使用骰子來選擇單詞；
+他們有一個由7,776個單詞組成的列表（6^5，因此用五個骰子擲出一個單詞），
+並指出六個單詞的短語具有77比特的熵且易於記憶。
+
+bigrams：雙詞組。在這裡指由兩個字母或兩個詞組成的序列，用於描述文本或資料的統計特徵。
+
+
+
+
+

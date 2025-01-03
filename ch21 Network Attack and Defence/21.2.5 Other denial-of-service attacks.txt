@@ -1,0 +1,62 @@
+
+As the clever ways of creating service-denial attacks have been closed off one by one
+, the bad guys have turned increasingly to brute force
+, by sending floods of packets from infected machines. 
+
+隨著一個又一個創造服務阻斷攻擊的巧妙方法被逐漸封鎖，
+壞人們越來越轉向使用蠻力，
+透過從受感染的機器發送大量封包來進行攻擊。
+
+The first distributed denial-of-service (DDoS) attack may have been the Morris worm in the 1980s
+, and the first deliberate one in the 1990s with the attack already mentioned on Panix. 
+Nowadays, botnets are assembled using all sorts of vulnerabilities
+, and underground markets let some people specialise in hacking machines 
+and selling them to others who extract value in various ways. 
+Since 2016, the machines most used for DDoS have been IoT devices 
+such as CCTV cameras, which are now connected in large numbers to home WiFi networks with reasonable bandwidth
+, but which tend to have known default passwords – and are often incapable of being patched. 
+The Mirai botnet appeared in 2016 to exploit this opportunity
+, and there have been over a thousand variants of it since (its source code got posted to Hackforums).
+
+第一次分散式阻斷服務（DDoS）攻擊可能是在1980年代的Morris蠕蟲，
+而第一次有意識的攻擊可能是在1990年代的Panix上已經提到的攻擊。
+如今，僵屍網絡是利用各種漏洞組裝而成的，
+地下市場讓一些人專門從事入侵機器
+並將其出售給其他人，這些人以各種方式提取價值。
+自2016年以來，用於 DDoS 的機器最常用的是物聯網設備，
+例如閉路電視攝像機，這些攝像機現在與家庭WiFi網絡連接，具有合理的帶寬，
+但往往具有已知的默認密碼，並且往往無法修補。 
+Mirai 僵屍網絡於2016年出現，以利用這個機會，
+自那時以來已經有一千多個變體（其源代碼已發布在Hackforums上）。
+
+There are various motives for service-denial attacks. 
+Most are launched by schoolkids – typically gamers who want to take down an opposing crew’s teamspeak server. 
+There has for some years been a black market in DDoS-for-hire
+, which the authorities in the USA and elsewhere have been trying to close down. 
+
+There have been some incidents of blackmail (e.g., of online bookmakers), and a growing use of the technique for suppressing political opponents 
+– starting perhaps with attacks on the servers of an opposition party in Kyrgyzstan, even when these were relocated to North America [1616]. 
+
+We discussed their use in conflict by states in Chapter 2.
+That said, one mustn’t forget online activism. 
+If a hundred thousand people send email to the White House protesting against some policy or other
+, is this a DDoS attack? Protesters should not be treated as felons; 
+but protest can easily shade over into abuse, and drawing legislative distinctions can be hard.
+
+對於服務阻斷攻擊，存在著各種動機。
+大多數攻擊是由學生發起的 - 通常是想要摧毀對手團隊的 Teamspeak 伺服器的遊戲玩家。
+多年來，黑市上存在著一個 DDoS 租用市場，
+美國和其他地方的當局一直在努力關閉它。
+
+曾發生過一些勒索事件（例如，在線博彩公司），以及該技術在壓制政治對手方面的增長使用 
+- 或許從對吉爾吉斯坦一個反對黨服務器的攻擊開始，即使這些服務器已經遷移到北美[1616]。
+
+我們在第二章中討論了國家衝突中的使用情況。
+儘管如此，人們不應忘記在線活動主義。
+如果十萬人向白宮發送電子郵件抗議某些政策，
+這是一次 DDoS 攻擊嗎？抗議者不應被視為罪犯；
+抗議很容易逐漸變成濫用，並且在立法上進行區分可能很困難。
+
+"Shade over" 是一個片語，意思是逐漸轉變或漸漸變成。
+在這個上下文中，它指的是一個行為或情況逐漸變成另一個行為或情況，
+通常是指一個原始行為或情況變得更為不當或不合適。

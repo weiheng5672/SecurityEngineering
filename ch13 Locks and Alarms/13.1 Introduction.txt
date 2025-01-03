@@ -1,0 +1,126 @@
+For if a man watch too long, it is odds he will fall asleepe.
+– FRANCIS BACON
+
+如果一個人觀察得太久，很有可能會睡著。
+
+
+
+The greatest of faults, I should say, is to be conscious of none.
+– THOMAS CARLYLE
+
+我認為最大的缺點是意識到自己沒有任何缺點。
+
+ "Conscious" 是指個人有自我意識、覺醒、清醒的狀態，
+ 意味著他們對周圍的事物和自己的狀態有認知。
+
+ 在這句話中，"conscious of none" 表示不自覺地不認識自己的缺點，
+ 即缺乏對自身缺陷的認知或察覺。
+
+
+Most security engineers nowadays focus on electronic systems, but physical protection cannot be neglected. 
+
+First, if you’re advising on a company’s overall risk management, then walls and locks are a factor. 
+
+Second, as it’s easier to teach someone with an electrical engineering or computer science background 
+the basics of physical security than the other way round
+, interactions between physical and logical protection are usually up to the systems person to manage. 
+
+Third, you will often be asked for your opinion on your client’s installations 
+– which may have been built by contractors with little understanding of system issues. 
+You’ll need to be able to give informed, but diplomatic, advice. 
+
+Fourth, many information security mechanisms can be defeated if a bad man gets physical access
+, whether at the factory, or during shipment, or before installation. 
+
+Fifth, many mechanical locks have recently been completely compromised by ‘bumping’
+, an easy covert-entry technique; 
+their manufacturers often seem unaware of vulnerabilities that enable their products to be quickly bypassed. 
+
+Finally, many of the electronic locks that are replacing them are easy to compromise
+, either because they use cryptography that’s been broken (such as Mifare classic) 
+or because of poor integration of the mechanical and digital components.
+
+如今，大多數安全工程師專注於電子系統，但物理保護也不能忽視。
+
+首先，如果您正在就公司的整體風險管理提供建議，那麼牆壁和鎖是一個因素。
+
+第二，由於從事電氣工程或計算機科學背景的人學習基本的物理安全知識比相反方向容易，因此物理與邏輯保護之間的互動通常由系統專家來管理。
+
+第三，您通常會被要求就客戶的安裝提出意見，而這些安裝可能是由對系統問題了解不深的承包商建造的。您需要能夠提出知情但圓滑的建議。
+
+第四，許多信息安全機制可能會被擊敗，如果壞人獲得了物理訪問權限，無論是在工廠、運輸過程中還是安裝前。
+
+第五，許多機械鎖最近已被完全擊敗，這是一種易於隱秘進入的技術；它們的製造商通常 對 使其產品能夠快速被迴避的 漏洞 毫無察覺。
+
+最後，許多正在取代它們的電子鎖易於被擊敗，或者因為它們使用的加密已被破解（例如Mifare classic），或者因為機械和數字組件的集成不佳。
+
+
+Much of physical security is just common sense
+, but there are some non-obvious twists
+, and there have been significant recent advances in technology. 
+
+There are useful ideas from criminology and architecture 
+on how you can reduce the incidence of crime around your facilities; 
+some of these may go across into system design too.
+
+And there’s a very interesting case study in burglar alarms.
+
+物理安全的許多方面是基於常識的，
+但也存在一些不明顯的技巧，
+而且在技術方面也有顯著的最新進展。
+
+它提到了犯罪學和建築學的一些有用思想，
+可以幫助您減少您設施周圍的犯罪率(incidence of crime)；
+其中一些想法可能也適用於系統設計。
+
+此外，還提到了關於防盜警報的一個非常有趣的案例研究。
+
+
+For example, in order to defeat a burglar alarm it’s enough to make it stop
+working, or even just to persuade the guards that it has become unreliable.
+
+This gives a new perspective on denial-of-service attacks. 
+Just as we’ve seen military messaging systems designed to enforce confidentiality 
+and bookkeeping systems whose goal is preserving record authenticity
+, monitoring gives us the classic example of systems that need to be dependably available. 
+
+If there is a burglar in my bank vault
+, then I don’t care very much who else gets to know (so I’m not worried about confidentiality)
+, or who it was who told me (so authenticity isn’t a major concern); 
+but I do care very much that an attempt to tell me is not thwarted. 
+
+Historically, about 90% of computer security research was about confidentiality
+, about 9% about authenticity and 1% about availability.
+
+But actual attacks – and companies’ infosec expenditures – are often the other way round
+, with more spent on availability than on authenticity and confidentiality combined. 
+
+And it’s alarm systems, above all else, that can teach us about availability.
+
+舉例來說，要擊敗防盜警報，僅僅使其停止運作就足夠了，甚至只需說服警衛認為它變得不可靠。
+
+這為我們對阻斷服務攻擊提供了新的視角。正如我們所看到的，一些軍事通信系統旨在強制保密，而一些記帳系統的目標是保護記錄的真實性，監控系統則提供了那些需要可靠可用性的典型例子。
+
+如果我的銀行金庫裡有一個竊賊，那麼我不太在乎其他人知道這件事（所以我對保密性不擔心），
+或者是誰告訴我的（所以真實性不是主要問題）；但我非常在乎嘗試告訴我的行動不會被挫敗。
+
+從歷史上看，大約90%的計算機安全研究是關於保密性的，約9%是關於真實性的，1%是關於可用性的。
+
+但實際的攻擊 - 以及公司的信息安全支出 - 通常是相反的，花在可用性上的資金比花在真實性和保密性上的資金加起來還要多。
+
+而且，最重要的是，正是警報系統可以教我們可用性的重要性。
+
+
+
+
+翻譯
+
+
+
+
+
+
+
+
+
+

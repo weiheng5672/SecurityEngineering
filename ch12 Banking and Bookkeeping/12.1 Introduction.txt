@@ -1,0 +1,166 @@
+Against stupidity, the Gods themselves contend in vain.
+– JC FRIEDRICH VON SCHILLER
+
+對抗愚蠢，連神明自己也徒勞無功
+
+Johann Christoph Friedrich von Schiller
+（1759年11月10日 - 1805年5月9日）是一位德國詩人、劇作家、哲學家和歷史學家，被譽為德國浪漫主義文學的重要代表之一。
+他的作品包括劇作《威廉·泰爾》（Wilhelm Tell）、《墨非爾》（Die Räuber）和《唐·卡洛斯》（Don Carlos）等，以及許多重要的詩歌。
+Schiller 的作品通常探討人性、自由、革命和愛情等主題，對德國文學和歷史產生了深遠的影響。
+
+As a dog returneth to his vomit, so a fool returneth to his folly.
+– PROVERBS 26:11
+
+狗若吐了、仍轉而吃、愚人辦了傻事、仍又去辦。
+
+"Proverbs" 指的是《聖經》中的箴言部分，它包含了智慧和道德教訓的短句或寓言。
+箴言通常以简洁而深刻的形式表达智慧，旨在引导人们的行为和思想。
+
+
+The cashless payment industry is one of the winners from the coronavirus pandemic, as people worldwide abandon cash in favour of card and phone payments. 
+The underlying banking systems range from payment card processing and home banking through high-value interbank money transfers to the back-end bookkeeping systems that keep track of it all and settle up afterwards.
+There are specialised networks for everything from stock trading to trade payments, many of which are open to other companies too. 
+Larger companies have internal bookkeeping and cash management systems that mirror many of the functions of a bank.
+
+新冠疫情 導致 全球人們放棄現金，轉而採用卡片和手機支付，這使得 無現金支付 行業成為疫情中的贏家之一。
+底層的銀行系統 涵蓋了 從支付卡處理和家庭銀行業務到高值銀行間資金轉移，以及在此之後追踪和結算一切的後端簿記系統。
+對於 股票交易 到 貿易支付 ，有 專門的網絡 ，其中許多也對其他公司開放。
+較大的公司擁有 內部簿記 和 現金管理 系統，可以反映出許多銀行的功能。
+
+Such systems matter to the security engineer for a number of reasons.
+
+由於一些原因，這些系統對安全工程師很重要
+
+First, they’re a core professional competence. 
+You need to understand transaction processing to tackle the wider problems of fraud
+, and this chapter will give you a road map. 
+You also need to understand internal controls based on bookkeeping
+, as these not only give early warnings when things go wrong
+, but also drive corporate risk management. 
+
+You have to be able to carry a conversation about Gramm-Leach-Bliley
+, Sarbanes-Oxley and PCI DSS to have credibility with your CFO. 
+
+When you propose protection mechanisms, one of the first things you’re likely to be asked is 
+how they’ll help executives discharge their fiduciary responsibilities to shareholders.
+
+首先，這些系統是核心的專業能力。
+您需要了解交易處理，以應對更廣泛的詐騙問題，
+而這章節將為您提供路線圖。
+您還需要理解基於簿記的內部控制，
+因為這些不僅在事情出錯時提供早期警告，
+而且推動企業風險管理。
+
+您必須能夠就Gramm-Leach-Bliley、Sarbanes-Oxley和PCI DSS進行對話，
+以便在您的首席財務官面前擁有信譽。
+
+當您提出保護機制時，您很可能首先被問及的是
+它們如何 幫助 高管 履行 對股東的 受託 責任 
+
+    "executives" 指的是高管，即公司中的管理層人員，如首席執行官、首席財務官等。
+    "discharge" 在這裡是指履行或執行某種責任或義務。
+    "fiduciary" 意指信託責任，指高管對公司股東負有的法律責任，要求他們以股東的最佳利益為依歸。
+    "shareholders" 是指公司的股東，即持有公司股份的個人或機構。在公司治理中，股東是公司的所有者之一。
+
+
+Second, bookkeeping drove the computer industry. 
+The first computer outside the military and academia was the Leo
+, which did bookkeeping for the Lyons chain of coffee houses from 1951. 
+
+Banking rapidly became the most intensive application area for computing
+, which spread into other firms via the automation of bookkeeping from the 1960s. 
+
+So the protection of bookkeeping systems is of both historical and practical importance. 
+
+It also gives us a well-understood model of protection in which confidentiality plays little role
+, but where the integrity of records (and their immutability once made) is paramount.
+
+A banking system should prevent customers from cheating each other, or the bank; 
+it should prevent bank staff from cheating the bank, or its customers; 
+and the evidence it provides should be good enough 
+that none of them can get away with falsely accusing others of cheating. 
+
+Banking and bookkeeping pioneered the use of dual control
+, also known nowadays as multi-party authorisation.
+
+第二，簿記驅動了電腦產業。
+第一台脫離軍方和學術界的電腦是利昂（Leo），
+從1951年開始為萊昂斯咖啡館連鎖店進行簿記。
+從1960年代開始，銀行業迅速成為電腦應用最密集的領域，通過簿記自動化的方式擴散到其他公司。
+因此，保護簿記系統具有歷史和實際重要性。
+
+它還為我們提供了一個被廣泛理解的保護模型，在這個模型中，保密性幾乎不起作用，
+但記錄的完整性（以及一旦形成後的不可變性）至關重要。
+
+銀行系統應該防止客戶彼此欺騙，或欺騙銀行；
+它應該防止銀行員工欺騙銀行，或其客戶；
+系統提供的證據應該是可信的，
+足以防止任何人透過虛假指控他人來逃脫責任
+
+銀行業和簿記開創了 雙重控制 的使用，現在也被稱為 多方授權
+
+Third, transaction processing systems 
+– whether for $50 ATM withdrawals, or $100m wire transfers – 
+were the application that launched commercial cryptology as a separate discipline outside the military. 
+They drove the development of encryption algorithms and protocols, as well as the supporting technology such as smartcards. 
+Many instructive mistakes were first made (or at least publicly documented) in the area of financial cryptography.
+
+第三，無論是用於50美元的自動取款，還是1億美元的電匯，
+交易處理系統 都是 將 商業密碼學 作為一門獨立學科 從軍事領域中分離出來 的應用
+ 
+ "launch" 在这里的意思是 推动、启动或开创
+ 这句话指的是 交易处理系统 作为应用 推动了 商业密码学 作为一个独立学科的发展
+
+它們推動了加密算法和協議的發展，以及智能卡等支援技術的發展。
+許多 具有啟發意義的錯誤 首次出現（或至少是公開記錄）在 金融密碼學 領域
+
+Finally, many of the global-scale systems we’ve built this century 
+were designed to circumvent the checks and balances 
+that had evolved over centuries in the local and manual systems they replaced. 
+
+Google’s mission was to make all the world’s information available 
+by disrupting the previous implicit and explicit controls of locality, scale, confidence and copyright. 
+
+Uber planned to become the global taxi company 
+by circumventing taxi regulations in thousands of towns and cities worldwide. 
+
+It’s hardly surprising that a successful startup often has to reinvent controls
+, whether under pressure from fraud and abuse, or under pressure from lawmakers.
+
+最後，許多我們在本世紀建立的全球規模系統
+都是 為了規避 在本地和手動系統中演變了幾個世紀的各種監督和平衡
+
+谷歌的使命是通過 打破 以前的地域性、規模性、信心和版權的隱含和明確的控制，使世界上所有的信息都可以獲得
+
+Uber計劃通過 規避 全球數千個城鎮和城市的計程車 規定 來成為全球計程車公司
+
+成功的初創企業往往 不得不 重新發明 控制，這並不令人意外，
+無論是受到詐騙和濫用的壓力，還是受到立法者的壓力
+
+In this chapter, I’ll first describe the bookkeeping systems used to track assets and manage the risk of corrupt staff; 
+such accounting systems are also used by other companies of any size. 
+
+I’ll then describe the international funds-transfer systems used for interbank payments. 
+
+Next, I’ll describe ATM systems, the public face of banking
+, whose technology has also been adopted in applications such as utility meters. 
+
+I’ll follow with the story of credit cards, which have become the main payment mechanism online. 
+I’ll then move on to more recent technical advances, including contactless payments, phone payments and open banking.
+
+在這一章中，我將首先描述用於跟蹤資產並管理內部腐敗風險的簿記系統；這些會計系統也被任何規模的其他公司使用。
+接下來，我將描述用於銀行間支付的國際資金轉移系統。
+然後，我將描述自動取款機系統，這是銀行的公共面，其技術也被應用於公用事業計量等應用中。
+我將繼續講述信用卡的故事，它已成為在線支付的主要機制。然後，我將轉向更近期的技術進步，包括無接觸支付、手機支付和開放式銀行服務。
+
+
+
+
+
+
+
+
+
+
+
+

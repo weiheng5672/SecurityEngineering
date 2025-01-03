@@ -1,0 +1,72 @@
+
+The most pervasive operational error is failing to reset default passwords. 
+This has been a chronic problem since the early dial access systems in the 1980s attracted attention from mischievous schoolkids. 
+A particularly bad example is where systems have default passwords that can’t be changed, checked by software that can’t be patched. 
+We see ever more such devices in the Internet of Things; 
+they remain vulnerable for their operational lives. 
+The Mirai botnets have emerged to recruit and exploit them, as I described in Chapter 2.
+
+Passwords in plain sight are another long-running problem, whether on sticky notes or some electronic equivalent. 
+A famous early case was R v Gold and Schifreen
+, where two young hackers saw a phone number for the development version of Prestel
+, an early public email service run by British Telecom, in a note stuck on a terminal at an exhibition.
+They dialed in later, and found the welcome screen had a maintenance password displayed on it.
+They tried this on the live system too, and it worked! 
+They proceeded to hack into the Duke of Edinburgh’s electronic mail account
+, and sent mail ‘from’ him to someone they didn’t like, announcing the award of a knighthood. 
+This heinous crime so shocked the establishment that 
+when prosecutors failed to persuade the courts to convict the young men, Britain’s parliament passed its first Computer Misuse Act.
+
+A third operational issue is asking for passwords when they’re not really needed
+, or wanted for dishonest reasons, as I discussed at the start of this section. 
+Most of the passwords you’re forced to set up on websites are there for marketing reasons
+– to get your email address or give you the feeling of belonging to a ‘club’ [295]. 
+So it’s perfectly rational for users who never plan to visit that site again to express their exasperation 
+by entering ‘123456’ or even ruder words in the password field.
+A fourth is atrocious password management systems: some don’t encrypt passwords at all
+, and there are reports from time to time of enterprising hackers smuggling back doors into password management libraries [429].
+
+But perhaps the biggest operational issue is vulnerability to social-engineering attacks.
+
+最普遍的操作錯誤是未重設默認密碼。
+自1980年代早期開始，這一問題就一直存在，當時的撥號訪問系統引起了調皮的學生的注意。
+一個特別糟糕的例子是系統有默認密碼，但無法更改，而且無法修補的軟件也沒有被檢查。
+在物聯網中，我們看到越來越多這樣的設備；
+它們在運作期間始終存在漏洞。
+Mirai僵尸网络已經出現，用來招募和利用這些漏洞，正如我在第2章中所描述的那樣。
+
+明文密碼是另一個長期存在的問題，無論是在便條上還是某種電子等效物上。
+一個著名的早期案例是R v Gold and Schifreen，兩名年輕的黑客在一個展覽的終端機上看到了Prestel的開發版本的電話號碼，這是由英國電信運營的早期公共電子郵件服務。
+他們後來撥打了這個號碼，發現歡迎界面上顯示了一個維護密碼。
+他們也試圖在實際系統上使用這個密碼，結果成功了！
+他們繼續駭入愛丁堡公爵的電子郵件帳戶，並假裝是他向一個他們不喜歡的人發送郵件，宣布授予爵位。
+這個滔天罪行震驚了當局，以至於當檢察官無法說服法院判定這兩名年輕人有罪時，英國議會通過了第一部《電腦濫用法》。
+
+第三個操作問題是在不真正需要時要求密碼，
+或出於不誠實的原因而需要密碼，就像我在本節開頭所討論的那樣。
+大多數強迫你在網站上設置的密碼都是為了營銷目的 -
+為了獲得你的電子郵件地址或給你一種屬於“俱樂部”的感覺。
+因此，對於從不打算再次訪問該網站的用戶來說，
+通過在密碼字段中輸入“123456”甚至更粗魯的字眼表達他們的憤怒是完全合理的。
+
+第四個是糟糕的密碼管理系統：一些根本不加密密碼，
+並且不時有報告說有黑客在密碼管理庫中偷偷塞入後門。
+
+但也許最大的操作問題是容易受到社交工程攻擊的脆弱性。
+
+單字解釋：
+
+chronic - 持續的、長期的
+dial - 撥號、撥打
+recruit - 招募
+plain - 明文的、清楚的
+exasperation - 惱怒、憤怒
+ruder - 更粗魯的、更粗暴的
+smuggling - 走私、偷運
+enterprising - 有進取心的、有魄力的
+atrocious" - 極其惡劣的、可怕的、殘暴的
+
+
+
+
+

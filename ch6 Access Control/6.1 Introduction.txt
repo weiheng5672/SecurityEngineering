@@ -1,0 +1,210 @@
+
+I first learned to program on an IBM mainframe 
+whose input was punched cards and whose output was a printer.
+You queued up with a deck of cards, ran the job, and went away with printout.
+All security was physical.
+
+Then along came machines that would run more than one program at once
+, and the protection problem of preventing one program from interfering with another.
+
+You don't want a virus to steal the passwords from your browser
+, or patch a banking application so as to steal your money. 
+
+And many reliability problems stem from applications misunderstanding each other
+, or fighting with each other.
+
+But it's tricky to separate applications when the customer wants them to share data. 
+It would make phishing much harder if your email client and browser ran on separate machines
+, so you were unable to just click on URLs in emails, but that would make life too hard.
+
+From the 1970s, access control became the centre of gravity of computer security.
+
+It's where security engineering meets computer science.
+
+Its function is to control which principals (persons, processes, machines, . . .) 
+have access to which resources in the system - which files they can read
+, which programs they can execute, how they share data with other principals, and so on.
+
+It's become horrendously complex. 
+If you start out by leafing through the 7000-plus pages of Arm's architecture reference manual 
+or the equally complex arrangements for Windows
+, your first reaction might be "I wish I'd studied music instead!" 
+In this chapter I try to help you make sense of it all.
+
+我最初是在一台 IBM 大型機上學習編程的，它的輸入是打孔卡片，輸出是打印機
+你排隊帶著一疊卡片，運行作業，然後帶著打印品離開
+所有的安全都是物理的
+
+然後 出現了 可以 同時運行多個程序 的機器，
+以及 防止 一個程序 干擾 另一個程序 的保護問題
+
+你不希望病毒 從你的瀏覽器中 竊取密碼，
+或者 修改銀行應用程序 以偷走你的錢
+
+許多可靠性(reliability)問題 
+源於 應用程序之間的誤解(misunderstanding)或爭執(fighting with each other)
+
+但是，當客戶 希望 它們 共享數據時 ，將應用程序 分開是很棘手的
+如果 你的 電子郵件客戶端 和 瀏覽器 在不同的機器上運行，你就 無法 單擊 電子郵件中的 URL 了，
+這會使 釣魚行為 變得更加困難，但這樣做會 讓 生活變得更加艱難
+
+************************************************************
+
+從 1970 年代開始， 訪問控制 成為了計算機安全的重心
+這是 安全工程(security engineering) 與 計算機科學 相遇的地方
+
+************************************************************
+
+它的功能是 
+控制 系統中的哪些 主體（人、進程、機器等） 
+可以訪問 系統中的哪些 資源 - 
+他們 可以讀取 哪些文件 ，
+他們 可以執行 哪些程序 ，
+他們 如何 與其他主體 共享數據 等等
+
+這變得極為複雜
+如果你首先翻閱 ARM 的 7000 多頁架構參考手冊 或者 同樣複雜的 Windows 安排，
+你的第一反應可能是“我真希望我學音樂！”
+在本章中，我試圖幫助你理解這一切
+
+I wish I'd studied music instead!
+這句話表示 說話者 對當前的情況 感到 非常困惑或挫折，
+並且 希望 自己 當初 應該 做出不同的選擇
+
+Access control works at a number of different levels, including at least:
+
+在不同層次上，存取控制的作用包括：
+
+1. Access controls at the application level may express a very rich,
+domain-specific security policy. The call centre staff in a bank are typi-
+cally not allowed to see your account details until you have answered a
+couple of security questions; this not only stops outsiders impersonating
+you, but also stops the bank staff looking up the accounts of celebrities,
+or their neighbours. Some transactions might also require approval from
+a supervisor. And that's nothing compared with the complexity of the
+access controls on a modern social networking site, which will have a
+thicket of rules about who can see, copy, and search what data from
+whom, and privacy options that users can set to modify these rules.
+
+ 應用層面的存取控制 可以表達 非常豐富的、特定於領域的 安全策略
+ 例如， 銀行的呼叫中心工作人員 通常在你回答了一些安全問題之前 不允許查看你的帳戶詳細信息；
+ 這不僅 阻止了 外部人員 冒充你，還 阻止了 銀行工作人員 查閱名人或鄰居的帳戶
+ 一些交易可能還需要 主管的批准
+ 這與 現代社交網絡站上 的 存取控制 的 複雜性 相比還算不上什麼，
+ 現代社交網絡站 通常有 一系列規則 ，
+ 用於控制 誰可以 查看 、 複製 和 搜索 誰的數據，
+ 以及 用戶 可以設置的 隱私選項 來修改這些規則
+
+2. The applications may be written on top of middleware, such as a web browser
+, a bank's bookkeeping system or a social network's database management system. 
+These enforce a number of protection properties. 
+For example, bookkeeping systems ensure that a transaction that debits one account must credit another
+, with the debits and credits balancing so that money cannot be created or destroyed;
+they must also allow the system's state to be reconstructed later.
+
+ 應用程序可能是建立在 中間件(middleware) 之上，
+ 例如 網頁瀏覽器 、銀行的 記帳系統 或 社交網絡的 數據庫管理系統
+ 這些middleware 強制執行 多個保護屬性
+
+ 例如，記帳(bookkeeping)系統 
+
+ 確保 一筆 從一個帳戶 借款(debits) 的交易 
+ 必須 向另一個帳戶 貸款(credit)，
+
+ 以使 借款(debits) 和 貸款(credits) 平衡，
+ 進而 防止 貨幣的 創造或破壞；
+
+ 它們還必須 允許 系統的狀態 在以後 被重建
+
+
+3. As the operating system constructs resources 
+such as files and communications ports from lower level components
+, it has to provide ways to control access to them. 
+Your Android phone treats apps written by
+different companies as different users and protects their data from
+each other. The same happens when a shared server separates the
+VMs, containers or other resources belonging to different users.
+
+ 由於 操作系統 從較低層級的組件 構建資源，
+ 如 文件 和 通信端口 ，因此 必須 控制 對它們的 訪問 
+ 你的 安卓手機 將不同公司 開發的 應用程序 視為 不同的用戶， 並保護 它們的數據 不被彼此訪問
+ 當 共享服務器 分隔 屬於不同用戶的 虛擬機器、容器或其他資源時，也是如此
+
+4. Finally, the operating system relies on the processor 
+and its associated memory-management hardware
+, which control which memory addresses a given process or thread can access.
+
+ 最後， 操作系統 依賴 處理器 及其 相關的 記憶管理硬件，
+ 它們控制著 特定 進程或線程 可以 訪問的記憶體位址
+
+
+{處} through /θruː/ 通過;穿越
+{肉} though /ðoʊ/ 雖然，儘管
+{則若} thorough /ˈθɝː.ə/ 仔細的 
+
+As we work up from the hardware through the operating system and middleware to the application layer
+, the controls become progressively more complex and less reliable. 
+
+And we find the same access-control functions being implemented at multiple layers. 
+For example, the separation between different phone apps that is provided by Android 
+is mirrored in your browser which separates web page material according to the domain name it came from 
+(though this separation is often less thorough).
+
+And the access controls built at the application layer or the middleware layer 
+may largely duplicate access controls in the underlying operating system or hardware. 
+
+It can get very messy, and to make sense of it 
+we need to understand the underlying principles, the common architectures, and how they have evolved.
+
+當我們從硬體透過作業系統和中介軟體進行到應用程式層，控制隨之逐漸變得更加複雜且不太可靠。
+我們會發現同樣的存取控制功能在多個層面被實施。
+例如，Android 提供的不同手機應用程式之間的隔離，
+在瀏覽器中也有體現，根據來源網域將網頁材料分隔開來
+（儘管這種分隔通常不太徹底）
+
+在 應用程式層或中介軟體層建立的 存取控制
+可能很大程度上 重複了 底層作業系統或硬體中的 存取控制
+
+這可能變得非常混亂，要理解它，
+我們需要了解底層原則、常見架構以及它們的演變
+
+I will start off by discussing operating-system protection mechanisms that support the isolation of multiple processes. 
+
+These came first historically – being invented along with the first time-sharing systems in the 1960s – 
+and they remain the foundation on which many higher-layer mechanisms are built
+, as well as inspiring similar mechanisms at higher layers. 
+
+They are often described as discretionary access control (DAC) mechanisms
+, which leave protection to the machine operator
+, or mandatory access control (MAC) mechanisms which are typically under the control of the vendor 
+and protect the operating system itself from being modified by malware.
+
+我將首先討論 操作系統 保護機制 ，這些機制 支持 多個進程的 隔離
+
+這些機制在歷史上首次出現 - 與20世紀60年代的第一代 分時系統 一起被發明 - 
+並且它們仍然是許多更高層次機制建立的 基礎，同時也 激發了 更高層次相似機制的出現
+
+它們通常被描述為 自主存取控制（DAC）機制 ，這些機制將保護權限留給 機器操作者 ，
+或者 強制存取控制（MAC）機制 ，這些機制通常由 供應商控制 ，並 保護 操作系統 免受 惡意軟件 修改
+
+I’ll give an introduction to software attacks and techniques for defending against them 
+– MAC, ASLR, sandboxing, virtualisation and what can be done with hardware. 
+
+Modern hardware not only provides CPU support for virtualisation and capabilities
+, but also hardware support such as TPM chips for trusted boot to stop malware being persistent. 
+
+我將介紹軟件攻擊以及防禦這些攻擊的技術 
+- 強制存取控制、位址空間配置隨機化（ASLR）、沙盒化、虛擬化以及硬件可以做的事情
+
+現代硬件不僅 提供了 CPU支持 針對虛擬化，
+還提供了 硬件支持 ，例如TPM芯片用於 可信啟動 ，以 阻止 惡意軟件的 持續存在
+
+These help us tackle the toxic legacy of the old single-user PC operating systems 
+such as DOS and Win95/98 which let any process modify any data
+, and constrain the many applications that won’t run unless you trick them into thinking that 
+they are running with administrator privileges.
+
+這些 幫助我們 應對 舊的單用戶個人電腦操作系統的 有害遺產，
+例如DOS和Win95/98，這些系統允許任何進程修改任何數據，
+並限制 許多應用程式，除非你以管理員特權欺騙它們運行
+

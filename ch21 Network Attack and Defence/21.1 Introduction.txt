@@ -1,0 +1,193 @@
+
+21  Network Attack and Defence
+
+21.1 Introduction
+
+In this chapter 
+I’m going to try to draw together the network aspects of security in a coherent framework.
+This is not straightforward as much of network security is practical engineering; 
+a purist from computer science might see the field as one bodge piled on top of another. 
+And network security may not be that important to many developers: 
+if you write apps for Androids and iPhones that talk to services on AWS or Azure
+, then you can leave much of the worry to Amazon or Microsoft.
+But many organisations need to pay attention to network security
+, and there are some visible strategic trends. 
+For twenty years, it was accepted that firms would have a trusted internal network or intranet
+, protected from the Internet by firewalls; 
+while taken to extremes by defence and intelligence organisations
+with classified internal networks, milder versions were seen as best practice by most normal firms. 
+And some industries have no viable alternatives.
+For example, the protocols used in industrial control systems 
+– DNP3 and Modbus – don’t support encryption or authentication
+, as they evolved in the days of leased lines and private radio links. 
+By the late 1990s
+, control systems engineers were attaching sensors and actuators to IP networks
+, as they were cheaper – and then realising that 
+anyone in the world who knew a sensor’s IP address could read it
+, and anyone who knew an actuator’s IP address could activate it. 
+This led to the growth of specialist firms who sell firewalls that understand these protocols; 
+energy companies have thousands of them.
+
+在這一章中，我將 試圖 將 安全性的網絡方面 統合 到 一個 有條理的 框架 中
+這並不是一件簡單的事情，因為許多 網絡安全 都是 實用工程；
+
+一個來自 計算機科學的純粹主義者 可能會把這個領域看作是 一個個補丁 堆疊在一起的
+
+而對許多 開發人員 來說， 網絡安全 可能並 不是那麼重要：
+如果你編寫的應用程序是用於安卓和iPhone，並與AWS或Azure上的服務進行通信，
+那麼你可以將大部分擔憂交給亞馬遜或微軟來處理
+
+但是許多組織需要注意 網絡安全，並且有一些明顯的 戰略趨勢
+二十年來，人們普遍認為公司會擁有一個 受信任的 內部網絡，由 防火牆 保護免受 互聯網 的攻擊；
+儘管被國防和情報組織帶到了極端，但較溫和的版本被大多數正常公司視為最佳實踐
+
+而且有些行業沒有可行的替代方案
+例如，工業控制系統中使用的協議 - DNP3和Modbus - 不支持 加密 或 身份驗證，
+因為它們是在 租用線路 和 私人無線電 連接的 時代發展起來的
+
+到了1990年代後期， 控制系統 工程師將 傳感器 和 執行器 連接到 IP網絡 上，因為它們更便宜 
+- 然後意識到 任何知道 傳感器IP地址的人 都可以讀取它，而 任何知道 執行器IP地址的人 都可以啟動它
+這導致了 專門公司 的增長，他們 出售 能夠 理解這些協議 的 防火牆 ；能源公司 擁有 成千上萬個 這樣的 防火牆
+
+draw together - 表示整合、彙編，指將各方面或各要素聚合在一起。
+purist - 純粹主義者，指一個人堅持純淨、原始、無雜質的概念或做法。
+bodge - 草率或粗製濫造的修補、解決方法。
+piled - 堆疊，指把物體堆積在一起。
+milder - 較溫和的，相對於極端或激烈的。
+realising - 意識到，明白，了解到。
+
+
+A typical electricity substation might have two hundred devices from a multiplicity of vendors
+, on a LAN where performance is critical, so retrofitting crypto is impractical; 
+but it has one connection to the outside world
+, so that’s where you have to put the protection. 
+
+This is known as re-perimeterization. 
+
+The same approach is taken with vehicles, where the internal CANBUS cannot be protected
+, so the radio interfaces with the outside world have to be.
+
+一個典型的 電力變電站 可能會有 來自多個供應商的 兩百個設備，
+這些 設備 連接在一個性能至關重要的 局域網 上，因此 後期 安裝 加密 是 不切實際 的；
+但它與 外部世界 只有一個連接，所以這就是你 必須加入保護的 地方
+
+這就是 所謂的 重新周邊化(re-perimeterization)
+
+在車輛上也採用了相同的方法，內部的CANBUS無法受到保護，
+所以必須 保護 與外部世界進行通信的無線電 接口
+
+單字解釋：
+
+multiplicity - 多樣性、多樣性，表示有多個不同的事物或元素。
+retrofitting crypto - 後期安裝加密，指將加密功能添加到現有系統或設備中，特別是對於已經存在且未設計用於加密的系統
+perimeterization - 在 網絡 安全 中 將 重點 放在 保護系統或網絡的 邊界或周邊
+CANBUS - 控制區域網，是一種在車輛中用於內部通信和控制的串行通訊網絡
+
+Perimeterization 
+是一種網絡安全策略，它強調保護系統或網絡的邊界或周邊
+在這種策略中，安全措施主要集中在防止外部攻擊者進入網絡或系統，
+通常透過防火牆、入侵檢測系統、入侵防禦系統等技術來實現
+
+re-perimeterization
+然而，隨著威脅環境的變化和技術的進步，
+傳統的周邊化安全模型已經變得不夠靈活和有效，
+因此需要重新評估和調整保護策略，
+以應對更加複雜和多樣化的威脅
+
+
+But in many firms the trend is firmly in the other direction, towards deperimeterisation. 
+One thought leader is Google, promoting an architecture without firewalls 
+that it callsa zero-trust security model: 
+“By shifting access controls from the network perimeter to individual users and devices
+, BeyondCorp allows employees, contractors, and other users to work more securely 
+from virtually any location without the need for a traditional VPN.” 
+Google’s experience is that 
+the move to mobile and cloud technology is making network perimeters ever harder to define
+, let alone police, and if a firm’s large enough that 
+some internal compromise is inevitable anyway 
+then the perimeter is the wrong place to put the primary protection [1988]. 
+There are still some perimeter defences
+, most notably against service-denial attacks
+, but internal networks are otherwise unprivileged 
+and the emphasis is on tight authentication and authorisation of users and devices: 
+each service has an Internet-facing access proxy. 
+One might see this as a per-service firewall rather than a per-building firewall
+, but there is quite a lot more to it with tiers of sensitivity
+, a device inventory service and an access control engine [1481]. 
+You also need really good HR data
+, so you can tie staff and contractors to devices and the services they’re allowed to use. 
+Much the same architecture is being adopted by other firms operating large-scale data centres
+, and zero-trust security is now the subject of draft standards activity by NIST [1621]. 
+It will no doubt get a boost from the pandemic because of the huge increase in home working.
+
+在許多公司中，趨勢明顯朝著另一個方向，即去中心化
+一位思想領袖是Google，它提倡一種沒有防火牆的架構，稱之為零信任安全模型：
+
+“通過將 訪問控制 從 網絡周邊 轉移 到 個別用戶和設備，
+BeyondCorp允許員工、承包商和其他用戶在幾乎任何地點更安全地工作，而無需傳統的VPN。”
+
+Google的經驗表明， 移動和雲技術的普及 使得 網絡周邊的 定義 越來越困難，更不用說管理了
+如果一家公司 足夠大， 某些內部妥協 是不可避免的，那麼將 主要保護措施 放在 周邊 是錯誤的
+在這種情況下， 重點 放在 用戶和設備 的 嚴格認證和授權上
+儘管 仍然 存在 一些 周邊防禦措施，尤其是 針對 服務拒絕攻擊，但 內部網絡 在其他方面 都 沒有 特權或特殊權限
+這裡的 重點是 對用戶和設備 進行嚴格的 身份驗證和授權，每個服務都有一個 面向互聯網的訪問代理 
+
+有些人可能會將這視為 每個服務的 防火牆，而不是 每個建築物的 防火牆，
+
+但實際上它還有很 多層次的敏感性，一個設備庫存服務 和 一個訪問控制引擎
+
+您還需要非常好的 人力資源數據，這樣您就可以將 員工和承包商 與 設備 以及 他們被允許使用的 服務 聯繫起來
+這種架構被其他運營大型數據中心的公司所采納，而零信任安全現在正是NIST（美國國家標準與技術研究所）正在制定標準活動的主題
+它無疑將因為大規模的在家辦公而受到疫情的推動而得到推動
+
+perimeter - 周邊，指的是 系統或網絡的 邊界或周邊，是傳統安全策略中的重要概念
+deperimeterisation - 去中心化，指的是 逐漸 移除或淡化 網絡或系統的 周邊 防禦措施，以 適應 現代的 技術和威脅 環境
+BeyondCorp - 超越公司，是Google提出的一種零信任安全模型
+contractors - 承包商，指與公司簽訂合同提供服務的外部個人或組織
+inevitable - 不可避免的，指無法避免的、注定發生的事情
+tiers - 層次，指分層結構中的不同等級或階段
+inventory - 庫存，指存貨或庫存，特指一個組織所持有的設備或資源的清單
+pandemic - 大流行，特指全球性的傳染病大規模爆發，如COVID-19疫情
+
+
+Other organisations may take a hybrid approach. 
+The university where I work, for example, has some defences at the perimeter but largely lets departments do our own thing;
+a computer science department has quite different requirements from a humanities department or the finance office.
+In order to explore the options and constraints, I’m first going to discuss networking protocols 
+such as BGP, DNS and SMTP and the service-denial attacks that can result from their abuse. 
+I’ll then take a closer look at malware, and then at defensive technologies 
+such as filtering and intrusion detection and how defenders can coordinate them. 
+
+I’ll then survey the limitations of widely-used crypto protocols 
+such as TLS, SSH and IPsec, and the particularly tricky role of certification authorities. 
+Finally I’ll return to network architecture. 
+Many issues are complex and interlinked, with some significant trade-offs. 
+
+For example, various kinds of end-to-end crypto can bring benefits 
+– particularly against bulk surveillance – 
+but can get in the way of the surveillance we want for network security.
+
+This chapter will deal with fixed networks
+, and I’ll discuss what’s different about mobile networks in the following chapter.
+
+其他組織可能採取混合方法。
+例如，我工作的大學在周邊設有一些防禦措施，但主要讓各個部門自行決定；
+一個計算機科學系的需求與人文學科系或財務辦公室截然不同
+
+為了 探索 各種選擇和限制，我首先會討論 網絡協議，
+如BGP、DNS和SMTP以及由於 濫用這些協議 可能導致的 服務拒絕攻擊
+然後我將更仔細地研究 惡意軟件，然後是 防禦性技術，
+如 過濾和入侵檢測，以及 防禦者如何協調它們
+
+然後我將 調查 廣泛使用的 加密協議（如TLS、SSH和IPsec）的限制，以及 認證機構 的 尤其棘手的角色
+最後，我將回到 網絡架構 
+許多問題都很 複雜且相互關聯，其中一些有 重大的權衡
+
+例如，各種類型的 端到端加密 可以帶來好處 
+- 特別是 對抗 大規模監視 - 
+但可能會 妨礙 我們想要用於網絡安全的 監視
+
+這一章將處理固定網絡，下一章我將討論移動網絡的不同之處
+
+surveillance - 監視，指對人、地點或活動的持續觀察和監控，通常是為了安全或情報收集的目的。
+

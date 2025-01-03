@@ -1,0 +1,143 @@
+
+Cryptography is where security engineering meets mathematics. 
+It gives us the tools that underlie most modern security protocols. 
+It is the key technology for protecting distributed systems, yet it is surprisingly hard to do right. 
+As we've already seen in Chapter 4, "Protocols," cryptography has often been used to
+protect the wrong things, or to protect them in the wrong way. Unfortunately,
+the available crypto tools aren't always very usable.
+
+密碼學(Cryptography)是 安全工程 與 數學 相結合的地方
+它為大多數現代安全協議提供了基礎工具
+它是 保護 分散系統 的 關鍵技術，然而， 正確應用 它 卻出奇地困難
+正如我們在第四章“協議”中已經看到的那樣，
+密碼學(cryptography)通常被用來 保護 錯誤的 事物，或者 以錯誤的方式 保護它們
+不幸的是，現有的密碼工具(crypto tools)並不總是非常易用
+
+But no security engineer can ignore cryptology. A medical friend once told
+me that while she was young, she worked overseas in a country where, for
+economic reasons, they'd shortened their medical degrees and concentrated
+on producing specialists as quickly as possible. One day, a patient who'd had
+both kidneys removed and was awaiting a transplant needed her dialysis shunt
+redone. The surgeon sent the patient back from the theater on the grounds that
+there was no urinalysis on file. It just didn't occur to him that a patient with no
+kidneys couldn't produce any urine.
+
+但是，沒有安全工程師能夠忽視 密碼學(cryptology)
+
+一位醫學朋友曾告訴我，當她年輕的時候，她曾在一個國家工作，
+由於經濟原因，他們縮短了醫學學位的時間，並集中精力盡快培養專家
+
+有一天，一位已經切除了兩個腎臟並等待移植手術的患者需要重新做透析導管
+外科醫生將患者送回手術室，理由是沒有他的尿液分析報告
+他根本沒有意識到一位沒有腎臟的患者是無法排尿的
+
+Just as a doctor needs to understand physiology as well as surgery
+, so a security engineer needs to be familiar with at least the basics of crypto(and much else). 
+
+There are, broadly speaking, three levels at which one can approach crypto. 
+
+The first consists of the underlying intuitions; 
+
+the second of the mathematics that we use to clarify these intuitions
+, provide security proofs where possible and tidy up the constructions that cause the most confusion;
+
+and the third is the cryptographic engineering - the tools we commonly use
+, and the experience of what can go wrong with them.
+
+正如醫生需要了解生理學以及外科手術一樣，
+安全工程師 也需要 至少 熟悉 加密(crypto)的基礎知識（以及更多）
+廣義而言，可以以三個層次來探索加密(crypto)
+
+第一個層次包括基本的直覺； 
+
+第二個層次是我們用來 澄清 這些直覺的 數學 ，
+以 在可能的情況下 提供 安全 證明，並 整理 造成 最多 混淆的 構造；
+
+第三個層次是密碼工程(cryptographic engineering) - 我們通常使用的工具，
+以及與這些工具 可能出現的問題 相關的經驗
+
+In this chapter, I assume you have no training in crypto 
+and set out to explain the basic intuitions.
+
+I illustrate them with engineering, and sketch enough of the mathematics 
+to help give you access to the literature when you need it. 
+
+One reason you need some crypto know-how is that 
+many common constructions are confusing,
+and many tools offer unsafe defaults.
+
+For example, Microsoft's Crypto API (CAPI) nudges engineers to use electronic codebook mode; 
+by the end of this chapter you should understand 
+what that is, why it's bad, and what you should do instead.
+
+我假設 您對加密(crypto) 沒有任何培訓 ，並 試圖解釋 基本的觀念
+我將通過 工程示例 來加以說明，並 概述 足夠的數學知識，
+以幫助您 在需要時 閱讀相關文獻
+
+您需要一些 加密知識(crypto know-how) 的原因之一是，
+許多 常見的構造 令人困惑，
+而且 許多工具 提供的 默認設置 是不安全的
+
+例如，微軟的 Crypto API（CAPI） 傾向於 讓工程師 使用 electronic codebook 模式；
+通過本章結束時，您應該理解
+這是什麼，為什麼它不好，以及您應該採取什麼替代措施
+
+Many crypto textbooks assume that their readers are pure maths graduates
+, so let me start off with non-mathematical definitions.
+
+Cryptography refers to the science and art of designing ciphers;
+cryptanalysis to the science and art of breaking them;
+while cryptology, often shortened to just crypto, is the study of both.
+
+The input to an encryption process is commonly called the plaintext or cleartext
+, and the output the ciphertext. 
+
+Thereafter, things get somewhat more complicated. 
+There are a number of basic building blocks, such as block ciphers, stream ciphers, and hash functions. 
+
+Block ciphers may either have one key for both encryption and decryption
+, in which case they're called shared-key (also secret-key or symmetric)
+, or have separate keys for encryption and decryption,
+in which case they're called public-key or asymmetric. 
+A digital signature scheme is a special type of asymmetric crypto primitive.
+
+許多密碼學(crypto)教科書假設其讀者是純數學畢業生，
+所以讓我從非數學的定義開始
+
+密碼學(Cryptography) 是指 設計 密碼(ciphers) 的科學與藝術；
+而 密碼分析(cryptanalysis) 是指 破解 密碼(ciphers) 的科學與藝術；
+而 密碼學(cryptology) ，通常簡稱為 crypto ，則是對兩者的研究
+
+加密過程(encryption process)的輸入
+通常被稱為明文(plaintext) 或 清文(cleartext)，而輸出則是密文(ciphertext)
+
+此後，事情變得稍微複雜一些
+有許多基本的構建模塊，
+如 區塊加密(block ciphers)、流式加密(stream ciphers)和雜湊函數
+
+區塊加密 可以具有用於 加密(encryption)和 解密(decryption) 的 同一密鑰(key)，
+此時它們被稱為 共享密鑰(shared-key) 也稱為 秘密鍵(secret-key)或 對稱密鑰(symmetric)，
+
+或者具有用於 加密 和 解密 的 不同密鑰(keys) ，
+此時它們被稱為 公鑰(public-key) 或 非對稱密鑰(asymmetric)
+數字簽名方案 是一種 特殊類型的 非對稱 密碼(crypto) 原理
+
+
+I will first give some historical examples to illustrate the basic concepts. 
+I'll then fine-tune definitions by introducing the security models that cryptologists use
+, including perfect secrecy, concrete security, indistinguishability and the random oracle model.
+
+Finally, I'll show how the more important cryptographic algorithms actually work
+, and how they can be used to protect data. 
+En route, I'll give examples of how people broke weak ciphers
+, and weak constructions using strong ciphers.
+
+我將首先給出一些歷史例子來說明基本概念
+然後，我將 通過 介紹 密碼學家(cryptologists) 使用的安全模型 進一步細化定義，
+包括完美保密性(perfect secrecy)、具體安全性(concrete security)、
+不可區分性(indistinguishability)和隨機神諭模型(random oracle model)
+
+最後，我將展示更重要的 加密算法(cryptographic algorithms) 的實際運作方式，以及它們如何用於保護數據
+在途中，我將舉例說明人們 如何 破解弱密碼(broke weak ciphers)
+以及使用 強密碼(strong ciphers) 的 弱構造(weak constructions)
+

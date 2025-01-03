@@ -1,0 +1,86 @@
+
+
+I’m going to assume some familiarity with basic network protocols.
+The telegraphic summary is as follows.
+The Internet Protocol (IP) is a stateless protocol
+that transfers packet data from one machine to another; 
+IP version 4 uses 32-bit IP addresses
+, often written as four decimal numbers in the range 0–255
+, such as 172.16.8.93. 
+ISPs are migrating to IP version 6, as the 4 billion possible IPv4 addresses are just about allocated; 
+IPv6 uses 128-bit addresses. 
+Some 10–15% of traffic is now IPv6; 
+in many countries a new broadband subscription will get you an IPv6 address which works for all normal consumer purposes.
+Local networks mostly use ethernet
+, in which devices have unique ethernet addresses (also called MAC addresses) 
+that are mapped to IPv4 addresses
+using the address resolution protocol (ARP). 
+The Dynamic Host Configuration Protocol (DHCP) is used to allocate IP addresses to machines as needed 
+and to ensure that each IP address is unique. 
+Network address translation (NAT) also enables multiple devices on a network to use the same Internet-facing IP address
+, typically with different port numbers; 
+this is used by most mobile network operators and many ISPs. 
+
+So if you want to track down a machine that has done something wicked
+, you will often have to get the logs that map MAC addresses of devices to IP addresses. 
+There may be more than one log, and lots can go wrong 
+– such as wrong timestamps, and failure to understand time zones.
+One of the most basic concerns is the prevention and mitigation of denial-of-service (DoS) attacks. 
+These have a number of flavours. 
+An opponent can try to steal some of your IP address space, or one or more of your domains,
+in order to send spam; 
+even when you get it back, you may find it’s been extensively blacklisted. 
+An opponent can send you huge floods of traffic from a botnet of many compromised machines; 
+a distributed denial-of-service (DDoS) attack. 
+They can abuse various online services such as DNS to send you floods of packet traffic. 
+Let’s work through these in turn.
+
+我假設你對基本的網絡協議有一定的了解
+簡而言之，情況如下
+互聯網協議（IP）是一種 無狀態協議 ， 用於將 數據包 從 一台計算機 傳輸到 另一台計算機
+
+IPv4使用32位元的IP地址，通常以0至255的四個十進制數字表示，例如172.16.8.93
+ISP正在遷移到IPv6，因為40億個可能的IPv4地址幾乎已被分配完畢
+IPv6使用128位元的地址。現在約有10-15%的流量是IPv6
+在許多國家，新的寬帶訂閱將為您提供一個IPv6地址，可滿足所有正常消費者需求
+
+本地網絡 主要使用 以太網，
+其中設備具有 唯一的 以太網地址（也稱為MAC地址），
+使用地址解析協議（ARP）將其映射到IPv4地址
+
+動態主機配置協議（DHCP）
+用於根據需要為機器分配IP地址，
+並確保每個IP地址都是唯一的
+
+網絡地址轉換（NAT）還可以
+使網絡上的多個設備 使用 相同的 面向互聯網的IP地址，通常具有不同的端口號；
+這是大多數移動網絡運營商和許多ISP使用的技術。
+
+所以，如果你想要追踪一台惡意行為的機器，
+通常你需要獲取將設備的MAC地址映射到IP地址的日誌
+
+可能會有多個日誌，並且很多問題都可能發生
+錯誤-例如錯誤的時間戳，以及無法理解的時區
+
+其中一個最基本的擔憂是防止和減輕服務拒絕（DoS）攻擊
+這些攻擊有幾種不同的方式
+
+對手可以試圖竊取您的一部分IP地址空間，或者一個或多個您的域名，以發送垃圾郵件；
+即使您將其收回，您可能會發現它已被廣泛列入黑名單
+
+對手可以從許多受到入侵的機器組成的殭屍網絡向您發送大量的流量；分散式服務拒絕（DDoS）攻擊
+他們可以濫用各種線上服務，例如DNS，向您發送大量的封包流量。讓我們逐一來看看這些
+
+
+flavours - 味道、風味，這裡指的是不同的種類或類型。
+blacklisted - 列入黑名單，表示將某人或某物列入禁止使用的名單中。
+
+將以上文字翻譯成繁體中文
+然後根據上下文
+條列解釋以下單字的意思
+flavours
+blacklisted.
+
+
+
+

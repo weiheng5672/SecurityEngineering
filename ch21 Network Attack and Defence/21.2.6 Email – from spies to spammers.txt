@@ -1,0 +1,158 @@
+
+The SMTP standard for email has particular issues 
+around the prevention of bulk interception
+, and the prevention of bulk unwanted mail.
+
+電子郵件的SMTP標準存在特定問題
+在防止大規模截取和防止大規模垃圾郵件方面。
+
+"Interception" 是名詞，指的是截取、攔截或監聽通訊或訊息的行為。
+在這個上下文中，"bulk interception" 意味著大規模截取，指的是大量截取或監聽通訊的行為。
+
+Email is by default neither encrypted nor authenticated
+, and was for decades available to anyone who could either monitor the network or access mail servers. 
+
+電子郵件默認情況下既不加密也不認證，
+數十年來，任何能夠監控網絡或訪問郵件伺服器的人都可以使用它。
+
+It was possible to use programs such as PGP/GPG to encrypt mail, but this never caught on outside small communities. 
+First, such programs can be a pain to use, and second, there are strong network effects: 
+there’s no point in using email encryption if none of your friends do. 
+What’s more, if only a small group of people use encryption, this may just bring them to the attention of the authorities; 
+subversive groups, spies and so on really need anonymity rather than just confidentiality, as we discussed in section 20.4. 
+So PGP/GPG tends to be used by specialists, such as sysadmins and anti-virus researchers.
+
+雖然可以使用像 PGP/GPG 這樣的程式來加密郵件，但這在小型社群之外從未流行起來。
+首先，這類程式可能使用起來比較麻煩；其次，存在著強大的網絡效應：
+如果你的朋友都不使用電子郵件加密，那麼使用它也沒有意義。
+而且，如果只有少數人使用加密，這可能會引起當局的關注；
+顛覆性團體、間諜等真正需要的是匿名性，而不僅僅是機密性，正如我們在20.4節中所討論的那樣。
+因此，PGP/GPG通常是由專家使用，例如系統管理員和反病毒研究人員。
+
+caught on：
+這個片語意思是某事變得流行或受歡迎。
+在這個上下文中，表示郵件加密方法並未在廣泛的使用者中流行起來。
+
+subversive：
+這個詞形容詞形容一個行為或事物，意思是顛覆性的，
+通常指的是企圖推翻或破壞現有體制或權威的。
+在文中，它指的是顛覆性的團體或活動，可能會對現有的權力結構或體制造成威脅。
+
+There are two main countermeasures to bulk interception. 
+First, most mail servers use starttls to set up encrypted communications with other mail servers as they exchange mail
+, especially since the Snowden revelations.
+Encrypted exchanges can be blocked by man-in-the-middle attacks
+, and these have been reported in some less-democratic countries. 
+The current countermeasure to such attacks, MTA Strict Transport Security (MTA-STS), is supported by Microsoft, Google and Yahoo [1222]: 
+it allows mail service providers to specify that mail should only be delivered to them 
+via a TLS session authenticated by a proper certificate which you download from their website. 
+This prevents downgrade or interception attacks on email to and from the big boys
+, and also allows opportunistic, trust-on-first-use encryption to other servers. 
+MTA-STS has generally supplanted an earlier standard
+, DNS-based Authentication of Named Entities (DANE) which put a TLS certificate for starttls in the mail server’s DNS record.
+
+對於大規模截取有兩個主要的對策。
+首先，大多數郵件伺服器使用 starttls 來建立與其他郵件伺服器的加密通訊，特別是自斯諾登事件曝光以來。
+加密的交換可以被中間人攻擊阻擋，這在一些不太民主的國家已經有所報告。
+目前對此類攻擊的對策是MTA Strict Transport Security（MTA-STS），由微軟、谷歌和雅虎支持[1222]：
+郵件服務提供商可以設定，只有通過從他們的網站下載的正確證書進行 TLS 會話驗證後，郵件才會被交付給他們。
+這防止了針對大公司的電子郵件的降級或截取攻擊，還允許對其他伺服器使用機會式、第一次使用即信任的加密。 
+
+降級攻击（Downgrade Attack）
+是一种网络攻击方式，攻击者通过修改通信的协议或加密等级，
+将通信转换为安全性较低或易受攻击的状态。
+在加密通信中，攻击者可能会试图迫使通信双方降低加密强度，
+以便更容易窃取通信内容或对通信进行破解。
+
+截取攻击（Interception Attack）
+是指攻击者截取网络通信的过程，使其能够监视、修改或篡改通信内容。
+攻击者可能会在通信的传输路径上插入自己的设备或软件来截取数据流量，
+从而获取通信内容或执行其他恶意操作。
+在加密通信中，截取攻击可能会破坏通信的保密性和完整性，使得加密数据被窃取或篡改。
+
+MTA-STS通常取代了較早的標準，即基於DNS的命名實體的身份驗證（DANE），該標準在郵件伺服器的 DNS 記錄中放置了 starttls 的 TLS 證書。
+
+starttls：一種郵件傳輸協定的擴展，它使未加密的通信可以在通信開始後加密。通常用於郵件伺服器之間的加密通信。
+Snowden：指愛德華·斯諾登（Edward Snowden），是一位前美國國家安全局（NSA）的承包商，因曝光了美國政府在全球範圍內大規模監視公民的情報活動而聞名。
+revelations：意思是揭示或曝光，通常指對某事物的意外或重要的發現或暴露。
+democratic：指民主的，是一個政治體制或組織的特點，其中權力由人民行使或通過代表民意的方式行使。
+the big boys：這個片語通常指的是大型企業、機構或有權勢的人，即那些在某一行業或領域中具有影響力和地位的重要角色。
+opportunistic：意思是機會主義的，通常指的是根據當前情況或機會行動的人或事物。
+trust-on-first-use：這是一種加密通信的機制，其中第一次通信時，系統會記住對方的公鑰，以便在日後的通信中驗證身份。
+MTA-STS：是一種郵件傳輸安全機制，全稱為Mail Transfer Agent Strict Transport Security，旨在提高郵件系統的安全性。
+supplanted：意思是取代了，代替了，通常指一個事物或方法被另一個事物或方法所取代或淘汰。
+
+
+The second countermeasure is that some 95% of personal email accounts nowadays are at the big five webmail providers
+, and many corporates use them too. 
+In this case, the confidentiality of email is assured by TLS, fortified with certificate pinning and certificate transparency which we’ll discuss later. 
+But although bulk access may be blocked, webmail is subject to warranted access, just like other services that corporates outsource.
+
+第二個對策是，如今大約95%的個人電子郵件帳戶都在五大網頁郵件提供商中，許多企業也使用它們。
+在這種情況下，電子郵件的保密性由 TLS 保證，TLS 通過證書固定和證書透明度進行加強。在後面我們將討論這些機制。
+儘管可能會阻止對郵件的大規模訪問，但網頁郵件服務仍然可能受到合法訪問的限制，就像企業外包的其他服務一樣。
+
+fortified：指加強或增強，通常指在某物的結構或功能上進行增強以提高其強度、安全性或效能。
+pinning：在這裡，指的是證書固定（certificate pinning），是一種保護通訊安全性的機制，通過指定信任的證書，防止使用任意證書對通訊進行攻擊。
+is subject to：意思是受到，遭受，通常指某事物可能受到某種狀態、情況或行為的影響或制約。
+warranted：是動詞 warrant 的過去分詞形式，指的是正當的、合理的、有保證的，通常指某事物是合理或正當的，有足夠的理由支持其存在或發生。
+
+"Outsource" 是一個動詞，指的是將一個公司的特定業務功能或活動外包給外部公司、組織或個人，
+以便讓公司專注於其核心業務。外包通常用於降低成本、提高效率或專業化特定業務領域。
+例如，一家公司可能會將財務、人力資源管理或信息技術等功能外包給專業的服務提供商，這樣可以節省成本並專注於核心業務。
+
+
+Bulk unwanted mail, or spam, has two components. The first is entirely legal
+but unwanted marketing communication. As marketers can make it tiresome
+to opt out, users find it more convenient to press the ‘report spam’ button once
+an offer or supplier is no longer of interest.
+
+The second consists of floods of generally unwanted traffic sent out for the
+most part by botnets, and often with clear criminal intent. This is in some
+respects similar to a DDoS attack: just as DDoS bots may forge IP addresses,
+spam bots may forge the sender’s email address. This is fought by the big
+providers with four main mechanisms.
+
+1. Domain Keys Identified Mail(DKIM) ties email to the sending domain
+by signing it using a signature key whose public verification key is
+kept in the sending domain’s DNS record. The signed material is
+selected to identify the message unambiguously despite the additions
+to headers that occur during transit, but to stop the bad guys adding
+an extra “From: PayPal” header. Mail that hasn’t been altered too
+much can be forwarded. There’s a replay attack in that the spammer
+sends his spam through Gmail, which signs it, and then forwards
+it afterwards; so mail servers cache DKIM signatures and discard
+mail carrying a signature that’s already been seen a few times.
+
+2. Sender Policy Framework (SPF) is similar but ties mail to the source
+IP address. Again, this is verifiable against a key in the domain
+DNS record. SPF doesn’t allow mail forwarding; mailing list
+servers are supposed to use a related protocol called Authenti-
+cated Received Chain (ARC) to re-sign mail they forward.
+
+3. A domain’s DNS can also contain a Domain-based Message Authen-
+tication, Reporting and Conformance (DMARC) record, which
+enables its owner to recommend what a recipient should do
+with email that appears to come from the owner’s domain but
+which fails authentication using both DKIM and SPF.
+
+4. Machine-learning systems are used to filter mail against authentication
+results and other criteria, and take much of their ground truth from
+whether users report mail as spam. This is made more complicated
+by user preferences for marketing material, which vary by user and
+over time.
+
+The illegal segment of spam is now a highly specialised business, run by
+several large gangs. Its statistics have been ‘lumpy’ since the mid-2000s,
+and this has been getting more pronounced. As of 2020, the gangs typically
+steal IP address space using malicious BGP route announcements, register
+thousands of domains, and send a few hundred spams from each before the
+machine-learning filters kick in and block them.
+
+
+翻譯成繁體中文
+然後根據上下文
+條列解釋以下詞彙的意思
+
+
+

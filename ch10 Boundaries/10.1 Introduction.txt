@@ -1,0 +1,240 @@
+
+They constantly try to escape
+From the darkness outside and within
+By dreaming of systems so perfect that no one will need to be good.
+- TS ELIOT
+
+他們不斷試圖 逃離 外在和內在的 黑暗， 透過 夢 想出 完美 到 沒有人 需要 做好人 的 系統 來實現
+
+T.S. Eliot 是一位著名的英國詩人、戲劇家和評論家。
+他被認為是20世紀最重要的詩人之一，
+其作品包括《荒地》（The Waste Land）和《貓》（Old Possum's Book of Practical Cats）等。
+
+這句話出自他的作品，代表了他獨特的觀點和文學風格。
+
+這句話表達了人們尋求 逃離現實 的渴望，
+他們希望通過建立完美的系統來 避免 面對外部和內部的 黑暗
+對於面對困難、挑戰和道德責任的 逃避 ，希望透過一種 理想化 的系統來 取代 真正的 道德行為 和 自我改進
+暗示了人們對於 逃避 現實和自我責任 的傾向，以及他們對於 建立 一個理想化世界的 幻想
+
+You have zero privacy anyway. Get over it.
+- SCOTT MCNEALY
+
+無論如何，你已經沒有隱私了。接受這一點吧。
+
+Scott McNealy 是一位美國企業家和計算機科學家，他是Sun Microsystems公司的共同創辦人之一。
+Sun Microsystems 曾是一家在電腦和軟件領域非常具有影響力的公司，後來於 2010 年被奧拉克（Oracle）收購。
+McNealy 以其對於計算機科技的貢獻而聞名，而上述引用的話語反映了他對於個人隱私議題的看法。
+
+
+When we restrict information flows to protect privacy or confidentiality
+, a policy goal is usually not to prevent information flowing 'down' a hierarchy 
+but to prevent it flowing 'across' between smaller groups.
+
+當我們限制信息流以保護隱私或保密時，
+政策目標通常不是阻止信息在層級間“向下”流動，
+而是阻止它在較小的群體之間“橫向”流動。
+
+If you give the million US Federal employees and contractors 
+with a Top Secret clearance access to too much Top Secret data
+, then you get a whistleblower like Ed Snowden if you're lucky
+, or a traitor like Aldrich Ames if you're not.
+
+如果你給予百萬名美國聯邦僱員和合約工人頂級機密許可證，
+讓他們獲得太多機密數據的訪問權限，
+那麼幸運的話，你可能會得到一個像艾德·斯諾登這樣的告密者，
+如果不幸的話，你可能會得到一個像奧爾德里奇·埃姆斯這樣的叛徒。
+
+As mobile phones spread round the world, they've made wildlife crime easier. 
+Game rangers and others who fight poaching face organised crime, violence and insider threats at all levels
+, but unlike in national intelligence there's no central authority to manage clearances and counterintelligence.
+
+隨著手機在全球擴散，它們使得野生動物犯罪變得更容易。
+打擊盜獵的遊戲巡護員和其他人面臨組織犯罪、暴力和各個層面的內部威脅，
+但與國家情報不同的是，沒有中央機構來管理許可和反情報。
+
+If you let too many people in a health service see patient records
+, you get scandals where staff look up data on celebrities. 
+And the existence of big central systems can lead to big scandals
+, such as where a billion English medical records going back a decade were sold to multiple drug companies.
+
+如果讓太多人在健康服務中查看病人記錄，就會出現工作人員查閱名人數據的醜聞。
+而存在大型中央系統可能會導致大醜聞，例如十年來的十億份英國醫療記錄被出售給多家藥品公司的案例。
+
+Similar issues arise in social care and in education. 
+There are frequent calls for data sharing, yet attempts to do it in practice cause all sorts of problems.
+
+在社會保障和教育領域也存在類似的問題。
+雖然經常有人呼籲進行數據共享，但在實踐中嘗試這樣做卻引起了各種問題。
+
+If you let everyone in a bank or an accountancy firm see all the customer records
+, then an unscrupulous manager could give really good advice to a client 
+by looking at the confidential financial information of that client's competitors.
+
+如果讓銀行或會計事務所的每個人都能查看所有客戶記錄，
+那麼一個不道德的經理可能會通過查看客戶競爭對手的機密財務信息，向客戶提供非常好的建議。
+
+
+The basic problem is that if you centralise systems containing sensitive information
+, you create a more valuable asset and simultaneously give more people access to it. 
+Just as the benefits of networks can scale more than linearly, so can the harms.
+
+基本問題在於，如果將包含敏感信息的系統集中管理，
+你會創造出一個更有價值的資產，同時讓更多人能夠訪問它。
+就像網絡的好處可以超線性擴展一樣，危害也可以。
+
+A common mitigation is to restrict how much information any individual sees. 
+In our five example cases above:
+
+1. Intelligence services put sensitive information into compartments
+, so that an analyst working on Argentina might see only the Top Secret reports 
+relating to Argentina and its neighbouring countries;
+
+2. Systems that support game conservation have to do something similar
+, but access control has to be a federated effort involving
+multiple conservancies, researchers, rangers and other actors;
+
+3. Many hospital systems limit staff access to the wards or departments
+where they work, to the extent that this is reasonably practical
+, and patients have a right to forbid the use of their data outside their direct care. 
+Both are becoming more difficult to implement as systems get more
+complex and their operators lack the incentive to make the effort;
+
+4. In 2010, the UK parliament closed down a system that was supposed to give doctors
+, teachers and social workers shared access to all childrens' data
+, as they realised it was both unsafe and illegal. 
+Yet there's constant pressure for information sharing
+, and all sorts of issues with schools and other institutions using dubious cloud services;
+
+5. Financial firms have 'Chinese walls' between different parts of the business
+, and bank staff are now often limited to accessing records
+for which they have a recent customer authorisation
+, such as by the customer answering security questions over the phone.
+
+一種常見的緩解措施是限制個人所能查看的信息量。在上述的五個案例中：
+
+情報機構將敏感信息劃分為不同的區域，以便分析人員只能查看與其工作相關的最高機密報告，
+例如，負責阿根廷事務的分析人員可能只能查看與阿根廷及其鄰國有關的最高機密報告；
+
+支持野生動物保護的系統必須採取類似的措施，
+但存取控制必須是一個聯邦式的努力，涉及多個保護區、研究人員、巡護員和其他參與者；
+
+許多醫院系統限制工作人員訪問他們工作的病房或部門的範圍，只要這在合理範圍內是實際可行的，
+患者有權禁止將其數據用於直接護理以外的用途。
+隨著系統變得更加複雜，操作人員缺乏進行努力的動力，實施這兩點變得越來越困難；
+
+在2010年，英國議會關閉了一個旨在讓醫生、教師和社會工作者共享所有兒童數據的系統，
+因為他們意識到這既不安全也不合法。
+然而，信息共享受到持續壓力，學校和其他機構使用可疑的雲服務存在各種問題；
+
+金融公司在業務的不同部分之間設有“中國牆”，
+銀行工作人員現在通常僅限於訪問他們最近獲得客戶授權的記錄，
+例如，客戶在電話上回答安全問題後的授權。
+
+We will discuss these kinds of access control in this chapter. There are several aspects: 
+what sort of technical designs are feasible, the operational costs they impose on the organisation
+, and – often the critical factor – whether the organisation is motivated to implement and police them properly.
+
+在本章中，我們將討論這些類型的存取控制。
+有幾個方面需要考慮：什麼樣的技術設計是可行的，它們對組織的運營成本造成了什麼樣的負擔，
+以及——通常是至關重要的因素——組織是否有動力來正確實施和監管它們。
+
+In the last chapter, we discussed multilevel security and saw that it can be hard to get the mechanisms right. 
+In this chapter, we’ll see that when we go for fine-grained access controls, it’s also hard to get the policy right. 
+Are the groups or roles static or dynamic? 
+Are they set by national policy, by commercial law, by professional ethics
+, or – as with your group of Facebook friends – by the system’s users? 
+What happens when people fight over the rules, or deceive each other? 
+Even where everyone is working for the same boss
+, different parts of an organisation can have quite different incentives. 
+Some problems can be technically complex but simple in policy terms (wildlife) 
+while others use standard mechanisms but have wicked policy problems (healthcare).
+
+在上一章中，我們討論了多級安全性，並且發現很難正確設置機制。
+在本章中，我們將看到，當我們選擇了細粒度的訪問控制時，正確設置政策也是很困難的。
+這些組或角色是靜態的還是動態的？
+它們是由國家政策、商業法律、專業道德，
+還是——就像您的Facebook好友一樣——由系統的用戶設置的？
+當人們在規則上爭吵或欺騙彼此時會發生什麼情況？
+即使每個人都是為同一老闆工作，組織的不同部分可能有非常不同的激勵因素。
+有些問題在技術上可能很複雜，但在政策上很簡單（野生動物保護），
+而其他問題可能使用標準機制，但在政策問題上很複雜（醫療保健）。
+
+To start with a simpler case, suppose you’re trying to set security policy at the tax collection office. 
+Staff have been caught in the past making improper access to the records of celebrities
+, selling data to outsiders, and leaking income details in alimony cases [189]. 
+How might you go about stopping that?
+
+讓我們從一個較簡單的情況開始，假設你正在設定稅務徵收辦公室的安全政策。
+過去曾有員工被發現不當地訪問名人的記錄、向外界出售數據，以及在贍養費案件中洩露收入細節。
+你會怎樣阻止這種情況發生？
+
+Your requirement might be to stop staff looking at tax records belonging to a different geographical region
+, or a different industry – except under strict controls. 
+Thus instead of the information flow control boundaries being horizontal
+as we saw in the classic civil service model in Figure 10.1
+, we actually need the boundaries to be mostly vertical, as shown in Figure 10.2.
+
+你的要求可能是阻止員工查看屬於不同地理區域或不同行業的稅務記錄，除非在嚴格的控制下。
+因此，我們需要的信息流控制邊界不像我們在圖10.1中看到的經典公務員模型中那樣是水平的，
+實際上我們需要的邊界大部分是垂直的，如圖10.2所示。
+
+Lateral information flow controls may be organizational
+, as when an intelligence agency keeps the names of agents working in one foreign country
+secret from the department responsible for spying on another. 
+
+橫向信息流控制可以是組織性的，
+例如情報機構 將 在一個外國工作的特工的姓名 對 另一個負責間諜活動的部門 保密。
+
+They may be relationship-based, as in a law firm where different clients’ affairs
+, and the clients of different partners, must be kept separate. 
+
+它們可以是基於關係的，例如在律師事務所中，
+不同客戶的事務 以及 不同合夥人的客戶 必須分開處理。
+
+They may be a mixture of the two
+, as in medicine where patient confidentiality is based in law on the rights of the patient 
+but may be enforced by limiting access to a particular hospital department or medical practice. 
+
+它們可能是兩者的混合，例如在醫學中，病人的保密性是建立在法律上的病人權利，
+但可能通過 限制 對特定醫院部門或醫療實踐的 訪問 來強制執行。
+
+They may be volumetric, as when a game conservancy doesn’t mind declassifying a handful of leopard photos
+but doesn’t want the poachers to get the whole collection, as that would let them work out the best places to set traps.
+
+它們可能是量的，例如一個野生動物保護區可能不介意將一小撮豹子照片解密，
+但不希望盜獵者獲得整個收藏，因為這樣會讓他們找到設置陷阱的最佳地點
+
+Doctors, bankers and spies have all learned that as well as preventing overt information flows
+, they also have to prevent information leakage through side-channels such as billing data. 
+The mere fact that patient X paid doctor Y suggests that X suffered from something in Y’s speciality.
+
+醫生、銀行家和間諜都已經學會，除了防止明顯的信息流外，
+他們還必須防止通過諸如帳單數據等 側信道的信息洩漏。
+僅僅是病人X支付給醫生Y的事實就暗示著X患有Y專業領域的某種疾病。
+
+
+翻譯
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

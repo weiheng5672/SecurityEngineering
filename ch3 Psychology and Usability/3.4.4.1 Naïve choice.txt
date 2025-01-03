@@ -1,0 +1,73 @@
+Since the mid-1980s, people have studied what sort of passwords people choose
+, and found they use spouses’ names, single letters, or even just hit carriage return giving an empty string as their password. 
+
+Cryptanalysis of tapes from a 1980 Unix system showed that of the pioneers, Dennis Ritchie used ‘dmac’(his middle name was MacAlistair); 
+
+the later Google chairman Eric Schmidt used ‘wendy!!!’ (his wife’s name) and Brian Kernighan used ‘/.,/.,’ [796]. 
+
+Fred Grampp and Robert Morris’s classic 1984 paper on Unix security [806] reports that 
+after software became available which forced passwords to be at least six characters long and have at least one nonletter
+, they made a file of the 20 most common female names, each followed by a single digit. 
+
+
+Of these 200 passwords, at least one was in use on each of several dozen machines they examined. 
+At the time, Unix systems kept encrypted passwords in a file /etc/passwd that all system users could read
+, so any user could verify a guess of any other user’s password. 
+
+Other studies showed that requiring a non-letter simply changed the most popular password from ‘password’ to ‘password1’ [1675].
+
+In 1990, Daniel Klein gathered 25,000 Unix passwords 
+and found that 21–25% of passwords could be guessed depending on the amount of effort put in [1058]. 
+
+Dictionary words accounted for 7.4%, common names for 4%, combinations of user and account name 2.7%
+, and so on down a list of less probable choices such as words from science fiction (0.4%) and sports terms (0.2%).
+
+Other password guesses used patterns, such as by taking an account ‘klone’ belonging to the user ‘Daniel V. Klein’ and trying passwords such as klone, klone1, klone123, dvk, dvkdvk, leinad, neilk, DvkkvD, and so on. 
+
+The following year, Alec Muffett released ‘crack’, software 
+that would try to brute-force Unix passwords using dictionaries and patterns derived from them by a set of mangling rules.
+
+The largest academic study of password choice of which I am aware is by Joe Bonneau
+, who in 2012 analysed tens of millions of passwords in leaked password files
+, and also interned at Yahoo where he instrumented the login system to collect live statistics on the choices of 70 million users. 
+
+He also worked out the best metrics to use for password guessability
+, both in standalone systems and where attackers use passwords harvested from one system to crack accounts on another [290]. 
+
+This work informed the design of password strength checkers and other current practices at the big service firms.
+
+自1980年代中期以來，人們一直在研究人們選擇的密碼類型，
+發現他們使用配偶的名字、單個字母，甚至只是按下回車鍵，將空字符串作為他們的密碼。
+
+對1980年Unix系統的磁帶進行的密碼分析顯示，先驅者中，
+Dennis Ritchie使用了"dmac"（他的中間名是MacAlistair）；
+後來的Google董事長Eric Schmidt使用了"wendy!!!"（他妻子的名字），
+Brian Kernighan使用了"/.,/.,"。
+
+Fred Grampp和Robert Morris在他們關於Unix安全性的經典1984年論文中報告說，
+在軟件開發後，強制密碼至少為六個字符長並且至少有一個非字母字符之後，
+他們製作了一個包含20個最常見女性名字的文件，每個名字後跟一個單個數字。
+
+在他們檢查的幾十台機器中，至少有一個使用了這200個密碼。
+當時，Unix系統將加密的密碼保存在一個所有系統用戶都可以讀取的文件/etc/passwd中，
+因此任何用戶都可以驗證對其他用戶的密碼的猜測。
+
+其他研究表明，要求存在非字母字符只是將最受歡迎的密碼從"password"更改為"password1"。
+
+在1990年，Daniel Klein收集了25,000個Unix密碼，發現根據投入的工作量，可以猜測21–25%的密碼。
+
+字典詞占7.4%，常見名字占4%，用戶名和帳戶名的組合占2.7%，
+以此類推，直到一系列不太可能的選擇，例如來自科幻（0.4%）和運動術語（0.2%）的詞。
+
+其他密碼猜測使用模式，例如通過採取屬於用戶"Dani​​el V. Klein"的帳戶"klone"，
+並嘗試密碼，如klone、klone1、klone123、dvk、dvkdvk、leinad、neilk、DvkkvD等。
+
+第二年，Alec Muffett發布了"crack"，這是一種軟件，
+它將嘗試使用字典和由一組扭曲規則衍生的模式來暴力破解Unix密碼。
+
+我所知的最大的一次學術研究是由Joe Bonneau進行的，
+他在2012年分析了數千萬個泄露的密碼文件中的數百萬個密碼，並在雅虎實習，
+他為登錄系統增加了儀表功能，以收集7000萬用戶的密碼選擇的實時統計信息。
+
+他還計算出了在獨立系統中和攻擊者使用從一個系統中獲取的密碼來破解另一個系統帳戶時使用的最佳度量標準。
+這項工作為大型服務公司的密碼強度檢查器的設計和其他當前實踐提供了信息。

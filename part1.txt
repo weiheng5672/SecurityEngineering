@@ -1,0 +1,111 @@
+In the first section of the book, I cover the basics.
+
+The first chapter sets out to clarify concepts and terminology 
+by describing the secure distributed systems commonly found in four environments: 
+a bank, an air force base, a hospital, and the home. 
+
+The second chapter then plunges into the thick of things by
+describing the threat actors and how they operate. 
+We look at state actors such as the US, Chinese and Russian intelligence communities
+, about which we now know quite a lot thanks to disclosures by Ed Snowden and others; 
+we describe the cybercrime ecosystem, which we've been studying for some years now; 
+and we also describe non-financial abuses from cyber-bullying and intimate partner abuse 
+up to election manipulation and political radicalisation. 
+This teaches that a wide range of attackers use similar techniques
+, not just at the technical level 
+but increasingly to deceive and manipulate people.
+
+In the third chapter we therefore turn to psychology.
+Phishing is a key technique for both online crime and national intelligence gathering; 
+usability failures are exploited all the time, and are really important for safety as well as security. 
+One of the most fruitful areas of security research in recent years has therefore been psychology. 
+Security engineers need to understand how people can be deceived
+, so we can design systems that make deception harder. 
+We also need to understand how risk perceptions and realities have drifted ever further apart.
+
+The following chapters dig deeper into the technical meat. 
+
+The fourth chapter is on security protocols, which specify 
+how the players in a system 
+- whether people, computers, phones or other electronic devices - 
+establish and maintain trust. 
+
+The fifth is on the 'duct tape' that underlies most of the protocols and holds distributed systems together: cryptography. 
+This is the art (and science) of codes and ciphers; 
+but it is much more than a clever means for keeping messages secret from an eavesdropper. 
+Nowadays its job is taking trust from where it exists to where it's needed
+, maintaining the integrity of security contexts, and much more besides.
+
+The sixth chapter is on access control:
+how can we keep apart the different apps on a phone
+, or the different virtual machines or containers on a server
+, and how can we control the data flows we want to permit between them.
+Sometimes this can be done cleanly, but often it's hard; 
+web browsers deal with JavaScript code from multiple untrustworthy websites
+, while home assistants have to deal with multiple people.
+
+我們如何在手機上保持不同應用程式之間的區分，
+或者在伺服器上保持不同虛擬機器或容器之間的區分，
+以及我們如何控制我們希望允許的數據流
+有時這可以做得很乾淨，但往往很困難；
+網頁瀏覽器要處理來自多個不可信網站的JavaScript代碼，
+而家庭助手則必須處理多個人
+
+The next chapter is on distributed systems. 
+Systems that run on multiple devices have to deal with coordination problems 
+such as concurrency control, fault tolerance, and naming. 
+These take on subtle new meanings when systems must be made resilient against malice as well as against accidental failure.
+Many systems perform poorly or even fail because their designers don't think through these issues.
+
+在 多個設備上運行的系統 必須處理 協調問題 ，如 並發控制 、 容錯容忍度 和 命名
+當系統必須對抗 惡意 以及 意外故障 時，這些問題會產生 微妙的 新含義
+許多系統表現不佳甚至失敗，因為它們的設計者沒有深思熟慮這些問題
+
+resilient 有彈性的；能復原的；有復原力的；適應性強的
+
+The final chapter in this part is on economics. 
+Security economics has grown hugely since this book first appeared in 2001 and helped to launch it as a subject. 
+We now know that many security failures are due to perverse incentives rather than to deficient technical protection mechanisms. 
+(Indeed, the former often explain the latter.) 
+The dependability of a system is increasingly an emergent property that depends on the self-interested striving of large numbers of players; 
+in effect it's an equilibrium in a market. 
+Security mechanisms are not just used to keep 'bad' people out of 'good' systems
+, but to enable one principal to exert power over another; they are often abused to capture or distort markets. 
+If we want to understand such plays, or to design systems that resist strategic manipulation, we need some game theory and auction theory.
+
+自從這本書於2001年首次出版以來，安全經濟學已經蓬勃發展，並幫助將其作為一門學科推出
+我們現在知道，許多 安全失敗 是 由於 扭曲的激勵 ，而 不是 因為 技術保護機制不足
+（事實上，前者通常解釋了後者。）
+系統的 可靠性 越來越成為一種 新興屬性 ，它取決於大量參與者的 自利 努力 ；實際上，它是 市場 中的一種 均衡
+安全機制不僅僅用於 將“壞”人排除在“好”系統之外 ，還用於讓 一方主體 對 另一方 施加權力；它們經常被 濫用 來 佔領或扭曲市場
+如果我們想要理解這類行為，或者 設計 抵抗戰略操縱的 系統 ，我們需要一些 博弈論 和 拍賣理論
+
+
+These chapters cover basic material, and largely follow what we teach first-year and second-year undergraduates at Cambridge. 
+But I hope that even experts will find the case studies of interest and value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

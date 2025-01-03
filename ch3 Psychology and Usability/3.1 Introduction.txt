@@ -1,0 +1,153 @@
+Many real attacks exploit psychology at least as much as technology. 
+We saw in the last chapter 
+how some online crimes involve the manipulation of angry mobs
+, while both property crimes and espionage make heavy use of phishing
+, in which victims are lured by an email to log on to a website that appears genuine 
+but that's actually designed to steal their passwords or get them to install malware.
+
+Online frauds like phishing are often easier to do, and harder to stop, than similar real-world frauds 
+because many online protection mechanisms are neither as easy to use nor as difficult to forge 
+as their real-world equivalents. 
+
+It's much easier for crooks to create a bogus bank website 
+that passes casual inspection than to build an actual bogus bank branch in a shopping street.
+
+許多真實攻擊至少在心理學上與技術同樣重要 
+我們在上一章中看到
+一些線上犯罪涉及操縱憤怒的暴民，
+而財產犯罪和間諜活動都大量使用釣魚，
+受害者被誘使通過電子郵件登錄到看似真實
+但實際上旨在竊取其密碼或讓他們安裝惡意軟件的網站上。
+
+像釣魚這樣的 線上欺詐 通常比 類似的 現實世界欺詐 更容易進行，更難阻止，
+因為許多在線保護機制 既不像 現實世界的等效品 那麼容易使用， 也不那麼 難以仿造
+
+對於罪犯來說，
+創建 一個通過粗略檢查即可通過的 假銀行網站
+要比 在街上 建立 一個實體的 假銀行分行 容易得多
+
+
+espionage: 間諜活動 
+genuine: 真的
+Frauds: 欺詐行為，詐騙
+Bogus: 假的，偽造的
+Forge: 仿造，偽造
+Crooks: 騙子，詐騙者
+Casual: 隨便的，非正式的
+
+We've evolved social and psychological tools over millions of years 
+to help us deal with deception in face-to-face contexts
+, but these are less effective when we get an email that asks us to do something.
+
+For an ideal technology, good use would be easier than bad use.
+We have many examples in the physical world: 
+a potato peeler is easier to use for peeling potatoes than a knife is
+, but a lot harder to use for murder.
+But we've not always got this right for computer systems yet.
+
+Much of the asymmetry between good and bad on which we rely in our daily business 
+doesn't just depend on formal exchanges - which can be automated easily - 
+but on some combination of physical objects, judgment of people, and the supporting social protocols. 
+
+So, as our relationships with employers, banks and government 
+become more formalised via online communication
+, and we lose both physical and human context
+, the forgery of these communications becomes more of a risk.
+
+我們在數百萬年的演化過程中發展了社交和心理工具，幫助我們應對面對面情境中的欺騙，
+但是當我們收到一封要求我們採取行動的電子郵件時，這些工具就不太有效了
+
+對於理想的技術來說，良好的使用應該比惡劣的使用更容易
+在物理世界中我們有許多例子：馬鈴薯削皮器用於削馬鈴薯比用刀更容易，但用於謀殺則難度大得多
+但是對於電腦系統，我們還沒有做到這一點
+
+我們日常業務中 善惡之間的不對稱
+很大程度上 不僅僅依賴於 正式的交流（這可以很容易地自動化），
+而是依賴於一些 物理物件 、 對人的判斷 以及 支持的社會規範的組合
+
+因此，隨著我們與雇主、銀行和政府之間的關係通過線上通訊變得更加正式化，
+並且我們 失去了 物理和人的背景 ，這些通訊的偽造就變得更加危險了
+
+Peeler: 一種用來削去水果或蔬菜皮的工具
+Forgery: 仿製，假造
+
+"physical objects" 
+具體的物品或實體，可能用於進行交易、認證身份或實現安全性
+這可能包括身份證、鑰匙、USB 安全密鑰等，用於確認身份或進行身份驗證
+
+"judgment of people" 
+人們的判斷力或辨識能力，通常用於評估其他人的行為是否可信或真實
+這可能包括透過 面對面交流 來判斷 對方的 誠實程度 或 真誠意圖
+
+"supporting social protocols" 
+支持社會互動和溝通的規範或標準，這些規範可能是隱含的或明確的
+這可能包括公認的溝通方式、商業約定或社會禮儀，用於 建立信任 或 確保信息的安全傳遞
+
+Deception, of various kinds, is now the principal mechanism used to defeat online security. 
+It can be used to get passwords, to compromise confidential information 
+or to manipulate financial transactions directly.
+
+Hoaxes and frauds have always happened, but the Internet makes some of them easier
+, and lets others be repackaged in ways that may bypass our existing controls 
+(be they personal intuitions, company procedures or even laws).
+
+各種形式的欺騙現在是擊敗線上安全的主要機制
+它可以用來獲取密碼，侵害機密信息，或直接操縱金融交易
+
+惡作劇和欺騙一直都存在，但互聯網使其中一些變得更容易，
+有人可能重新包裝這些手法
+規避現有的控制方式（無論是個人直覺、公司程序，還是法律）
+
+Hoaxes：惡作劇，指故意欺騙或愚弄他人的行為或消息
+repackaged：重新包裝，指將某物重新打包或重新製作，以改變其外觀或形式
+
+Another driver for the surge in attacks based on social engineering is that 
+people are getting better at technology.
+As designers learn how to forestall the easier technical attacks
+, psychological manipulation of system users or operators becomes ever more attractive. 
+
+So the security engineer absolutely must understand basic psychology
+, as a prerequisite for dealing competently with everything from passwords to CAPTCHAs 
+and from phishing to social engineering in general; 
+a working appreciation of risk misperception and scaremongering 
+is also necessary to understand the mechanisms 
+underlying angry online mobs and the societal response to emergencies 
+from terrorism to pandemic disease. 
+
+So just as research in security economics led to a real shift 
+in perspective between the first and second editions of this book
+, research in security psychology has made much of the difference 
+to how we view the world between the second edition and this one.
+
+社會工程攻擊激增的另一個驅動因素是人們在技術上變得更加嫻熟
+隨著設計師們學會如何預防更簡單的技術攻擊，
+對系統用戶或操作者的心理操控變得越來越有吸引力
+
+因此，安全工程師絕對必須了解基本心理學，作為應對從密碼到 CAPTCHA，
+從釣魚到社會工程等各種問題的能力的 先決條件；
+對 風險誤解 和 危言聳聽 的 工作認識 也是必要的，
+以理解引起 憤怒的線上暴民 和 從 恐怖主義 到 流行病 等緊急情況下的 社會反應的機制
+
+就像安全經濟學的研究在本書的第一版和第二版之間引起了真正的觀點轉變一樣，
+安全心理學的研究也在本書的第二版和本版本之間產生了很大的不同。
+
+surge：激增，劇增。
+forestall：預防，阻止。
+prerequisite：先決條件，必要條件。
+competently：有能力地，稱職地。
+misperception：誤解，錯誤的理解。
+scaremongering：危言聳聽，散布恐懼。
+perspective：觀點，看法。
+
+In the rest of this chapter, I’ll first survey relevant research in psychology
+, then work through how we apply the principles 
+to make password authentication mechanisms more robust against attack
+, to security usability more generally
+, and beyond that to good design.
+
+概述與心理學相關的研究，
+然後逐步解釋我們如何應用這些原則，
+使密碼身份驗證機制更加堅固，以抵禦攻擊，
+使安全性的可用性更加普遍，
+以及在此之上實現良好的設計
+

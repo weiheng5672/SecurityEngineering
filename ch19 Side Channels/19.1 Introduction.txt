@@ -1,0 +1,110 @@
+
+The hum of either army stilly sounds,
+That the ﬁxed sentinels almost receive
+The secret whispers of each others’ watch;
+Fire answers ﬁre, and through their paly ﬂames
+Each battle sees the other’s umber’d face.
+– WILLIAM SHAKESPEARE, KING HENRY V, ACT IV
+
+「兩軍間依舊彼此呼嘯，
+固定哨兵幾近能夠
+聽到對方的暗語；
+火光迴盪，透過淡淡的炎光，
+每一方都看到對方
+在火光中的模糊臉龐。」
+
+莎士比亞的《亨利五世》第四幕，描述了兩支對峙的軍隊相互間隔離的情景
+
+
+Optimisation consists of taking something that works and replacing
+it with something that almost works but is cheaper.
+– ROGER NEEDHAM
+
+"優化是將一個有效的東西替換為一個幾乎有效但更便宜的東西。" 
+
+羅杰·尼德漢（Roger Needham）是一位計算機科學家，他在計算機科學領域做出了重要貢獻
+他曾在劍橋大學任教，並且擔任過微軟劍橋研究院的院長
+尼德漢的研究涉及分佈式計算、安全性、作業系統等領域
+他也因提出了許多重要的計算機科學理論和概念而聞名
+
+
+Electronic devices such as computers and phones leak information in all
+sorts of ways. A side channel is where information leaks accidentally via
+some medium that was not designed or intended for communication; a covert
+channel is where the leak is deliberate. Side channel attacks are everywhere,
+and 3–4 of them have caused multi-billion dollar losses.
+1. First, there are conducted or radiated electromagnetic signals,
+which can compromise information locally and occasionally at
+longer ranges. These ‘Tempest’ attacks led NATO governments
+to spend billions of dollars a year on shielding equipment, start-
+ing in the 1960s. After the end of the Cold War, people started
+to realise that there had usually been nobody listening.
+2. Second, side channels leak data between tasks on a single device, or
+between devices that are closely coupled; these can exploit both power
+and timing information, and also contention for shared system resources.
+The discovery of Differential Power Analysis in the late 1990s held up
+the deployment of smartcards in banking and elsewhere by 2–3 years
+once it was realised that all the cards then on sale were vulnerable.
+
+電子設備如電腦和手機通過各種方式洩漏信息。
+側信道是信息意外地通過某些未經設計或意圖用於通信的媒介洩漏的地方；
+隱蔽信道是故意洩漏的地方。側信道攻擊無處不在，其中3-4起已造成數十億美元的損失。
+
+首先，有導體或輻射的電磁信號，它們可以在本地以及偶爾在更長的範圍內危害信息。
+這些「風暴」攻擊導致北約各國政府從1960年代開始每年花費數十億美元用於屏蔽設備。
+冷戰結束後，人們開始意識到通常沒有人在聽。
+
+其次，側信道在單個設備上的任務之間或者在密切耦合的設備之間洩漏數據；
+這些可以利用功耗和時間信息，也可以利用共享系統資源的爭用。
+在1990年代末發現差分功耗分析後，人們意識到當時所有銷售的智能卡都存在漏洞，這延遲了銀行和其他地方的智能卡部署2-3年。
+
+3. The third multibillion-dollar incident started in January 2018 with
+the announcement of the ‘Spectre’ and ‘Meltdown’ attacks, which
+exploit speculative execution to enable one process on a CPU to snoop
+on another, for example to steal its cryptographic keys. This will
+probably force the redesign of all superscalar CPUs over 2020–5.
+4. There are attacks that exploit shared local physical resources, such as
+when a phone listens to keystrokes entered on a nearby keyboard, or
+indeed on a keyboard on its own touch screen – whether that sensing is
+done with microphones, the accelerometer and gyro, or even the camera.
+Another example is that a laser pulse can create a click on a microphone,
+so a voice command can be given to a home assistant through a window.
+So far, none of the side-channel attacks on phones and other IoT devices
+has scaled up to have major impact – but there are ever more of them.
+5. Finally, there are attacks that exploit shared social resources. An
+example is identifying someone in a supposedly anonymous
+dataset from patterns of communications, location history or even
+just knowing when they went on holiday. This has led to many
+poor policy decisions and much wishful thinking around whether
+personal data can be anonymised sufficiently to escape privacy
+law. There have been both scandalous data leaks, and complaints
+that data should be made more available for research and other
+uses. It’s hard to put a dollar value on this, but it is significant in
+fields such as medical research, as we discussed in Chapter 11.
+We have known about side channels for years but have consistently under-
+estimated the importance of some, while spending unreasonable sums on
+defending against others. A security engineer who wants to protect systems
+long-term without either overlooking real and scalable threats, or wasting
+money chasing shadows, needs to understand the basics.
+
+第三起數十億美元的事件始於2018年1月，當時宣布了「幽靈」和「熔斷」攻擊，
+利用了推測執行來使CPU上的一個進程能夠窺探另一個進程，例如竊取其加密密鑰。
+這可能迫使在2020-2025年期間重新設計所有超級標量CPU。
+
+還有一些攻擊利用共享的本地物理資源，比如當手機監聽附近鍵盤輸入時，
+或者確實在其觸摸屏上的鍵盤上監聽時——不管感測是通過麥克風、加速度計和陀螺儀，
+甚至是攝像頭完成的。另一個例子是激光脈衝可以在麥克風上產生點擊聲，
+因此可以通過窗戶向家庭助手發出語音命令。
+到目前為止，對手機和其他物聯網設備的側信道攻擊都還沒有擴大到產生重大影響的程度——但這些攻擊越來越多。
+
+最後，還有一些攻擊利用共享的社交資源。
+一個例子是通過通信模式、位置歷史甚至僅僅知道他們何時度假等
+來辨識在一個被認為是匿名的數據集中的某人。
+這導致了許多不良政策決策和對個人數據是否能夠被足夠匿名化以避開隱私法律的幻想。
+既有令人震驚的數據洩漏，也有關於應該使數據更加可用於研究和其他用途的投訴。
+很難對此估值，但在醫學研究等領域，這是顯著的，正如我們在第11章中討論的那樣。
+
+我們多年來一直知道側信道，但一直低估了其中一些的重要性，同時又在防御其他攻擊上浪費了不合理的金錢。
+一位想要長期保護系統而既不忽視真實且可擴展的威脅，也不浪費金錢追逐幻影的安全工程師需要了解基礎知識。
+
+

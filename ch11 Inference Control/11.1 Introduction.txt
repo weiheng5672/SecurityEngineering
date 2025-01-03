@@ -1,0 +1,180 @@
+
+
+"Inference Control"（推論控制）
+
+是指在資料 隱私保護 中的一種技術或方法。
+
+它的目的是通過 限制 對已知資訊和統計分析的 訪問 ，來 防止 敏感資訊的未授權 推論 。
+當人們可以通過 分析 已知的數據 來 推斷 出原始數據中的 敏感信息 時，就存在著隱私風險。
+因此，推論控制的目標是在數據共享或發佈時，確保通過 控制 訪問和使用方式 來 最小化 這種推論風險。
+
+
+Privacy is a transient notion. 
+It started when people stopped believing that God could see everything 
+and stopped when governments realised there was a vacancy to be filled.
+– ROGER NEEDHAM
+
+隱私是一個隨著時間變化的概念
+隱私的觀念起源於人們不再相信上帝可以無所不見，因此開始注意保護自己的私密信息
+然而，隨著時間的推移，政府意識到這是一個可以填補的空缺，因此開始介入監管和控制個人的隱私
+
+羅杰·尼德姆（Roger Needham），是一位著名的計算機科學家，曾在計算機安全和隱私方面做出了重要貢獻
+
+“Anonymized data” is one of those holy grails, like “healthy ice-cream” or
+“selectively breakable crypto”.
+– CORY DOCTOROW
+
+"匿名化數據"是一個看似理想但實際上難以實現的目標，就像"健康的冰淇淋"或"選擇性可破解加密"一樣
+
+
+科幻作家Cory Doctorow，他以探討科技和社會議題聞名，經常關注數字隱私和數據安全等問題
+在這句話中，他暗示了匿名化數據的挑戰，即使看似可以實現，實際上仍然難以保護個人隱私
+
+"Grail" （圣杯）在這裡用作象徵性的概念，指代人們渴望但很難實現的理想或目標
+使用"grail"來描述"匿名化數據"，暗示它雖然看似理想，但實際上難以完全實現
+
+
+Just as Big Tobacco spent decades denying that smoking causes lung cancer
+, and Big Oil spent decades denying climate change
+, so also Big Data has spent decades pretending that sensitive personal data can easily be ‘anonymised’ 
+so it can be used as an industrial raw material without infringing on the privacy rights of the data subjects.
+
+就像大煙草業花了幾十年否認吸煙會導致肺癌一樣，
+大石油業也花了幾十年否認氣候變化，
+同樣地，大數據業也花了幾十年假裝敏感的個人數據可以輕易地被「匿名化」，
+這樣就可以將其用作工業原材料而不侵犯數據主體的隱私權。
+
+大數據公司 聲稱 他們將數據「匿名化」後，可以將其用於商業目的，而 不會 侵犯數據主體的隱私權。
+他們 聲稱 這些數據被去識別化後，不再關聯到特定的個人，因此 不會 構成對個人隱私權的侵犯。
+
+Anonymisation is an aspirational term that means stripping identifying information from data 
+in such a way that useful statistical research can be done without leaking information about identifiable data subjects.
+
+匿名化是一個 具有理想主義色彩的字眼，意味著從數據中剝離識別信息，
+以便可以進行有用的統計研究，而不會泄露有關可識別數據主體的信息。
+
+Its limitations have been explored in four waves of research, each responding to the technology of the day.
+
+這個方法的局限性已經在四波研究中被探索，每一波研究都回應了當時的技術
+
+The first wave came in the late 1970s and early 1980s in the context of the US census
+, which contained statistics that were sensitive of themselves 
+but where aggregate totals were required for legitimate reasons
+such as allocating money to states; 
+and in the context of other structured databases from college marks through staff salaries to bank transactions.
+Statisticians started to study how information could leak, and to develop measures for inference control.
+
+第一波研究始於1970年代末至1980年代初，主要在美國人口普查的背景下進行，
+該普查包含了敏感的統計信息，這些數據的總和結果是必要的，用於合法的目的，例如將資金分配給各州；
+在其他結構化的數據庫中，比如大學成績、職員薪水、銀行交易等等，
+也存在類似的情況，需要對敏感數據進行統計總結，同時保護個人隱私
+統計學家開始研究信息如何洩漏，並制定推論控制的措施
+
+The second wave came in the 1990s as medical records were computerised.
+Both health service administrators and medical researchers saw this as a treasure trove
+, and hoped that removing patients’ names and addresses would be enough to make the data non-personal. 
+This turned out to be insufficient because of the richness of the data
+, which led to tussles in several countries including the USA, the UK, Germany and Iceland. 
+There have since been multiple scandals when inadequately anonymised data were leaked or even sold.
+
+第二波研究出現在1990年代，隨著醫療記錄的電腦化。
+無論是健康服務管理者還是醫學研究人員都將這視為一個寶藏，
+希望刪除患者的姓名和地址就足以使數據不再具有個人特徵。
+然而，這被證明是不夠的，因為數據的豐富性，
+這導致了包括美國、英國、德國和冰島在內的多個國家的爭執。
+此後，出現了多起因未充分匿名化的數據泄露甚至出售而引起的醜聞。
+
+The third wave, in the mid-2000s, came when people realised they could use search engines 
+to identify people in large datasets of consumer preferences 
+such as movie ratings and search engine logs. 
+
+An advance in theory came in 2006, when Cynthia Dwork and colleagues developed the theory of differential privacy
+, which quantifies the extent to which inferences can be prevented by limiting queries and adding noise
+, enabling us to add noise where it’s needed.
+This is now being used in the US census, whose experience teaches a lot about its practical limits.
+
+第三波在2000年代中期到來，當時人們意識到他們可以使用搜索引擎來識別大型數據集中的個人偏好，例如電影評分和搜索引擎日誌。
+
+ 搜索引擎日誌通常不是公開存放在服务器上的，而是保存在搜索引擎公司的内部系统中作为日志文件。
+ 这些日志记录着用户的搜索历史、点击记录等信息，以帮助搜索引擎改进搜索结果和提供个性化的服务。
+ 然而，这些日志在一定的情况下可能会被用于研究或数据分析目的，但通常是在匿名化处理后才会被共享或公开。
+ 即使在網絡上的數據是匿名的，但通過分析用戶的電影評分和搜索引擎日誌等大型數據集，仍然可以推斷出個人的身份或其他敏感信息。
+
+理論上的一項進步出現在2006年，當時辛西婭·德沃克（Cynthia Dwork）及其同事們發展出了差分隱私的理論，
+該理論 量化了 限制查詢和添加噪音可以阻止推論的 程度，使我們能夠在需要時添加噪音。
+
+ 差分隱私理論提供了一種方法來量化這種隱私泄露的程度，
+ 並且該理論還提出了限制查詢和添加噪音的方法，以減少這種推斷的可能性。
+
+這現在被應用在美國人口普查中，其經驗對其實際限制有很多教訓。
+
+The fourth wave came upon us in the late 2010s 
+with social media, pervasive genomics and large databases of personal location histories 
+collected by phone apps and widely sold to marketers. 
+
+Ever more companies who sell personal information at scale 
+pretend that it isn’t personal because names are somehow tokenised. 
+
+Ever more press articles show how bogus such claims usually are. 
+
+For example, in December 2019 the New York Times reported 
+analysing the mobile-phone location history of 12 million Americans over a few months
+, locating celebrities, rioters, police, Secret Service officers and even sex-industry customers without difficulty 
+
+
+第四波在2010年代末出現，
+隨著社交媒體、普遍存在的基因組學
+和 由手機應用程序收集 並 廣泛出售給營銷人員的 個人位置歷史的 大型數據庫。
+
+越來越多的公司以大規模出售個人信息，假裝這些信息並不屬於個人，因為名字被某種方式標記化了。
+越來越多的新聞文章表明，這些主張通常是虛假的。
+例如，2019年12月，《紐約時報》報導了
+對1200萬美國人幾個月的手機定位歷史的分析，
+輕鬆定位到名人、暴徒、警察、特勤局人員，甚至是性產業客戶
+
+
+We face a yawning gap
+between
+what can be done using anonymisation and related privacy technologies
+, and 
+what stakeholders from medical researchers through marketers to politicians would like to believe is possible. 
+
+This gap has been the subject of much discussion and, as with tobacco and carbon emissions, political argument.
+
+As our knowledge of the re-identification risks becomes ever more detailed and certain
+, so the hopes of both governments and industry become ever more unrealistic. 
+
+Governments repeatedly call for proposals,
+and data users call for contractors, to create services that cannot be created;
+all too often, contracts for privacy services are won by the more ignorant or
+unscrupulous operators.
+
+我們面臨著一個巨大的鴻溝，即
+使用匿名化和相關隱私 技術所能實現的，
+以及 
+醫學研究人員、營銷人員和政治家等 利益相關者希望可以實現的 
+之間存在著巨大的差距。
+
+這個鴻溝一直是許多討論的主題，就像煙草和碳排放一樣，成為政治爭論的焦點。
+
+隨著我們對重新識別風險的 了解變得越來越詳細和確定，政府和行業的 希望也變得越來越不現實。
+
+政府反复呼籲提出建議，數據使用者呼籲承包商創建無法創建的服務；
+而往往，隱私服務的合同由更無知或不道德的營運商贏得。
+
+It must be said that not all governments have simply been ignorant. 
+Both the UK and Ireland, for example, annoyed other EU member states for years
+by allowing firms to pretend that data were anonymous when they clearly weren’t
+, and this was one of the factors that led the EU to pass the General Data Protection Regulation (GDPR)
+, as I will discuss later in section 26.6.1.
+
+Since it came into force, the wriggle room for wishful thinking has become less 
+– though even the European institutions have sometimes had a rosy view of what can be achieved by de-identification.
+
+必須說，並非所有政府都只是無知的。
+例如，英國和愛爾蘭政府允許企業聲稱他們處理的數據是匿名的，即使實際上這些數據並不具有真正的匿名性，而惹惱了其他歐盟成員國多年。
+
+這是導致歐盟通過《通用數據保護規則》（GDPR）的因素之一，我將在後面的第26.6.1節中進行討論。
+自該規則生效以來，不切實際想法的彈性空間 已經減少了，
+但即使歐洲機構有時對去識別能夠實現的目標也持樂觀的觀點。
+

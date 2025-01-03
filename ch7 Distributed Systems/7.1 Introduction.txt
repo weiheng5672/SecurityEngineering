@@ -1,0 +1,87 @@
+
+
+A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.
+
+一個分散式系統是指你甚至不知道存在的電腦的故障可能會導致你自己的電腦無法使用
+
+"Render" 是一個動詞，表示使得、使成為、使得處於某種狀態，
+在上下文中，它表示某個事件或行為導致了某種結果或狀態
+
+例如，"render your own computer unusable" 意味著
+使你自己的電腦無法使用
+
+
+What's in a name? That which we call a rose by any other name would smell as sweet.
+
+名字中蘊含的意義是什麼？不管我們稱之為什麼名字，玫瑰的芬芳依舊甜美
+
+這句話出自莎士比亞的《羅密歐與茱麗葉》（Romeo and Juliet），表達了以下的意思：
+
+這句話指出名字本身並不影響事物的本質或特性
+即使我們用不同的名字來稱呼同一件事物，它的本質或特性仍然不變
+
+在這個例子中，莎士比亞強調了愛情的真正本質不受外界的影響，
+不論我們如何稱呼它，它的本質依然是美好的，
+就像玫瑰花一樣，即使我們稱呼它們為其他名字，它們的芳香依然一樣甜美
+
+
+We need a lot more than authentication, access control and cryptography tobuild a robust distributed system of any size. 
+Some things need to happen quickly, or in the right order
+, and matters that are trivial to deal with for a few machines become a big deal 
+once we have hyperscale data centres with complex arrangements for resilience. 
+
+Everyone must have noticed that when you update your address book with an online service provider
+, the update might appear a second later on another device, or perhaps only hours later.
+
+我們需要比驗證、訪問控制和加密更多的東西來建立一個任何大小的健壯的分散式系統
+有些事情需要快速發生，或按照正確的順序進行，
+而對於少數機器來說不重要的事情， 在 擁有 具有複雜的恢復能力安排的 超大規模數據中心 時 ，就變得非常重要
+
+每個人都會注意到，當你使用 線上服務提供商 更新你的通訊錄時，
+更新 可能 一秒鐘後 會在另一個設備上出現 ，或者 可能只有幾個小時後才出現
+ 
+
+Over the last 50 years, we've learned a lot about issues such as concurrency, failure recovery and naming 
+as we've built things ranging from phone systems and payment networks to the Internet itself. 
+
+在過去的50年裡，
+隨著我們建立了各種事物，從電話系統和支付網絡到互聯網本身，
+我們學到了很多關於並發性、故障恢復和命名等問題
+
+We have solid theory, and a lot of hard-won experience.
+These issues are central to the design of robust secure systems but are often handled rather badly.
+
+我們擁有扎實的理論基礎，以及許多艱辛獲得的經驗
+這些問題對於設計強健的安全系統至關重要，但通常處理得相當糟糕
+
+I've already described attacks on protocols that arise as concurrency failures. 
+If we replicate data to make a system fault-tolerant, then we may increase the risk of data theft. 
+
+我已經描述了 隨 並發失敗 而出現的 對協議的攻擊
+如果我們 複製數據 來使系統 具有 容錯能力，那麼我們 可能會增加 數據被盜的風險
+
+Finally, naming can be a thorny problem. 
+There are complex interactions of people and objects 
+with accounts, sessions, documents, files, pointers, keys and other ways of naming stuff. 
+
+Many organisations are trying to build larger, flatter namespaces 
+- whether using identity cards to track citizens or using device ID to track objects - 
+but there are limits to what we can practically do.
+
+Big data means dealing with lots of identifiers
+, many of which are ambiguous or even changing, and a lot of things can go wrong.
+
+最後，命名可能是一個棘手的問題
+人與物件之間存在複雜的互動，
+包括帳戶、會話、文件、檔案、指針、密鑰等多種命名方式
+
+許多組織都在試圖建立更大、更平坦的命名空間，
+不管是 使用 身份證 來追蹤公民 還是 使用 設備ID 來追蹤物體，
+但實際可行的範圍是有限的
+
+大數據意味著處理大量的標識符，
+其中許多是含糊不清甚至是變化的，很多事情可能出現問題。
+
+
+
+{走你} thorny /ˈθɔːr.ni/ 棘手的，麻煩的

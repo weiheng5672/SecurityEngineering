@@ -1,0 +1,78 @@
+
+
+Part of the solution is to give users better tools. 
+Modern browsers alert you to wicked URLs, with a range of mechanisms under the hood. 
+First, there are lists of bad URLs collated by the anti-virus and threat intelligence community. 
+Second, there’s logic to look for expired certificates and other compliance failures
+(as the majority of those alerts are false alarms).
+
+
+There has been a lot of research, in both industry and academia
+, about how you get people to pay attention to warnings. 
+
+We see so many of them, most are irrelevant, and many are designed to shift risk to us from someone else. 
+So when do people pay attention? 
+In our own work, we tried a number of things and found that people paid most attention when the warnings
+were not vague and general (‘Warning - visiting this web site may harm your computer!’) 
+but specific and concrete 
+(‘The site you are about to visit has been confirmed to contain software that poses a significant risk to you, with no tangible benefit. 
+It would try to infect your computer with malware designed to steal your bank account and credit card details in order to defraud you) [1329].
+
+Subsequent research by Adrienne Porter Felt and Google’s usability team has tried many
+ideas including making warnings psychologically salient using faces (which doesn’t work), simplifying the text (which helps) and making the safe defaults both attractive and prominent (which also helps). 
+
+Optimising these factors improves compliance from about 35% to about 50% [675]. 
+However, if you want to stop the great majority of people from clicking on known-bad URLs, then voluntary compliance isn’t enough. 
+You either have to block them at your firewall, or block them at the browser 
+(as both Chrome and Firefox do for different types of certificate error – a matter to which we’ll return in 21.6).
+
+
+解決方案的一部分是給用戶更好的工具。
+
+現代瀏覽器會提醒您有惡意的URL，這是由一系列機制支持的。
+首先，有一些由防病毒和威脅情報社群整理的壞URL列表。
+其次，還有一些邏輯來檢查過期的證書和其他違規行為（因為大多數警報都是虛警）。
+
+在工業界和學術界已經有很多研究，探討如何讓人們注意到警告。
+我們經常看到這些警告，大多數是無關緊要的，許多是為了將風險從其他人轉移到我們身上。
+那麼人們什麼時候會注意到呢？
+在我們自己的工作中，我們試了很多方法，
+發現當警告不是模糊而普遍的時候
+（“警告-訪問這個網站可能會損害您的電腦！”），
+而是具體而具體的時候
+（“您即將訪問的網站已被確認包含對您構成重大風險的軟件，且沒有明確的好處。
+它會試圖通過惡意軟件感染您的電腦，以竊取您的銀行帳戶和信用卡詳細信息以進行欺詐）。
+
+Google的可用性團隊進行了後續研究，嘗試了許多想法，
+包括使用臉部使警告在心理上引人注目（這是無效的），
+簡化文本（有所幫助）
+並使安全默認值既有吸引力又突出（這也有所幫助）。
+
+優化這些因素將遵從率從約35％提高到約50％。
+但是，如果您想要阻止大多數人點擊已知的壞URL，那麼自願遵守是不夠的。
+您必須在防火牆上阻止它們，或者在瀏覽器上阻止它們
+（正如Chrome和Firefox對不同類型的證書錯誤所做的那樣 - 這是我們將在第21.6節中討論的問題）。
+
+
+wicked：在這裡指的是惡意的，邪惡的，通常用來形容壞的或邪惡的事物。
+hood：這裡指的是引擎罩的縮寫，是指汽車引擎的罩子，但在這裡應該是指代隱藏的背後的意思。
+compliance：遵從，順從，指按照規定或要求行事的行為或態度。
+tangible：具體的，可觸摸的，指可以感知到或實際存在的事物，與抽象相對。
+prominent：突出的，顯著的，指在某個方面或位置上特別顯眼或重要的。
+voluntary：自願的，自發的，指自己主動選擇或自發地進行某個行為或活動。
+
+
+將以上文字翻譯成繁體中文
+然後根據上下文
+條列解釋以下單字的意思
+wicked
+hood
+compliance
+tangible
+prominent 
+voluntar
+
+
+
+
+

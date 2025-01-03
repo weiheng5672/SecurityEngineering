@@ -1,0 +1,49 @@
+
+After phishing became a real threat to online banking in the mid-2000s
+, banks tried to train their customers to look for certain features in websites. 
+
+This has been partly risk reduction, but partly risk dumping 
+– seeing to it that customers who don’t understand or can’t follow instructions can be held responsible for the resulting loss. 
+The general pattern has been that as soon as customers are trained to follow some particular rule
+, the phishermen exploit this, as the reasons for the rule are not adequately explained.
+
+At the beginning, the advice was ‘Check the English’, so the bad guys either got someone who could write English, or simply started using the banks’ own emails but with the URLs changed. 
+
+Then it was ‘Look for the lock symbol’, so the phishing sites started to use SSL 
+(or just forging it by putting graphics of lock symbols on their web pages). 
+Some banks started putting the last four digits of the customer account number into emails; 
+
+the phishermen responded by putting in the first four (which are constant for a given bank and card product). 
+Next the advice was that it was OK to click on images, but not on URLs;
+the phishermen promptly put in links that appeared to be images but actually pointed at executables. 
+The advice then was to check where a link would really go by hovering your mouse over it; 
+the bad guys then either inserted a non-printing character into the URL to stop Internet Explorer from displaying the rest, or used an unmanageably long URL (as many banks also did).
+This sort of arms race is most likely to benefit the attackers. 
+The countermeasures become so complex and counterintuitive that they confuse more and more users – exactly what the phishermen need. 
+The safety and usability communities have known for years that ‘blame and train’ is not the way to deal with unusable systems 
+– the only real fix is to design for safe usability in the first place [1453].
+
+在2000年代中期，釣魚行為成為網上銀行的真正威脅後，銀行試圖訓練他們的客戶去尋找網站中的某些特定特徵。
+這在某種程度上是風險降低，但在某種程度上是風險轉嫁 - 確保那些不理解或無法遵循指示的客戶對由此導致的損失負責。
+一般模式是，一旦客戶被訓練遵循某個特定的規則，釣魚者就會利用這一點，因為這些規則的原因並沒有得到充分的解釋。
+
+一開始，建議是“檢查英文”，所以壞人要麼找到會寫英文的人，要麼只是使用銀行的郵件，但URL已經更改了。
+
+然後是“尋找鎖定符號”，所以釣魚網站開始使用SSL（或者只是通過在他們的網頁上放置鎖定符號的圖形來偽造）。
+一些銀行開始在郵件中放入客戶帳戶號碼的最後四位數;
+
+釣魚者的回應是放入前四位數（對於特定的銀行和卡產品是固定的）。
+接下來的建議是，單擊圖像是可以的，但不要點擊URL;
+釣魚者立即插入了看似是圖像但實際上指向可執行文件的鏈接。
+然後的建議是通過將滑鼠懸停在其上來檢查鏈接的實際目的地;
+壞人然後要么在URL中插入不可打印字符以阻止Internet Explorer顯示其餘部分，
+要么使用一個不可管理的長URL（正如許多銀行也這樣做的）。
+這種類型的軍備競賽最有可能使攻擊者受益。
+對抗措施變得如此複雜和反直覺，以至於他們越來越混淆更多用戶 - 這正是釣魚者所需要的。
+
+安全和可用性社區多年來一直知道
+“blame and train”指的是將責任歸咎於用戶，然後通過培訓他們來解決系統不可用的問題。
+這種方法被認為並不是有效的，因為它忽略了系統設計方面的問題，而將責任全部歸咎於用戶。
+- 唯一真正的解決方法是一開始就設計安全可用性。
+
+

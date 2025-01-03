@@ -1,0 +1,163 @@
+
+Sometimes you can train the users. 
+Password checkers have trained them to use longer passwords with numbers as well as letters
+, and the effect spills over to websites that don’t use them [446]. 
+But you do not want to drive customers away
+, so the marketing folks will limit what you can do. 
+In fact, research shows that 
+password rule enforcement is not a function of the value at risk
+, but of whether the website is a monopoly. 
+Such websites typically have very annoying rules
+, while websites with competitors, such as Amazon, are more usable,
+placing more reliance on back-end intrusion-detection systems.
+
+In a corporate or military environment you can enforce password choice rules, or password change rules, or issue random passwords. 
+But then people will have to write them down. 
+
+So you can insist that passwords are treated the same way as the data they protect: 
+bank master passwords go in the vault overnight
+, while military ‘Top Secret’ passwords must be sealed 
+in an envelope, in a safe, in a room that’s locked when not occupied, in a building patrolled by guards. 
+
+You can send guards round at night to clean all desks and bin everything that hasn’t been locked up. 
+
+But if you want to hire and retain good people, you’d better think things through a bit more carefully. 
+
+For example, one Silicon Valley firm had a policy that the root password for each
+machine would be written down on a card and put in an envelope taped to the side of the machine 
+– a more human version of the rule that passwords be treated the same way as the data they protect. 
+
+The domestic equivalent is the card in the back of your wifi router with the password.
+
+While writing the first edition of this book
+, I could not find any account of experiments 
+on training people in password choice that would hold water 
+by the standards of applied psychology (i.e., randomized controlled trials with adequate statistical power). 
+
+The closest I found was a study of the recall rates, forgetting rates, and guessing rates of various types of password [347];
+this didn’t tell us the actual effects of giving users various kinds of advice.
+We therefore decided to see what could be achieved by training
+, and selected three groups of about a hundred volunteers from our first-year science students [2058]:
+
+the red (control) group was given the usual advice (password at least six characters long, including one nonletter);
+the green group was told to think of a passphrase and select letters from
+it to build a password. 
+So ‘It’s 12 noon and I am hungry’ would give ‘I’S12&IAH’;
+the yellow group was told to select eight characters (alpha or numeric) 
+at random from a table we gave them, write them down
+, and destroy this note after a week or two once they’d memorized the password.
+
+What we expected to find was that 
+the red group’s passwords would be easier to guess than the green group’s which would in turn be easier than the yellow group’s; 
+and that the yellow group would have the most difficulty remembering their passwords (or would be forced to reset them more often)
+, followed by green and then red. But that’s not what we found.
+
+About 30% of the control group chose passwords that could be guessed using Alec Muffett’s ‘crack’ software, versus about 10 percent for the other two groups. 
+
+So passphrases and random passwords seemed to be about equally effective. 
+
+When we looked at password reset rates, there was no significant difference between the three groups. 
+
+When we asked the students whether they’d found their passwords hard to remember (or had written them down)
+, the yellow group had significantly more problems than the other two;
+but there was no significant difference between red and green.
+
+The conclusions we drew were as follows.
+
+For users who follow instructions, passwords based on mnemonic phrases offer the best of both worlds. 
+They are as easy to remember as naively selected passwords, and as hard to guess as random passwords.
+The problem then becomes one of user compliance. 
+A significant number of users (perhaps a third of them) just don’t do what they’re told.
+
+So when the army gives soldiers randomly-selected passwords
+, its value comes from the fact that the password assignment compels user compliance
+, rather than from the fact that they’re random (as mnemonic phrases would do just as well).
+
+But centrally-assigned passwords are often inappropriate. 
+
+When you are offering a service to the public
+, your customers expect you to present broadly the same interfaces as your competitors. 
+
+So you must let users choose their own website passwords
+, subject to some lightweight algorithm to reject passwords that are ‘clearly bad’. 
+
+(GCHQ suggests using a ‘bad password list’ of the 100,000 passwords most commonly found in online password dumps.)
+
+
+有時候你可以訓練使用者。密碼檢查器已經訓練了他們使用更長的密碼，包含數字和字母，而這種效果也會波及到那些不使用這些檢查器的網站。
+但你不希望驅逐客戶，所以行銷人員會限制你能做的事情。
+事實上，研究顯示，密碼規則的執行不是由風險價值決定的，而是由網站是否壟斷決定的。
+這些網站通常會有非常惱人的規則，而像亞馬遜這樣有競爭對手的網站則更易用，更多地依賴於後端入侵檢測系統。
+
+在企業或軍事環境中，你可以強制執行密碼選擇規則，或密碼更改規則，或發放隨機密碼。但那樣的話人們就得把它們寫下來。
+
+所以你可以堅持要求密碼與其保護的數據一樣受到尊重：
+銀行的主密碼晚上放在金庫裡，
+而軍事的『機密』密碼必須放在信封裡，放在保險櫃裡，放在沒人時上鎖的房間裡，放在由警衛巡邏的建築物內。
+
+你可以在晚上派遣警衛清理所有桌子，並將沒有被鎖起來的東西放進垃圾箱。
+但如果你想聘用和留住優秀的人才，你最好仔細考慮一下。
+
+例如，一家矽谷公司有一個政策，即每台機器的根密碼會被寫在一張卡片上，
+並貼在機器的側面，這是對密碼與其保護的數據一樣受到尊重的更人性化的版本。
+在家庭環境中，相當於路由器背面的卡片上的密碼。
+
+在撰寫本書的第一版時，我找不到任何關於訓練人們選擇密碼的實驗，
+這些實驗能夠符合應用心理學的標準（即具有充分的統計功效的隨機對照試驗）。
+我找到的最接近的是一項對各種類型的密碼的回憶率、遺忘率和猜測率進行研究；
+這並沒有告訴我們給用戶各種建議的實際效果。
+因此，我們決定看看通過培訓可以實現什麼，並從我們的一年級理科學生中選擇了三個約一百人的小組：
+
+紅色（對照）小組獲得了通常的建議（密碼至少要有六個字符，包括一個非字母字符）；
+綠色小組被告知要想一個密語，然後從中選擇字母來構建密碼。因此，“It's 12 noon and I am hungry”會給出“I'S12&IAH”；
+黃色小組被告知從我們給的表中隨機選擇八個字符（字母或數字），寫下來，並在一兩周後銷毀這個筆記，一旦他們記住了密碼。
+
+我們預期會發現紅色小組的密碼比綠色小組的更容易猜測，
+而綠色小組的又比黃色小組的更容易，
+而黃色小組則最難記住他們的密碼（或者更頻繁地被迫重置），其次是綠色，然後是紅色。
+但這並不是我們發現的情況。
+
+大約30%的對照組選擇的密碼可以使用Alec Muffett的“crack”軟件猜測，而其他兩組則約為10%。
+因此，密語和隨機密碼似乎具有大致相同的效果。
+
+當我們查看密碼重置率時，三個小組之間沒有顯著差異。
+
+當我們問學生們是否發現他們的密碼難以記住（或者已經將它們寫下來），
+黃色小組比其他兩個小組有顯著更多的問題；但紅色和綠色之間沒有顯著差異。
+
+
+我們得出的結論如下：
+
+對於遵從指示的用戶來說，基於口訣短語的密碼最好。
+它們易於記憶，就像天真選擇的密碼一樣，而且難以猜測，就像隨機密碼一樣。
+問題就變成了用戶的遵從性問題。許多用戶（也許有三分之一）只是不聽指示。
+
+因此，當軍隊給士兵隨機選擇密碼時，其價值來自於迫使用戶遵從，
+而不是來自於它們的隨機性（因為口訣短語同樣有效）。
+
+中央分配的密碼通常是不適當的。
+特別是在提供服務給公眾時，客戶期望與競爭對手相比，您提供的界面應該大致相同。
+因此，您應該讓用戶自己選擇他們的網站密碼，但受到某些輕量級算法的限制，以拒絕“明顯糟糕”的密碼。
+
+一個建議是使用“壞密碼列表”，其中包含 online password dumps中最常見的10萬個密碼。
+
+
+In the case of bank cards, users expect a bank-issued initial PIN plus the ability to change the PIN 
+afterwards to one of their choosing (though again you may block a ‘clearly bad’ PIN such as 0000 or 1234).
+
+Over half of cardholders keep a random PIN
+, but about a quarter choose PINs such as children’s birth dates which have less entropy than random PINs would
+, and have the same PIN on different cards. 
+The upshot is that a thief who steals a purse or wallet may have a chance of about one in eleven to get lucky, if he tries the most common
+PINs on all the cards first in offline mode and then in online mode, so he gets six goes at each. 
+Banks that forbid popular choices such as 1234 can increase the odds to about one in eighteen [296].
+
+在銀行卡的情況下，用戶期望銀行發行初始PIN，然後可以在之後自行更改PIN。
+儘管如此，您可能會阻止一些“明顯糟糕”的PIN，比如0000或1234。
+
+事實上，超過一半的持卡人會保留一個隨機的PIN，
+但大約四分之一的人會選擇像兒童生日這樣的PIN，
+
+這些PIN的熵比隨機PIN低，而且可能會在不同的卡上使用相同的PIN。
+
+

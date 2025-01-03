@@ -1,0 +1,216 @@
+
+Give me a rock on which to stand, and I will move the world.
+– ARCHIMEDES
+
+給我一個站立的石頭，我將移動整個世界
+
+
+Whoever thinks his problem can be solved using cryptography, doesn’t understand his problem
+and doesn’t understand cryptography.
+– Attributed by Roger Needham and Butler Lampson to each other
+
+認為自己的問題可以通過加密解決的人，既不了解自己的問題，也不了解加密。
+
+羅杰·尼德漢（Roger Needham）和巴特勒·蘭普森（Butler Lampson）都是知名的計算機科學家。
+尼德漢是英國計算機科學家，曾在劍橋大學擔任教授，並在微軟研究院擔任院長。
+蘭普森是美國的計算機科學家和工程師，他在Xerox Palo Alto Research Center (PARC) 工作期間做出了許多重要貢獻，後來也成為了微軟的研究員。
+
+他們互相相信對方是這句話的作者，或者至少是它的共同創作者
+
+
+
+
+
+Cryptography is often used to build a trustworthy component on which more complex designs can rely. 
+
+Such designs come from three rather different backgrounds. 
+
+The first is the government systems world we described in Chapter 9
+, where the philosophy is to minimise the trusted computing base 
+using mechanisms like data diodes and multilevel secure encryption devices. 
+
+The second is the world of banking described in Chapter 12 where smartcards are used
+as authentication tokens while HSMs are used to protect PINs and keys. 
+
+The third is the world of cryptography research in the 1980s and 1990s 
+where people dreamed of solving social problems using mathematics: 
+of creating anonymous communications so that oppressed groups could evade state surveillance
+, leading to censorship-resistant publishing
+, untraceable digital cash and electronic elections that would be impossible to rig. 
+
+In all these cases, real life turned out to be somewhat messier than we anticipated.
+
+密碼學通常被用來建立一個可信賴的基礎組件，其他更複雜的系統或設計依靠這個基礎組件來確保安全性
+
+這些設計來自三個相當不同的背景
+
+第一個是我們在第9章中描述的政府系統世界，其哲學是通過使用 數據二極管 和 多級安全加密設備 等機制 來最小化 可信計算基礎
+
+ 「信任計算基礎」（Trusted Computing Base，TCB）是指一個計算系統中被視為是安全和可信的核心部分。
+ 它包括了操作系統、軟體、硬體、和各種安全措施等組成部分，這些部分被認為是關鍵的、必須被妥善保護和管理的。
+ 它是指在計算系統中提供安全環境進行操作的一切元素。
+ 這包括硬體、固件、軟體、操作系統、物理位置、內建安全控制，以及指定的安全和安全程序。
+
+第二個是在第12章中描述的銀行界，其中智能卡被用作身份驗證令牌，而HSM用於保護PIN和密鑰
+
+ HSM 指的是硬體安全模組（Hardware Security Module），是一種專用硬體裝置，用於管理和保護敏感資訊、加密金鑰、密碼和其他安全性相關的操作。
+ 這些模組通常提供高度安全的環境，以確保密鑰和敏感資訊在存儲和使用過程中不受到未授權訪問或攻擊。
+ HSM 主要用於加密金融交易、數位簽名、身份驗證等安全性相關應用。
+ 它們提供了硬體級別的安全性，通常包括物理防護、加密運算、隔離、多重驗證等功能，以確保密鑰和敏感資訊的保密性和完整性。
+ 在銀行和金融機構中，HSM經常用於保護PIN碼、加密交易數據和安全設備的身份驗證
+
+ 在資訊科技中，「token」（令牌）是一個廣泛使用的術語，通常用於描述一種數位或物理形式的標識符，
+ 其用途是代表使用者或實體進行身份驗證、訪問控制或授權。
+ 這些令牌可以是一個數位密鑰、一組字符、一張卡片、一個硬體裝置等等。
+
+ 身份驗證令牌（Authentication tokens）是一種用於識別用戶身份的安全性工具。
+ 這些令牌通常是數字或物理形式的，用於證明用戶是合法的，並且有權訪問系統、應用程序或服務。
+
+第三個是20世紀80年代和90年代的密碼學研究世界，人們夢想著用數學來解決社會問題：
+創造匿名通信，讓壓迫的群體能夠逃避國家監視，從而實現抗審查的出版、不可追踪的數字貨幣和無法操縱的電子選舉
+
+在所有這些情況下，現實生活都比我們預期的要複雜得多
+
+There are even more complex cryptographic components that we use as platforms. 
+
+But the engineering isn’t just about reducing the attack surface, or simplifying our fault tree analysis. 
+
+In most cases there’s a significant interaction with policy, liability and other complicating factors.
+
+
+
+除了基本的加密組件外，還有更複雜的加密組件被用作平台
+但是，工程不僅僅是為了減少攻擊面，或者簡化我們的故障樹分析
+在大多數情況下，與政策、責任和其他使事情變得複雜的因素之間存在顯著的交互作用
+
+ 故障樹分析（Fault Tree Analysis，FTA）是一種用於分析和評估系統或過程中可能發生的故障的方法
+ 它通常應用於工程、安全、風險管理等領域，用於評估系統的可靠性和安全性
+ 在故障樹分析中，首先要定義系統或過程的頂層事件（Top Event），這是需要進行分析和評估的主要事件或故障
+ 然後，分析人員根據專業知識和相關資料，開始進行事件的分解，將頂層事件分解成一系列可能的原因和故障模式
+ 分解過程中，使用邏輯閘（如AND閘、OR閘）來描述事件之間的關係
+ AND閘表示所有子事件都必須發生才能導致頂層事件，而OR閘表示只要其中一個子事件發生就可能導致頂層事件
+ 最後，通過定量或定性的方法評估每個事件的發生概率，以及整個故障樹的可靠性和安全性。
+ 這可以幫助識別系統中的潛在故障模式和弱點，並制定相應的改進措施以提高系統的可靠性和安全性。
+
+In this chapter I’m going to discuss six examples of cryptographic engineering 
+– full disk encryption, the Signal protocol, Tor, hardware security modules, enclaves and blockchains. 
+
+The first is a simple example to set the scene;
+the other five use crypto in more complex ways to support a wide range of applications
+, including payments in the case of the last three. 
+
+All but HSMs are used by cybercriminals.
+
+Hard disk encryption has been around since the 1980s and is one of the simplest security products
+, at least conceptually. 
+
+By encrypting the data on your hard disk when the machine’s in use
+, you ensure that a thief can only steal the hardware, not the data.
+
+在這一章中，我將討論六個加密工程的例子
+——全磁盤加密、Signal協議、Tor、硬件安全模塊、飛地(enclaves) 和區塊鏈
+
+首先會提供一個簡單的例子或情景，以引出後續的內容或主題；
+
+其他五個則以更複雜的方式使用加密來支持各種應用，包括最後三個中的支付。
+除了HSMs之外，所有這些都被網絡犯罪分子使用。
+
+硬盤加密自20世紀80年代以來一直存在，至少在概念上是最簡單的安全產品之一。
+通過在機器使用時對硬盤上的數據進行加密，您確保竊賊只能偷走硬件，而不能偷走數據。
+
+Signal is a protocol for secure messaging between phones. 
+
+It is perhaps the next level up in complexity 
+and is about enabling people to manage a social network 
+as securely as possible in the face of equipment compromise. 
+
+Signal does private contact discovery by means of enclaves.
+
+Signal，是一種用於手機間安全通訊的協議
+它被認為是更高層次的複雜性，其目標是在設備被犯罪者入侵的情況下，使人們能夠盡可能安全地管理社交網絡
+
+enclaves 指的是一種安全技術，用於私人聯繫發現
+這種技術通常涉及將特定的處理器或硬體區域保護起來，以防止未經授權的訪問和攻擊
+因此，「Signal」使用「enclaves」來實現私人聯繫發現，進一步提高了通訊的安全性和隱私保護水平
+
+私人聯繫發現（private contact discovery）是指一種隱私保護技術，
+用於在不公開的情況下，讓用戶能夠找到彼此的聯繫方式，例如手機號碼或電子郵件地址
+
+Tor takes this to the next level by providing anonymity
+, when you don’t want someone observing your traffic 
+to know who you’re talking to or which websites you’re visiting.
+
+Tor將這一點提升到了下一個層次，提供了匿名性，
+當您不希望 有人觀察您的流量 知道您 在與誰交談 或 訪問哪些網站
+
+HSMs have provided a trust platform for payment services since the 1980s.
+
+But the crypto apps that run on them can suffer from attacks on their application programming interfaces 
+that are so deeply entangled with payment applications that they are very hard to fix.
+
+HSMs自20世紀80年代以來一直為支付服務提供了信任平台
+但 在其上運行的加密應用程序 可能會受到 對 其應用程序編程接口的 攻擊，
+這些接口與支付應用程序緊密相關，很難修復
+
+Enclaves are an attempt by CPU vendors to provide a general-purpose crypto platform: 
+we’ve had Arm’s TrustZone since 2004 and Intel’s SGX since 2015.
+They are starting to replace HSMs in payment applications, and also support
+private contact discovery in Signal. But they have been plagued with problems
+from side-channel attacks to class breaks. For example, if you can extract the
+master secret key from an SGX chip, you can break the whole ecosystem.
+
+飛地(Enclaves)是 CPU供應商 提供 通用加密平台 的一種嘗試：
+
+ enclaves 指的是安全的硬體區域，可以保護和執行敏感的計算任務，如加密和解密操作
+ CPU供應商通常會提供支援這種功能的硬體，以使軟體開發人員能夠在這些安全區域中執行加密操作，以提高安全性。
+ CPU供應商為了提供加密功能而提供的一種安全硬體機制，以促進數據的安全處理和保護
+
+自2004年以來，我們已經有了Arm的TrustZone和自2015年以來的Intel的SGX
+
+ Arm的TrustZone和Intel的SGX（Software Guard Extensions）都可以被視為「enclaves」
+ 這兩種技術都是用於建立安全的硬體區域，可以保護敏感的計算任務和數據
+
+    Arm的TrustZone：
+    TrustZone是一種硬體安全技術，通常用於Arm架構的處理器
+    它創建了一個被稱為「Secure World」的安全執行環境，與常規的「Normal World」環境相隔離
+    TrustZone允許軟體在Secure World中運行，以保護敏感的計算和資料，提供安全性和隔離
+
+    Intel的SGX：
+    SGX是一種軟體保護擴展，用於Intel處理器
+    它創建了被稱為「enclaves」的安全區域，可以保護應用程序中的敏感代碼和數據
+    SGX使用硬體隔離技術，確保這些enclaves中的計算任務和資料不受到未授權的訪問或修改。
+
+ 總的來說，TrustZone和SGX都是用於建立安全的硬體區域，
+ 用於保護敏感的計算和資料，從而提高系統的安全性和隔離性
+ 因此，它們可以被視為「enclaves」的實現
+
+它們開始在支付應用程序中取代HSMs，並且還支持Signal中的 私人聯繫發現
+但它們一直受到 側信道攻擊 和 類型破壞 等問題的困擾
+例如，如果您可以從SGX芯片中提取主密鑰，則可以破壞整個生態系統
+
+
+Finally, for a quite different kind of trusted computer, we look at Bitcoin. This
+is a project, since 2009, to create a digital currency based on a shared ledger
+that emerges using cryptographic mechanisms from the cooperation of mutu-
+ally mistrustful parties. Many of the stakeholders are far from trustworthy,
+and there are dominant players at several levels in the technology stack. Yet a
+trusted computer has somehow emerged, thanks to a combination of cryptog-
+raphy and economic incentives, and has kept going despite the huge amounts
+of money that could be taken in a successful attack.
+It may be useful to bring together in one chapter the trusted platforms of both
+bankers and gangsters, so we can contrast them. Some striking facts emerge.
+For example, the best attempts of the top technology companies to produce
+trusted computers have produced flawed products, while the gangsters seem
+to have created something that works – at least for now.
+
+最後，對於一種截然不同的可信計算機，我們來看一下比特幣。
+這是一個自2009年以來的項目，旨在創建一種基於共享帳本的數字貨幣，該帳本通過互不信任的雙方的合作使用加密機制而出現。
+許多利益相關者都離不了信任，技術堆棧的幾個層面都存在主要參與者。
+然而，由於加密學和經濟激勵措施的結合，一個可信的計算機出現了，盡管在一次成功攻擊中可能會損失巨額資金，但它仍在運行。
+
+將銀行家和匪幫的可信平台匯集到同一章節中可能是有用的，這樣我們可以將它們進行對比。
+一些引人注目的事實浮現出來。例如，頂級技術公司最好的嘗試，生產可信計算機的產品已經顯示出存在缺陷，
+而匪幫似乎創造出了一些可以工作的東西——至少目前是這樣。
+
+
+
